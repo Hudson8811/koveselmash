@@ -90,3 +90,74 @@ body{
 		}
 	}
 }
+
+
+.pagi{
+	text-align: center;
+
+	ul{
+		display: inline-block;
+		vertical-align: top;
+		background: #eff2f7;
+		padding: 5px;
+		border-radius: 22px;
+		font-size: 15px;
+		line-height: 31px;
+
+		li{
+			display: inline-block;
+			vertical-align: middle;
+			height: 33px;
+
+			a{
+				display: inline-block;
+				vertical-align: middle;
+				width: 26px;
+				height: 26px;
+				line-height: 26px;
+				border-radius: 50%;
+			}
+
+			&.active{
+				a{
+					background: #34a963;
+					font-weight: 500;
+					color: #fff;
+				}
+			}
+
+			&:first-child{
+				margin-right: 10px;
+			}
+
+			&:last-child{
+				margin-left: 10px;
+			}
+
+			&.control{
+
+				a{
+					border:1px solid #a4acb5;
+					width: 31px;
+					height: 31px;
+
+					svg{
+						margin-top: 1px;
+						display: inline-block;
+						vertical-align: middle;
+					}
+
+					&:hover{
+						background: #34a963;
+						border-color: #34a963;
+
+						svg path{
+							fill:#fff;
+						}
+					}
+				}
+			}
+		}
+	}
+
+}
