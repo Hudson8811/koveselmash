@@ -263,11 +263,11 @@
 	    </div>
 	</header>
 	<div class="big-banner-page" style="background-image: url('images/jpg/bg-catalog-2.jpg')">
-	    <div class="page-wrapper">
+	    <div class="container">
 	        <p><span>1200 км</span> цепей <br> произведено в 2019 году</p>
 	    </div>
 	</div>
-	<nav id="breadcrumbs">
+	<nav id="breadcrumbs" class="container">
 	    <ul>
 	        <li><a href="">Главная</a></li>
 	        <li><a href="">Каталог</a></li>
@@ -276,12 +276,116 @@
 	    </ul>
 	</nav>
 
-	<div class="page-wrapper catalog-page">
+	<div class="page-wrapper catalog-page container">
 		<aside class="left_side-catalog">
-			1
+			<div class="left_side-catalog_tabs">
+				<div class="dt rL hid">
+					<ul>
+						<li><a class="active">По продукции</a></li>
+						<li><a>По отраслям</a></li>
+					</ul>
+				</div>
+
+				<div class="dd rL ">
+					<div class="item rL active">
+						<ul class="cd-accordion-menu">
+							<li class="has-children">
+
+								<label><input type="checkbox">Group 1</label>
+
+								<ul>
+									<li class="has-children">
+
+										<label><input type="checkbox">Sub Group 1</label>
+
+										<ul>
+											<li><a href="#0">Image</a></li>
+											<li><a href="#0">Image</a></li>
+											<li><a href="#0">Image</a></li>
+										</ul>
+									</li>
+									<li><a href="#0">Image</a></li>
+									<li><a href="#0">Image</a></li>
+								</ul>
+							</li>
+
+							<li class="has-children">
+
+								<label><input type="checkbox">Group 1</label>
+
+								<ul>
+									<li class="has-children">
+
+										<label><input type="checkbox">Sub Group 1</label>
+
+										<ul>
+											<li><a href="#0">Image</a></li>
+											<li><a href="#0">Image</a></li>
+											<li><a href="#0">Image</a></li>
+										</ul>
+									</li>
+									<li><a href="#0">Image</a></li>
+									<li><a href="#0">Image</a></li>
+								</ul>
+							</li>
+
+							<li class="has-children">
+
+								<label><input type="checkbox">Group 1</label>
+
+								<ul>
+									<li class="has-children">
+
+										<label><input type="checkbox">Sub Group 1</label>
+
+										<ul>
+											<li><a href="#0">Image</a></li>
+											<li><a href="#0">Image</a></li>
+											<li><a href="#0">Image</a></li>
+										</ul>
+									</li>
+									<li><a href="#0">Image</a></li>
+									<li><a href="#0">Image</a></li>
+								</ul>
+							</li>
+						</ul> <!-- cd-accordion-menu -->
+					</div><!--end item-->
+					<div class="item rL">
+						dsg
+					</div><!--end item-->
+				</div>
+			</div>
 		</aside>
 		<div class="content-catalog">
-			sdgf
+			<h1 class="catalog-title">Цепи круглозвенные для сельскохозяйственной техники</h1>
+			<div class="big_menu">
+				<a href="" class="item">
+					<span class="image_block" style="background-image: url('images/jpg/cep-1.jpg')"></span>
+					<span class="text">Цепи для скребковых цепных конвейеров с кронштейном</span>
+				</a>
+				<a href="" class="item">
+					<span class="image_block" style="background-image: url('images/jpg/cep-2.jpg')"></span>
+					<span class="text">Донные транспортеры для разбрасывателей удобрений</span>
+				</a>
+				<a href="" class="item">
+					<span class="image_block" style="background-image: url('images/jpg/cep-3.jpg')"></span>
+					<span class="text">Донные транспортеры для разбрасывателей удобрений</span>
+				</a>
+			</div>
+			<div class="sort_row">
+				<div class="sort_block">
+					Сортировать по:
+					<select name="" id="">
+						<option value=""></option>
+					</select>
+					<span class="gray">200 наименований</span>
+				</div>
+				<div class="trig_block">
+					Вид:
+					<a class="sep1 active"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><g><g><g><path fill="#dee2e7" d="M0 0h11v11H0z"/></g><g><path fill="#dee2e7" d="M0 12h11v11H0z"/></g><g><path fill="#dee2e7" d="M12 0h11v11H12z"/></g><g><path fill="#dee2e7" d="M12 12h11v11H12z"/></g></g></g></svg></a>
+					<a class="sep2"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><g><g><g><path fill="#dee2e7" d="M0 0h7v7H0z"/></g><g><path fill="#dee2e7" d="M8 3V-.002h15v3z"/></g><g><path fill="#dee2e7" d="M8 7V4h15v3z"/></g><g><path fill="#dee2e7" d="M8 11V7.998h15v3z"/></g><g><path fill="#dee2e7" d="M8 15v-3h15v3z"/></g><g><path fill="#dee2e7" d="M8 18.999v-3h15v3z"/></g><g><path fill="#dee2e7" d="M8 22.999v-3h15v3z"/></g><g><path fill="#323640" d="M23 6H8"/></g><g><path fill="#dee2e7" d="M0 8h7v7H0z"/></g><g><path fill="#dee2e7" d="M0 16h7v7H0z"/></g></g></g></svg></a>
+				</div>
+			</div>
 		</div>
 	</div>
 
@@ -358,6 +462,40 @@
 	<script src="js/main.js"></script>
 	<script>
 		$('#breadcrumbs li').eq(-2).addClass('prelast');
+
+        $('.left_side-catalog_tabs .dt ul a').click(function() {
+            $(this).closest('.dt').find('a').removeClass('active');
+            $(this).addClass('active');
+            $(this).closest('.left_side-catalog_tabs').find('.item').removeClass('active')
+                .eq($(this).parent().index()).addClass('active');
+            return false;
+        });
+
+        $(document).ready(function() {
+            $(".left_nav").accordion({
+                accordion:false,
+                speed: 500,
+                closedSign: '<em class="plus"></em>',
+                openedSign: '<em class="minus"></em>'
+            });
+        });
+
+        jQuery(document).ready(function(){
+            var accordionsMenu = $('.cd-accordion-menu');
+
+            if( accordionsMenu.length > 0 ) {
+
+                accordionsMenu.each(function(){
+                    var accordion = $(this);
+                    //detect change in the input[type="checkbox"] value
+                    accordion.on('change', 'input[type="checkbox"]', function(){
+                        var checkbox = $(this);
+                        console.log(checkbox.prop('checked'));
+                        ( checkbox.prop('checked') ) ? checkbox.parent().siblings('ul').attr('style', 'display:none;').slideDown(300) : checkbox.parent().siblings('ul').attr('style', 'display:block;').slideUp(300);
+                    });
+                });
+            }
+        });
 	</script>
 </body>
 </html>

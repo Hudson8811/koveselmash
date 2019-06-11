@@ -26,3 +26,67 @@ body{
 #jGrowl{
   z-index: 999999;
 }
+
+
+
+#breadcrumbs ul{
+	padding-top: 53px;
+	font-size: 15px;
+	line-height: 25px;
+	padding-bottom: 53px;
+
+	li {
+		display: inline;
+		vertical-align: top;
+		margin-right: 15px;
+
+		&.prelast{
+			&:after{
+				background: url("../images/svg/arr-bread-b.svg");
+			}
+		}
+
+		&:after {
+			content: '';
+			display: inline-block;
+			vertical-align: middle;
+			margin-top: -2px;
+			width: 5px;
+			height: 9px;
+			background: url("../images/svg/arr-bread.svg");
+			margin-left: 20px;
+		}
+
+		a{
+			color: #848e99;
+		}
+	}
+
+	li:last-child:after{
+		display: none;
+	}
+}
+
+.big-banner-page{
+	height: 321px;
+	background-size: cover;
+	background-position: center center;
+	font-weight: bold;
+	font-size: 35px;
+	line-height: 48px;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: stretch;
+	align-content: stretch;
+
+	p{
+		margin-bottom: 2px;
+
+		span{
+			color: #34a963;
+		}
+	}
+}
