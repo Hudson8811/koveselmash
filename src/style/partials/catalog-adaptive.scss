@@ -1,0 +1,38 @@
+@media screen and (max-width: 999px) {
+  #breadcrumbs ul{
+    font-size: 14px;
+    padding-top: 25px;
+    padding-bottom: 24px;
+  }
+  #breadcrumbs ul li{
+    margin-right: 19px;
+  }
+  #breadcrumbs ul li:after{
+    margin-left: 24px;
+  }
+  .big-banner-page{
+    font-size: 27px;
+    line-height: 40px;
+    height: 250px;
+  }
+  .big-banner-page p{
+    margin-bottom: 0;
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  #breadcrumbs ul{
+    font-size: 13px;
+  }
+  #breadcrumbs ul li:after{
+    margin-left: 14px;
+  }
+  #breadcrumbs ul li{
+    margin-right: 9px;
+    display: inline-block;
+  }
+  .big-banner-page{
+    display: none;
+  }
+}

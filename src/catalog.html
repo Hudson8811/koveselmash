@@ -6,12 +6,22 @@
 
 <body>
 	//= template/header.html
+	//= template/big-banner.html
+	//= template/breadcrumbs.html
 
 	<div class="page-wrapper catalog-page">
-		content
+		<aside class="left_side-catalog">
+			1
+		</aside>
+		<div class="content-catalog">
+			sdgf
+		</div>
 	</div>
 
 	//= template/footer.html
 	//= template/scripts.html
+	<script>
+		$('#breadcrumbs li').eq(-2).addClass('prelast');
+	</script>
 </body>
 </html>
