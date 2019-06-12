@@ -186,7 +186,129 @@ header{
 	}
 }
 
-
+footer{
+	color: #848e99;
+	background-color: #445055;
+	font-size: 13px;
+	line-height: 20px;
+	.menu-line{
+		padding: 95px 0 55px;
+		display: flex;
+		justify-content: space-between;
+		.col{
+			&:nth-child(4){
+				margin-left: 100px;
+			}
+		}
+		.menu{
+			max-width: 212px;
+			+ .menu{
+				margin-top: 20px;
+			}
+			.title{
+				color: #ffffff;
+				font-size: 15px;
+				font-weight: 500;
+				a{
+					color: #ffffff;
+				}
+			}
+			.submenu{
+				list-style: none;
+				margin-top: 20px;
+				li{
+					+ li{
+						margin-top: 10px;
+					}
+				}
+				a{
+					color: #848e99;
+				}
+			}
+		}
+		.contacts-block{
+			max-width: 265px;
+			.title{
+				color: #ffffff;
+				font-size: 15px;
+				font-weight: 500;
+				margin-bottom: 20px;
+			}
+			.block{
+				+.block{
+					margin-top: 14px;
+					&.mgn-more{
+						margin-top: 22px;
+					}
+				}
+				.label{
+					color: #848e99;
+					font-size: 13px;
+					font-weight: 400;
+				}
+				.phone-link{
+					color: #ffffff;
+					font-size: 18px;
+					font-weight: 600;
+					margin-top: 10px;
+					display: inline-block;
+					span{
+						font-weight: 400;
+					}
+				}
+				.address{
+					color: #ffffff;
+					font-size: 13px;
+					font-weight: 400;
+					margin-top: 10px;
+				}
+				.mail-link{
+					color: #848e99;
+					font-size: 13px;
+					font-weight: 400;
+				}
+			}
+			.soc-block{
+				display: flex;
+				width: 203px;
+				align-items: center;
+				justify-content: space-between;
+				margin-top: 37px;
+				.soc-link{
+					img{
+						display: block;
+					}
+				}
+			}
+		}
+	}
+	.copy-line{
+		border-top: 1px solid #59656a;
+		padding: 55px 0 75px;
+		display: flex;
+		justify-content: space-between;
+		.col{
+			&:nth-child(1){
+				max-width: 475px;
+				.copy-2{
+					margin-top: 20px;
+				}
+			}
+			&:nth-child(3){
+				a{
+					margin-top: 8px;
+					display: block;
+					img{
+						display: block;
+					}
+				}
+			}
+		}
+		a{
+			color: #848e99;
+		}
+	}
+}
 
 #breadcrumbs ul{
 	padding-top: 53px;
