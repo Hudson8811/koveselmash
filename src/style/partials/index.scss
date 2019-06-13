@@ -160,16 +160,22 @@
   }
 
   .popular-spec-products{
+    margin-top: 110px;
     .carousel-titles{
       display: flex;
       border-bottom: 3px solid #dee2e7;
       justify-content: center;
+      width: max-content;
+      padding: 0 40px;
+      margin: 0 auto;
       .carousel-title{
         padding: 0 0 25px;
         color: #848e99;
         font-size: 18px;
         font-weight: 500;
         position: relative;
+        line-height: 30px;
+        cursor: pointer;
         +.carousel-title{
           margin-left: 51px;
         }
@@ -184,16 +190,28 @@
             display: block;
             position: absolute;
             left: 0;
-            bottom: 0;
+            bottom: -3px;
           }
           &::before{
             content: '';
             display: block;
             position: absolute;
             left: calc(50% - 8px);
-            bottom: 0;
+            bottom: -19px;
             border: 8px solid transparent;	border-top: 8px solid #34a963;
           }
+        }
+      }
+    }
+    .carousels-content{
+      border: 1px solid #dee2e7;
+      padding: 40px;
+      box-sizing: border-box;
+      margin-top: -1px;
+      .carousel{
+        display: none;
+        &.active{
+          display: block;
         }
       }
     }

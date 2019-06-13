@@ -10,6 +10,11 @@ $(document).ready(function() {
         $('#tab-1').css('background-image', 'url(' + bg + ')');
     });
 
+    $('.home-page .popular-spec-products .carousel-title').click(function () {
+        $(this).addClass('active').siblings('.carousel-title').removeClass('active');
+        var carousel = $(this).data('carousel');
+        $('#carousel-'+carousel).addClass('active').siblings('.carousel').removeClass('active');
+    });
 
 
 });
