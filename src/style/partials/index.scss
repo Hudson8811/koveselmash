@@ -162,16 +162,38 @@
   .popular-spec-products{
     .carousel-titles{
       display: flex;
+      border-bottom: 3px solid #dee2e7;
+      justify-content: center;
       .carousel-title{
         padding: 0 0 25px;
         color: #848e99;
         font-size: 18px;
         font-weight: 500;
         position: relative;
+        +.carousel-title{
+          margin-left: 51px;
+        }
         &.active{
           color: #1c1c1c;
           font-size: 25px;
-          &:
+          &::after{
+            content: '';
+            height: 3px;
+            width: 100%;
+            background: #34a963;
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+          }
+          &::before{
+            content: '';
+            display: block;
+            position: absolute;
+            left: calc(50% - 8px);
+            bottom: 0;
+            border: 8px solid transparent;	border-top: 8px solid #34a963;
+          }
         }
       }
     }
