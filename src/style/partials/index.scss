@@ -101,7 +101,7 @@
           background-repeat: no-repeat;
           background-image: none;
           flex-wrap: wrap;
-          transition: background 0.3s linear;
+
           .item{
             background: url("../images/svg/arr-link-w.svg") right 15px top 15px no-repeat;
             padding: 40px 60px;
@@ -154,6 +154,24 @@
               }
             }
           }
+        }
+      }
+    }
+  }
+
+  .popular-spec-products{
+    .carousel-titles{
+      display: flex;
+      .carousel-title{
+        padding: 0 0 25px;
+        color: #848e99;
+        font-size: 18px;
+        font-weight: 500;
+        position: relative;
+        &.active{
+          color: #1c1c1c;
+          font-size: 25px;
+          &:
         }
       }
     }
