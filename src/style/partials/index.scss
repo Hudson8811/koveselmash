@@ -1,0 +1,162 @@
+.home-page{
+  .home-banner{
+    height: 697px;
+    .container{
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-size: cover;
+      .text-block{
+        .big-text{
+          color: #ffffff;
+          font-size: 35px;
+          font-weight: 700;
+          line-height: 48px;
+        }
+        .small-text{
+          color: #ffffff;
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 30px;
+          margin-top: 60px;
+        }
+      }
+      .medals{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img{
+          display: block;
+          +img{
+            margin-top: 23px;
+          }
+        }
+      }
+    }
+  }
+
+  .tabs-menu{
+    margin-top: -77px;
+    .container{
+      box-sizing: border-box;
+      border: 1px solid #dee2e7;
+    }
+    .tabs-titles{
+      display: flex;
+      .tab-title{
+        width: 33.3333%;
+        height: 77px;
+        background-color: #f2f3f5;
+        color: #1c1c1c;
+        font-size: 18px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        cursor: pointer;
+        +.tab-title{
+          border-left: 1px solid #dee2e7;
+        }
+        &.active{
+          background-color: #ffffff;
+          color: #34a963;
+          &::before{
+            content: "";
+            width: 19px;
+            height: 19px;
+            display: block;
+            background: #34a963 url("../images/svg/arr-down-w.svg") center center no-repeat;
+            border-radius: 100%;
+            position: absolute;
+            right: 38px;
+            top: calc(50% - 9px);
+          }
+          &::after{
+            content: "";
+            width: 100%;
+            height: 5px;
+            background-color: #34a963;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+          }
+        }
+      }
+    }
+    .tabs-content{
+      .tab{
+        display: none;
+        &.active{
+          display: block;
+          &#tab-1{
+            display: flex;
+          }
+        }
+        &#tab-1{
+          background-color: #445055;
+          background-size: cover;
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-image: none;
+          flex-wrap: wrap;
+          transition: background 0.3s linear;
+          .item{
+            background: url("../images/svg/arr-link-w.svg") right 15px top 15px no-repeat;
+            padding: 40px 60px;
+            width: 33.3333%;
+            height: 361px;
+            box-sizing: border-box;
+            border-bottom: 1px solid rgba(255,255,255,0.3);
+            border-right: 1px solid rgba(255,255,255,0.3);
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: column;
+            .image-block{
+              height: 60px;
+              display: flex;
+              align-items: flex-end;
+              img{
+                display: block;
+              }
+            }
+            .title{
+              color: #ffffff;
+              font-size: 18px;
+              font-weight: 600;
+              line-height: 25px;
+              margin-top: 30px;
+              max-width: 200px;
+            }
+            .list{
+              padding-top: 40px;
+              box-sizing: border-box;
+              display: none;
+              flex-direction: column;
+              align-items: flex-start;
+              a{
+                display: inline-block;
+                font-size: 14px;
+                color: #ffffff;
+                +a{
+                  margin-top: 15px;
+                }
+              }
+            }
+            &:nth-child(3n){
+              margin-right: 0;
+            }
+            &:hover{
+              background: #34a963 url("../images/svg/arr-link-down-w.svg") right 15px top 15px no-repeat;
+              .list{
+                display: flex;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
