@@ -18,3 +18,18 @@ $(document).ready(function() {
 
 
 });
+
+var popularSwiper = new Swiper ('.popular-spec-products #carousel-1 .swiper-container', {
+    slidesPerView: 4,
+    spaceBetween: 46,
+    pagination: {
+        el: '.popular-spec-products #carousel-1 .swiper-pagination',
+        clickable: true,
+    },
+
+    navigation: {
+        nextEl: '.popular-spec-products #carousel-1 .swiper-button-next',
+        prevEl: '.popular-spec-products #carousel-1 .swiper-button-prev',
+    },
+
+})
