@@ -16,6 +16,12 @@ $(document).ready(function() {
         $('#carousel-'+carousel).addClass('active').siblings('.carousel').removeClass('active');
     });
 
+    $('.home-page .why-block .title-list .title').click(function () {
+        $(this).addClass('active').siblings('.title').removeClass('active');
+        var why = $(this).data('why');
+        $('#why-img-'+why).addClass('active').siblings('img').removeClass('active');
+        $('#why-content-'+why).addClass('active').siblings('.why-content').removeClass('active');
+    });
 
 });
 
