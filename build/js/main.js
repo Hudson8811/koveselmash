@@ -69,6 +69,12 @@ $(document).ready(function() {
         $('#why-content-'+why).addClass('active').siblings('.why-content').removeClass('active');
     });
 
+    $('.home-page .big-tabs .tab-title').click(function () {
+        $(this).addClass('active').siblings('.tab-title').removeClass('active');
+        var tabb = $(this).data('tabb');
+        $('#tabb-'+tabb).addClass('active').siblings('.tab').removeClass('active');
+    });
+
 });
 
 var popularSwiper = new Swiper ('.popular-spec-products #carousel-1 .swiper-container', {
@@ -84,4 +90,20 @@ var popularSwiper = new Swiper ('.popular-spec-products #carousel-1 .swiper-cont
         prevEl: '.popular-spec-products #carousel-1 .swiper-button-prev',
     },
 
-})
+});
+
+var partnersSwiper = new Swiper ('.partners-block .swiper-container', {
+    spaceBetween: 1,
+    slidesPerView: 5,
+    slidesPerColumn: 3,
+    pagination: {
+        el: '.partners-block .swiper-pagination',
+        clickable: true,
+    },
+
+    navigation: {
+        nextEl: '.partners-block  .swiper-button-next',
+        prevEl: '.partners-block  .swiper-button-prev',
+    },
+
+});
