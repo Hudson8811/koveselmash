@@ -27,6 +27,45 @@ body{
   z-index: 999999;
 }
 
+.btn {
+  font-family: $font1;
+  height: 45px;
+  border-radius: 50px;
+  border: 2px solid #dee2e7;
+  background-color: #333333;
+  padding: 0 25px;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+  max-width: 100%;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  color: #34a963;
+  font-weight: 400;
+  text-transform: uppercase;
+  &:focus{
+    outline: none;
+  }
+  &.btn-white{
+    color: #34a963;
+    border: 2px solid #dee2e7;
+    background-color: #333333;
+    &::after{
+      content: "";
+      display: inline-block;
+      width: 19px;
+      height: 19px;
+      background: #34a963 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='5' height='9' viewBox='0 0 5 9'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%23eaeff5' d='M5.012-.029L1.742 4.5l3.27 4.529H3.245l-3.27-4.529 3.27-4.528z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") center center no-repeat;
+      border-radius: 100%;
+      margin-left: 15px;
+    }
+    &:hover{
+    }
+  }
+}
+
+
 header{
 	background: #ffffff;
 	border-bottom: 5px solid #34a963;
