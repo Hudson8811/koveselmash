@@ -31,6 +31,21 @@ $(document).ready(function() {
         $(this).addClass('active').siblings('.tab-title').removeClass('active');
         var tabb = $(this).data('tabb');
         $('#tabb-'+tabb).addClass('active').siblings('.tab').removeClass('active');
+        if (tabb == 3){
+            var reviewSwiper = new Swiper ('.big-tabs #tabb-3 .swiper-container', {
+                slidesPerView: 2,
+                spaceBetween: 30,
+                pagination: {
+                    el: '.big-tabs #tabb-3 .swiper-pagination',
+                    clickable: true,
+                },
+
+                navigation: {
+                    nextEl: '.big-tabs #tabb-3 .swiper-button-next',
+                    prevEl: '.big-tabs #tabb-3 .swiper-button-prev',
+                },
+            });
+        }
     });
 
 });
@@ -47,7 +62,6 @@ var popularSwiper = new Swiper ('.popular-spec-products #carousel-1 .swiper-cont
         nextEl: '.popular-spec-products #carousel-1 .swiper-button-next',
         prevEl: '.popular-spec-products #carousel-1 .swiper-button-prev',
     },
-
 });
 
 var partnersSwiper = new Swiper ('.partners-block .swiper-container', {
@@ -63,5 +77,5 @@ var partnersSwiper = new Swiper ('.partners-block .swiper-container', {
         nextEl: '.partners-block  .swiper-button-next',
         prevEl: '.partners-block  .swiper-button-prev',
     },
-
 });
+

@@ -539,6 +539,10 @@
               a{
                 text-decoration: underline;
                 font-weight: 600;
+                color: #1c1c1c;
+                &:hover{
+                  color: #34a963;
+                }
               }
             }
             .left-block{
@@ -582,6 +586,81 @@
                 max-width: 470px;
               }
             }
+          }
+        }
+        &#tabb-3{
+          padding-bottom: 65px;
+          .swiper-container{
+            margin: 77px 0;
+          }
+          .swiper-slide{
+            background-color: #eff2f7;
+            box-sizing: border-box;
+            padding: 45px;
+            .image-block{
+              height: 70px;
+              display: flex;
+              align-items: center;
+              img{
+                display: block;
+                max-width: 100%;
+                max-height: 100%;
+              }
+            }
+            .title{
+              margin-top: 5px;
+              color: #1c1c1c;
+              font-size: 18px;
+              font-weight: 600;
+            }
+            .type{
+              color: #848e99;
+              font-size: 13px;
+              font-weight: 400;
+              margin-top: 5px;
+            }
+            .text-block{
+              margin: 35px 0;
+              padding: 35px 0;
+              min-height: 312px;
+              box-sizing: border-box;
+              border-top: 1px solid #dee2e7;
+              border-bottom: 1px solid #dee2e7;
+              .text{
+                color: #1c1c1c;
+                font-size: 15px;
+                font-style: italic;
+                line-height: 25px;
+              }
+              .name{
+                margin-top: 30px;
+                color: #1c1c1c;
+                font-size: 15px;
+                font-weight: 600;
+              }
+              .role{
+                color: #848e99;
+                font-size: 13px;
+                font-weight: 400;
+                margin-top: 10px;
+              }
+            }
+            .letter{
+              color: #34a963;
+              font-size: 15px;
+              font-weight: 600;
+              text-decoration: underline;
+              &:hover{
+                text-decoration: none;
+              }
+            }
+          }
+          .swipper-control{
+            padding: 5px;
+            border-radius: 50px;
+            background-color: #eff2f7;
+            width: 249px;
+            margin: 0 auto;
           }
         }
       }
