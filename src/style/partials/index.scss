@@ -90,7 +90,7 @@
         display: none;
         &.active{
           display: block;
-          &#tab-1{
+          &#tab-1, &#tab-2{
             display: flex;
           }
         }
@@ -106,13 +106,13 @@
             background: url("../images/svg/arr-link-w.svg") right 15px top 15px no-repeat;
             padding: 40px 60px;
             width: 33.3333%;
-            height: 361px;
             box-sizing: border-box;
             border-bottom: 1px solid rgba(255,255,255,0.3);
             border-right: 1px solid rgba(255,255,255,0.3);
             display: flex;
             justify-content: flex-end;
             flex-direction: column;
+            height: 361px;
             .image-block{
               height: 60px;
               display: flex;
@@ -152,6 +152,38 @@
               .list{
                 display: flex;
               }
+            }
+          }
+        }
+        &#tab-2{
+          background-color: #445055;
+          background-size: cover;
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-image: none;
+          flex-wrap: wrap;
+
+          .item{
+            padding: 30px 60px;
+            width: 33.3333%;
+            box-sizing: border-box;
+            border-bottom: 1px solid rgba(255,255,255,0.3);
+            border-right: 1px solid rgba(255,255,255,0.3);
+            display: flex;
+            align-items: center;
+            height: 144px;
+            .title{
+              font-weight: 600;
+              max-width: 250px;
+              color: #ffffff;
+              font-size: 15px;
+              line-height: 22px;
+            }
+            &:nth-child(3n){
+              margin-right: 0;
+            }
+            &:hover{
+              background: #34a963;
             }
           }
         }

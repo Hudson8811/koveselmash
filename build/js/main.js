@@ -55,6 +55,10 @@ $(document).ready(function() {
         var bg = $(this).data('bg');
         $('#tab-1').css('background-image', 'url(' + bg + ')');
     });
+    $('.home-page .tabs-menu #tab-2 .item').hover(function () {
+        var bg = $(this).data('bg');
+        $('#tab-2').css('background-image', 'url(' + bg + ')');
+    });
 
     $('.home-page .popular-spec-products .carousel-title').click(function () {
         $(this).addClass('active').siblings('.carousel-title').removeClass('active');
