@@ -20,6 +20,14 @@ $(document).ready(function() {
         $(this).parents('.parent').toggleClass('active').find('.inner-menu').slideToggle();
     });
 
+    $('.level-1 .diler-col .list-item > a').click(function () {
+        event.preventDefault();
+        var diler = $(this).data('diler');
+        $(this).parents('.list-item').addClass('active').siblings('.list-item').removeClass('active');
+        $('#diler-'+diler).addClass('active').siblings('.diler').removeClass('active');
+    });
+
+
     $(document).mouseup(function (e){
         var div = $(".drop-block");
         if (!div.is(e.target) && div.has(e.target).length === 0) {
