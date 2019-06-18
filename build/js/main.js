@@ -60,6 +60,18 @@ $(document).ready(function() {
         }
     });
 
+    $('.level-1 > a').click(function () {
+        $('.level-1 > a').removeClass('active');
+        $(this).addClass('active');
+    });
+
+    $(document).mouseup(function (e){
+        var div = $(".drop-block");
+        if (!div.is(e.target) && div.has(e.target).length === 0) {
+            $('.level-1 > a').removeClass('active');
+        }
+    });
+
 });
 $(document).ready(function() {
     $('.home-page .tabs-menu .tab-title').click(function () {
