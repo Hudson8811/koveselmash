@@ -268,8 +268,9 @@ header{
 							color: #34a963;
 							font-size: 18px;
 							font-weight: 600;
+							text-decoration: underline;
 							&:hover{
-								text-decoration: underline;
+								text-decoration: none;
 							}
 						}
 					}
@@ -397,6 +398,9 @@ header{
 							}
 						}
 					}
+				}
+				&.drop-block-6{
+
 				}
 			}
 			.haschild{
