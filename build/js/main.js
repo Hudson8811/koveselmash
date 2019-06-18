@@ -361,6 +361,11 @@ $(document).ready(function() {
         $(this).addClass('active');
     });
 
+    $('.level-1 .menu-item.parent > a').click(function () {
+        event.preventDefault();
+        $(this).parents('.parent').toggleClass('active').find('.inner-menu').slideToggle();
+    });
+
     $(document).mouseup(function (e){
         var div = $(".drop-block");
         if (!div.is(e.target) && div.has(e.target).length === 0) {
