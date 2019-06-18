@@ -4,8 +4,10 @@
 //= libs/jquery.fancybox.min.js
 //= libs/jquery.maskedinput.min.js
 //= libs/swiper.min.js
+//= libs/jquery.accordion.js
 
 /* my scripts */
 
 //= partials/main.js
 //= partials/index.js
+//= partials/catalog.js

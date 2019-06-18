@@ -1,91 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="utf-8">
-	<meta name="description" content="">
-	<meta name="keywords" content="">
-	
-	<title>Тайтл</title>
-	
-	<link rel="icon" href="favicon.ico">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap&subset=cyrillic" rel="stylesheet">
-	<link href="css/main.css" rel="stylesheet">
+	//= template/head.html
 </head>
 
 <body>
-	<header>
-	    <div class="container">
-	        <div class="logo-line">
-	            <a href="/" class="logo">
-	                <img src="images/png/logo.png" alt="">
-	                <span class="text-block">
-	                    <span class="title">Ковельсельмаш</span>
-	                    <span class="losung">Надежность и стабильность</span>
-	                </span>
-	            </a>
-	            <div class="no-logo">
-	                <div class="address">г. Ковель, ул. Варшавская 1</div>
-	                <a href="tel:+380335261002" class="phone"><span>+38 (03352)</span>  6-10-02</a>
-	                <div class="select-lang-block">
-	                    <a href="" class="lang active">Рус</a>
-	                    <div class="more-langs">
-	                        <a href="" class="lang active">Eng</a>
-	                        <a href="" class="lang active">Укр</a>
-	                    </div>
-	                </div>
-	                <a href="" class="search"><img src="images/png/i-search.png" alt=""></a>
-	                <a href="" class="cart"><img src="images/png/i-cart.png" alt=""></a>
-	            </div>
-	        </div>
-	        <div class="menu-line">
-	            <ul class="menu">
-	                <li class="level-1 haschild">
-	                    <a href="">Компания</a>
-	                    <div class="drop-block">Выпадающий блок</div>
-	                </li>
-	                <li class="level-1 haschild">
-	                    <a href="">Продукция</a>
-	                    <div class="drop-block">Выпадающий блок</div>
-	                </li>
-	                <li class="level-1 haschild">
-	                    <a href="">Услуги</a>
-	                    <div class="drop-block">Выпадающий блок</div>
-	                </li>
-	                <li class="level-1 haschild">
-	                    <a href="">Клиентам и партнерам</a>
-	                    <div class="drop-block">Выпадающий блок</div>
-	                </li>
-	                <li class="level-1 haschild">
-	                    <a href="">Пресс-центр</a>
-	                    <div class="drop-block">Выпадающий блок</div>
-	                </li>
-	                <li class="level-1 haschild">
-	                    <a href="">Контакты</a>
-	                    <div class="drop-block">Выпадающий блок</div>
-	                </li>
-	
-	                <li class="level-1 callback-link">
-	                    <a href="javascript:;" data-fancybox data-src="#callback">Оформить заявку</a>
-	                </li>
-	            </ul>
-	        </div>
-	    </div>
-	</header>
-	<div class="big-banner-page" style="background-image: url('images/jpg/bg-catalog-2.jpg')">
-	    <div class="container">
-	        <p><span>1200 км</span> цепей <br> произведено в 2019 году</p>
-	    </div>
-	</div>
-	<nav id="breadcrumbs" class="container">
-	    <ul>
-	        <li><a href="">Главная</a></li>
-	        <li><a href="">Каталог</a></li>
-	        <li><a href="">Цепи</a></li>
-	        <li><span>Цепи круглозвенные для сельскохозяйственной техники</span></li>
-	    </ul>
-	</nav>
+	//= template/header.html
+	//= template/big-banner.html
+	//= template/breadcrumbs.html
 
 	<div class="page-wrapper catalog-page container">
 		<aside class="left_side-catalog">
@@ -480,7 +402,44 @@
 			</div>
 		</aside>
 		<div class="content-catalog">
-			<h1 class="catalog-title">Цепи круглозвенные для сельскохозяйственной техники</h1>
+			<h1 class="catalog-title">Продукция по отраслям</h1>
+
+			<div class="industry_menu">
+				<div class="row">
+					<div class="item">
+						<a href="" style="background-image: url('images/jpg/catalog-menu-1.jpg')">
+							<span class="text">Горно-шахтная промышленность</span>
+						</a>
+					</div>
+					<div class="item">
+						<a href="" style="background-image: url('images/jpg/catalog-menu-2.jpg')">
+							<span class="text">Железнодорожная отрасль</span>
+						</a>
+					</div>
+					<div class="item">
+						<a href="" style="background-image: url('images/jpg/catalog-menu-3.jpg')">
+							<span class="text">Энергетическая отрасль</span>
+						</a>
+					</div>
+					<div class="item">
+						<a href="" style="background-image: url('images/jpg/catalog-menu-4.jpg')">
+							<span class="text">Сельское хозяйство</span>
+						</a>
+					</div>
+					<div class="item">
+						<a href="" style="background-image: url('images/jpg/catalog-menu-5.jpg')">
+							<span class="text">Машиностроение</span>
+						</a>
+					</div>
+					<div class="item">
+						<a href="" style="background-image: url('images/jpg/catalog-menu-6.jpg')">
+							<span class="text">Прочее</span>
+						</a>
+					</div>
+
+					<div class="clear"></div>
+				</div>
+			</div>
 			<div class="big_menu">
 				<div class="row">
 					<div class="item">
@@ -501,191 +460,46 @@
 							<span class="text">Цепи для скребковых цепных конвейеров с кронштейном</span>
 						</a>
 					</div>
-					<div class="clear"></div>
-				</div>
-			</div>
-			<div class="sort_row">
-				<div class="sort_block">
-					Сортировать по:
-					<select name="" id="">
-						<option value=""></option>
-					</select>
-					<span class="gray">200 наименований</span>
-				</div>
-				<div class="trig_block">
-					Вид:
-					<a class="sep1 active"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><g><g><g><path fill="#dee2e7" d="M0 0h11v11H0z"/></g><g><path fill="#dee2e7" d="M0 12h11v11H0z"/></g><g><path fill="#dee2e7" d="M12 0h11v11H12z"/></g><g><path fill="#dee2e7" d="M12 12h11v11H12z"/></g></g></g></svg></a>
-					<a class="sep2"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><g><g><g><path fill="#dee2e7" d="M0 0h7v7H0z"/></g><g><path fill="#dee2e7" d="M8 3V-.002h15v3z"/></g><g><path fill="#dee2e7" d="M8 7V4h15v3z"/></g><g><path fill="#dee2e7" d="M8 11V7.998h15v3z"/></g><g><path fill="#dee2e7" d="M8 15v-3h15v3z"/></g><g><path fill="#dee2e7" d="M8 18.999v-3h15v3z"/></g><g><path fill="#dee2e7" d="M8 22.999v-3h15v3z"/></g><g><path fill="#323640" d="M23 6H8"/></g><g><path fill="#dee2e7" d="M0 8h7v7H0z"/></g><g><path fill="#dee2e7" d="M0 16h7v7H0z"/></g></g></g></svg></a>
-				</div>
-			</div>
-
-			<div class="catalog catalog_table">
-				<div class="row">
 					<div class="item">
 						<a href="">
-							<span class="image_block" style="background-image: url('images/jpg/product-test.jpg')"></span>
-							<span class="ah1">6х19-5</span>
-							<span class="ah2">303.613.271-04</span>
+							<span class="image_block" style="background-image: url('images/jpg/cep-3.jpg')"></span>
+							<span class="text">Цепи для скребковых цепных конвейеров с кронштейном</span>
 						</a>
 					</div>
 					<div class="item">
 						<a href="">
-							<span class="image_block" style="background-image: url('images/jpg/product-test.jpg')"></span>
-							<span class="ah1">6х19-5</span>
-							<span class="ah2">303.613.271-04</span>
+							<span class="image_block" style="background-image: url('images/jpg/cep-3.jpg')"></span>
+							<span class="text">Цепи для скребковых цепных конвейеров с кронштейном</span>
 						</a>
 					</div>
 					<div class="item">
 						<a href="">
-							<span class="image_block" style="background-image: url('images/jpg/product-test.jpg')"></span>
-							<span class="ah1">6х19-5</span>
-							<span class="ah2">303.613.271-04</span>
+							<span class="image_block" style="background-image: url('images/jpg/cep-3.jpg')"></span>
+							<span class="text">Цепи для скребковых цепных конвейеров с кронштейном</span>
 						</a>
 					</div>
 					<div class="item">
 						<a href="">
-							<span class="image_block" style="background-image: url('images/jpg/product-test.jpg')"></span>
-							<span class="ah1">6х19-5</span>
-							<span class="ah2">303.613.271-04</span>
+							<span class="image_block" style="background-image: url('images/jpg/cep-3.jpg')"></span>
+							<span class="text">Цепи для скребковых цепных конвейеров с кронштейном</span>
 						</a>
 					</div>
 					<div class="item">
 						<a href="">
-							<span class="image_block" style="background-image: url('images/jpg/product-test.jpg')"></span>
-							<span class="ah1">6х19-5</span>
-							<span class="ah2">303.613.271-04</span>
+							<span class="image_block" style="background-image: url('images/jpg/cep-3.jpg')"></span>
+							<span class="text">Цепи для скребковых цепных конвейеров с кронштейном</span>
 						</a>
 					</div>
-
 					<div class="clear"></div>
 				</div>
 			</div>
 
-			<nav class="pagi">
-			    <ul>
-			        <li class="control"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="5" height="9" viewBox="0 0 5 9"><g><g><path fill="#848e99" d="M5.012-.029L1.742 4.5l3.27 4.529H3.245l-3.27-4.529 3.27-4.528z"/></g></g></svg></a></li>
-			        <li><a href="">1</a></li>
-			        <li class="active"><a href="">2</a></li>
-			        <li><a href="">3</a></li>
-			        <li><a href="">4</a></li>
-			        <li>...</li>
-			        <li><a href="">10</a></li>
-			        <li class="control"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="5" height="9" viewBox="0 0 5 9"><g><g><path fill="#848e99" d="M-.002 8.996l3.248-4.497-3.248-4.5h1.755l3.249 4.5-3.249 4.497z"/></g></g></svg></a></li>
-			    </ul>
-			</nav>
+
 		</div>
 	</div>
 
-	<footer>
-	    <div class="container">
-	        <div class="menu-line">
-	            <div class="col">
-	                <div class="menu">
-	                    <div class="title"><a href="">Компания</a></div>
-	                    <ul class="submenu">
-	                        <li><a href="">О предприятии</a></li>
-	                        <li><a href="">Наша миссия</a></li>
-	                        <li><a href="">Производство</a></li>
-	                        <li><a href="">История компании</a></li>
-	                        <li><a href="">Фото видео галерея</a></li>
-	                        <li><a href="">Представители</a></li>
-	                        <li><a href="">Публичная информация</a></li>
-	                    </ul>
-	                </div>
-	                <div class="menu">
-	                    <div class="title"><a href="">Корпоративная ответственность</a></div>
-	                </div>
-	            </div>
-	            <div class="col">
-	                <div class="menu">
-	                    <div class="title"><a href="">Продукция</a></div>
-	                    <ul class="submenu">
-	                        <li><a href="">Горно-шахтенная промышленность</a></li>
-	                        <li><a href="">Железнодорожная отрасль</a></li>
-	                        <li><a href="">Энергетическая отрасль</a></li>
-	                        <li><a href="">Сельское хозяйтсво</a></li>
-	                        <li><a href="">Машиностроение</a></li>
-	                        <li><a href="">Прочее</a></li>
-	                    </ul>
-	                </div>
-	                <div class="menu">
-	                 <div class="title"><a href="">Услуги</a></div>
-	                </div>
-	                <div class="menu">
-	                    <div class="title"><a href="">Пресс-центр</a></div>
-	                </div>
-	            </div>
-	            <div class="col">
-	                <div class="menu">
-	                    <div class="title"><a href="">Сбытовая сеть</a></div>
-	                    <ul class="submenu">
-	                        <li><a href="">Список дилеров</a></li>
-	                        <li><a href="">Как стать дилером</a></li>
-	                        <li><a href="">Календарь выставок</a></li>
-	                        <li><a href="">Анкета клиента</a></li>
-	                        <li><a href="">Сделать заказ</a></li>
-	                    </ul>
-	                </div>
-	                <div class="menu">
-	                    <div class="title"><a href="">Обеспечение</a></div>
-	                    <ul class="submenu">
-	                        <li><a href="">Список поставщиков</a></li>
-	                        <li><a href="">Как стать поставщиком</a></li>
-	                        <li><a href="">Порядок закупок</a></li>
-	                        <li><a href="">Реестр закупок</a></li>
-	                        <li><a href="">Тендеры</a></li>
-	                        <li><a href="">Черный список</a></li>
-	                    </ul>
-	                </div>
-	            </div>
-	            <div class="col">
-	                <div class="contacts-block">
-	                    <div class="title">Контакты</div>
-	                    <div class="block">
-	                        <div class="label">Приемная</div>
-	                        <a href="" class="phone-link"><span>+38 (03352)</span> 6-10-02</a>
-	                    </div>
-	                    <div class="block">
-	                        <div class="label">Отдел снабжения</div>
-	                        <a href="" class="phone-link"><span>+38 (03352)</span> 6-10-54</a>
-	                    </div>
-	                    <div class="block">
-	                        <div class="label">Отдел сбыта</div>
-	                        <a href="" class="phone-link"><span>+38 (03352)</span> 6-10-41</a>
-	                    </div>
-	                    <div class="block mgn-more">
-	                        <div class="label">Адрес предприятия</div>
-	                        <div class="address">Украина, 45007, г. Ковель Волынской области , ул. Варшавская, 1</div>
-	                    </div>
-	                    <div class="block mgn-more">
-	                        <div class="mail-link">reception@kovelselmash.com</div>
-	                    </div>
-	                    <div class="soc-block">
-	                        <a href="" target="_blank" class="soc-link"><img src="images/png/soc-fb.png" alt=""></a>
-	                        <a href="" target="_blank" class="soc-link"><img src="images/png/soc-tw.png" alt=""></a>
-	                        <a href="" target="_blank" class="soc-link"><img src="images/png/soc-insta.png" alt=""></a>
-	                        <a href="" target="_blank" class="soc-link"><img src="images/png/soc-youtube.png" alt=""></a>
-	                    </div>
-	                </div>
-	            </div>
-	
-	        </div>
-	        <div class="copy-line">
-	            <div class="col">
-	                <div class="copy">© 2019 Машиностроительный завод «Ковельсельмаш» </div>
-	                <div class="copy-2">Любое использование материалов размещенных на сайте компании<br>«Ковельсельмаш» должно быть согласовано с правообладателем</div>
-	            </div>
-	            <div class="col">
-	                <a href="">Политика конфиденциальности</a>
-	            </div>
-	            <div class="col">
-	                <div class="label">Создание сайта:</div>
-	                <a href="" target="_blank"><img src="images/png/dev-logo.png" alt=""></a>
-	            </div>
-	        </div>
-	    </div>
-	</footer>
-	<script src="js/main.js"></script>
+	//= template/footer.html
+	//= template/scripts.html
 
 </body>
 </html>
