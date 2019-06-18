@@ -4,6 +4,7 @@
 //= libs/jquery.fancybox.min.js
 //= libs/jquery.maskedinput.min.js
 //= libs/swiper.min.js
+//= libs/jquery.nice-select.min.js
 
 /* my scripts */
 
