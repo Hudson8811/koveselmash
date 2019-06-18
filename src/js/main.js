@@ -11,3 +11,4 @@
 
 //= partials/main.js
 //= partials/index.js
+//= partials/catalog.js
