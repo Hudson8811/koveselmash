@@ -36,4 +36,6 @@ $(document).ready(function() {
     });
 
     $('#breadcrumbs li').eq(-2).addClass('prelast');
+
+    $('.select-style').niceSelect();
 });

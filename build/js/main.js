@@ -382,6 +382,8 @@ $(document).ready(function() {
     });
 
     $('#breadcrumbs li').eq(-2).addClass('prelast');
+
+    $('.select-style').niceSelect();
 });
 $(document).ready(function() {
     $('.home-page .tabs-menu .tab-title').click(function () {
@@ -408,7 +410,7 @@ $(document).ready(function() {
     $('.home-page .why-block .title-list .title').click(function () {
         $(this).addClass('active').siblings('.title').removeClass('active');
         var why = $(this).data('why');
-        $('#why-img-'+why).addClass('active').siblings('img').removeClass('active');
+        select
         $('#why-content-'+why).addClass('active').siblings('.why-content').removeClass('active');
     });
 
@@ -463,7 +465,6 @@ var partnersSwiper = new Swiper ('.partners-block .swiper-container', {
         prevEl: '.partners-block  .swiper-button-prev',
     },
 });
-
 $(document).ready(function() {
 
     $('.left_side-catalog_tabs .dt ul a').click(function() {

@@ -23,7 +23,7 @@ $(document).ready(function() {
     $('.home-page .why-block .title-list .title').click(function () {
         $(this).addClass('active').siblings('.title').removeClass('active');
         var why = $(this).data('why');
-        $('#why-img-'+why).addClass('active').siblings('img').removeClass('active');
+        select
         $('#why-content-'+why).addClass('active').siblings('.why-content').removeClass('active');
     });
 

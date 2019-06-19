@@ -1,14 +1,14 @@
 // Default variables
-$font_size: 14px !default;
+$font_size: 15px !default;
 $font_size_small: 12px !default;
 
-$input_border_radius: 5px !default;
+$input_border_radius: 50px !default;
 $input_height: 42px !default;
 $input_height_small: 36px !default;
-$dropdown_padding: 18px !default;
+$dropdown_padding: 27px !default;
 
 $gray_dark: #444 !default;
-$gray: #999 !default;
+$gray: #1c1c1c !default;
 $gray_light: #e8e8e8 !default;
 $gray_lighter: #f6f6f6 !default;
 $primary_light: $gray !default;
@@ -19,7 +19,7 @@ $arrow_color: $gray !default;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   background-color: #fff;
   border-radius: $input_border_radius;
-  border: solid 1px $gray_light; 
+  border: solid 1px #dee2e7;
   box-sizing: border-box;
   clear: both;
   cursor: pointer;
@@ -32,7 +32,7 @@ $arrow_color: $gray !default;
   line-height: $input_height - 2;
   outline: none;
   padding-left: $dropdown_padding;
-  padding-right: $dropdown_padding + 12;
+  padding-right: $dropdown_padding + 23;
   position: relative;
   text-align: left !important;
   transition: all 0.2s ease-in-out;
@@ -47,26 +47,23 @@ $arrow_color: $gray !default;
   }
   // Arrow
   &:after { 
-    border-bottom: 2px solid $arrow_color;
-    border-right: 2px solid $arrow_color;
+    width: 9px;
+    height: 6px;
     content: '';
     display: block; 
-    height: 5px;
-    margin-top: -4px;
+    margin-top: -3px;
     pointer-events: none;
     position: absolute; 
-    right: 12px; 
+    right: 27px;
     top: 50%; 
-    transform-origin: 66% 66%;
-    transform: rotate(45deg);
     transition: all 0.15s ease-in-out;
-    width: 5px;
+    background: url("../images/svg/arr-lang.svg");
   }
   
   &.open {
     @extend :active;
     &:after {
-      transform: rotate(-135deg);
+      transform: rotate(-180deg);
     }
     .list {
       opacity: 1;
@@ -114,8 +111,8 @@ $arrow_color: $gray !default;
   
   // List and options
   .list {
+    min-width: 100%;
     background-color: #fff;
-    border-radius: $input_border_radius;
     box-shadow: 0 0 0 1px rgba($gray_dark, .11);
     box-sizing: border-box;
     margin-top: 4px;
@@ -141,11 +138,11 @@ $arrow_color: $gray !default;
     min-height: $input_height - 2;
     outline: none;
     padding-left: $dropdown_padding;
-    padding-right: $dropdown_padding + 11;
+    padding-right: $dropdown_padding + 23;
     text-align: left;
     transition: all 0.2s;
-    &:hover, &.focus, &.selected.focus { 
-      background-color: $gray_lighter;
+    &:hover, &.focus, &.selected.focus {
+      color: #34a963;
     }
     &.selected { 
       font-weight: bold;
