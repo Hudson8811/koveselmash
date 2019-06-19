@@ -463,6 +463,7 @@ var partnersSwiper = new Swiper ('.partners-block .swiper-container', {
         prevEl: '.partners-block  .swiper-button-prev',
     },
 });
+
 $(document).ready(function() {
 
     $('.left_side-catalog_tabs .dt ul a').click(function() {

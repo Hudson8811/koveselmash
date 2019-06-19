@@ -1,0 +1,28 @@
+.news-events-page{
+  .page-title{
+    color: #1c1c1c;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 55px;
+  }
+  .flex-block{
+    display: flex;
+    justify-content: space-between;
+    .left-block{
+      width: 710px;
+      .page-subtitle{
+        color: #1c1c1c;
+        font-size: 18px;
+        font-weight: 600;
+      }
+      .news-list{
+        .item{
+          display: flex;
+          padding-bottom: 40px;
+          padding-top: 40px;
+          border-bottom: 1px solid #dee2e7;
+        }
+      }
+    }
+  }
+}
