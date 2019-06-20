@@ -12,3 +12,4 @@
 //= partials/main.js
 //= partials/index.js
 //= partials/catalog.js
+//= partials/news-events.js
