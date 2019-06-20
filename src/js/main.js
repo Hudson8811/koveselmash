@@ -13,3 +13,4 @@
 //= partials/index.js
 //= partials/catalog.js
 //= partials/news-events.js
+//= partials/product-cart.js
