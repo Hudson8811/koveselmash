@@ -539,4 +539,15 @@ $(document).ready(function() {
         $input.change();
         return false;
     });
+
+    $('.product-tabs .tab-title:not(.disabled)').click(function () {
+        $(this).addClass('active').siblings('.tab-title').removeClass('active');
+        var tab = $(this).data('tab');
+        $('#tab-'+tab).addClass('active').siblings('.tab').removeClass('active');
+    });
+
+    $('.commetns-form .stars .star').click(function () {
+        var star = $(this).data('star');
+        $(this).parents('.stars').removeAttr('class').addClass('stars stars-'+star);
+    });
 });

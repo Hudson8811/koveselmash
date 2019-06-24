@@ -27,53 +27,74 @@ body{
   z-index: 999999;
 }
 
+.hide{
+	display: none;
+}
+
 .btn {
-  font-family: $font1;
-  border-radius: 50px;
-  border: 2px solid #dee2e7;
-  background-color: transparent;
-  padding: 12px 25px;
-  box-sizing: border-box;
-  text-align: center;
-  cursor: pointer;
-  max-width: 100%;
-  display: inline-block;
-  position: relative;
-  z-index: 1;
-  color: #34a963;
-  font-weight: 400;
-  text-transform: uppercase;
-  vertical-align: middle;
-  span{
-    vertical-align: middle;
-  }
-  &:focus{
-    outline: none;
-  }
-  &.btn-white{
-    color: #34a963;
-    border: 2px solid #dee2e7;
-    background-color: transparent;
-    &::after{
-      content: "";
-      display: inline-block;
-      width: 19px;
-      height: 19px;
-      background: #34a963 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='5' height='9' viewBox='0 0 5 9'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%23eaeff5' d='M-.002 8.996l3.248-4.497-3.248-4.5h1.755l3.249 4.5-3.249 4.497z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") center center no-repeat;
-      border-radius: 100%;
-      margin-left: 15px;
-      vertical-align: middle;
-    }
-    &:hover{
+	font-family: $font1;
+	border-radius: 50px;
+	border: 2px solid #dee2e7;
+	background-color: transparent;
+	padding: 12px 25px;
+	box-sizing: border-box;
+	text-align: center;
+	cursor: pointer;
+	max-width: 100%;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	color: #34a963;
+	font-weight: 400;
+	text-transform: uppercase;
+	vertical-align: middle;
+	span{
+	vertical-align: middle;
+	}
+	&:focus{
+	outline: none;
+	}
+	&.btn-white{
+	color: #34a963;
+	border: 2px solid #dee2e7;
+	background-color: transparent;
+	&::after{
+	  content: "";
+	  display: inline-block;
+	  width: 19px;
+	  height: 19px;
+	  background: #34a963 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='5' height='9' viewBox='0 0 5 9'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%23eaeff5' d='M-.002 8.996l3.248-4.497-3.248-4.5h1.755l3.249 4.5-3.249 4.497z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") center center no-repeat;
+	  border-radius: 100%;
+	  margin-left: 15px;
+	  vertical-align: middle;
+	}
+	&:hover{
 		border-color: #34a963;
-    }
-  }
+	}
+	}
+	&.btn-green{
+		color: #ffffff;
+		border: 2px solid #34a963;
+		background-color: #34a963;
+		&::after{
+			content: "";
+			display: inline-block;
+			width: 19px;
+			height: 19px;
+			background: #ffffff url("data:image/svg+xml,%3Csvg width='5' height='9' xmlns='http://www.w3.org/2000/svg' version='1.1' viewBox='0 0 5 9'%3E%3Cg%3E%3Cg%3E%3Cpath d='M-0.00211,8.99673v0l3.24829,-4.49797v0l-3.24829,-4.49845v0h1.75541v0l3.24852,4.49845v0l-3.24852,4.49797v0z' fill='%2334a963' fill-opacity='1'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E") center center no-repeat;
+			border-radius: 100%;
+			margin-left: 15px;
+			vertical-align: middle;
+		}
+		&:hover{
+			border-color: #1c1c1c;
+		}
+	}
 }
 
 .radio{
 	input[type=checkbox] {
 		margin: 0;
-		margin-top: 2px;
 		margin-right: 10px;
 		vertical-align: middle;
 		outline: none!important;
@@ -95,6 +116,58 @@ body{
 		font-size: 13px;
 		font-weight: 300;
 		line-height: 18px;
+	}
+}
+
+.plus-minus{
+	display: flex;
+	width: 120px;
+	height: 34px;
+	position: relative;
+	overflow: hidden;
+	.plus, .minus{
+		width: 34px;
+		height: 100%;
+		background-color: #ffffff;
+		background-position: center center;
+		background-repeat: no-repeat;
+		cursor: pointer;
+		position: absolute;
+		border: 1px solid #dee2e7;
+		box-sizing: border-box;
+		top: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		&:hover{
+			background-color: #34a963;
+			border-color: #34a963;
+			img{
+				filter: brightness(100);
+			}
+		}
+		&.plus{
+			right: 0;
+		}
+		&.minus{
+			left: 0;
+		}
+	}
+	input{
+		width: 100%;
+		height: 100%;
+		background: #ffffff;
+		box-sizing: border-box;
+		border: 1px solid #dee2e7;
+		margin: 0;
+		padding: 0 34px;
+		text-align: center;
+		font-size: 15px;
+		color: #1c1c1c;
+		font-family: $font1;
+		&:focus{
+			outline: none;
+		}
 	}
 }
 

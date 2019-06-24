@@ -69,7 +69,7 @@
                 <div class="price-row">
                     <div class="left">
                         <div class="price">Цена: <span>по запросу</span></div>
-                        <a href="" data-fancybox class="video-link">Видеообзор</a>
+                        <a href="" data-fancybox="" class="video-link">Видеообзор</a>
                     </div>
                     <div class="status in-stock">В наличии</div>
                 </div>
@@ -86,9 +86,9 @@
                         <div class="quant">
                             <div class="label">Количество, кг:</div>
                             <div class="plus-minus">
-                                <div class="minus"></div>
+                                <div class="minus"><img src="images/svg/i-minus.svg" alt=""></div>
                                 <input type="text" value='1'>
-                                <div class="plus"></div>
+                                <div class="plus"><img src="images/svg/i-plus.svg" alt=""></div>
                             </div>
                         </div>
                         <div class="btn btn-green">Заказать</div>
@@ -100,7 +100,7 @@
 
         <div class="product-tabs">
             <div class="tabs-titles">
-                <div class="tab-title active" data-tab="1">active</div>
+                <div class="tab-title active" data-tab="1">Описание</div>
                 <div class="tab-title disabled" data-tab="2">Варианты<br>изготовления</div>
                 <div class="tab-title" data-tab="3">Документация</div>
                 <div class="tab-title disabled" data-tab="4">Запасные части</div>
@@ -148,7 +148,7 @@
                         </table>
                     </div>
                     <div class="tech">
-                        <div class="title">Применение:</div>
+                        <div class="title">Характеристики::</div>
                         <table>
                             <tr>
                                 <th rowspan="2"><div class="rus">Размер цепи dpx</div><div class="eng">Size</div></th>
@@ -167,6 +167,25 @@
                                 <th><div class="rus">Пробная</div><div class="eng">Proof</div></th>
                                 <th><div class="rus">Разрушающая</div><div class="eng">Breaking</div></th>
                             </tr>
+                            <tr class="edinic">
+                                <td colspan="7">мм, mm</td>
+                                <td colspan="2">кН</td>
+                                <td>%</td>
+                                <td>кг, kg</td>
+                            </tr>
+                            <tr>
+                                <td>5х18,5</td>
+                                <td>ТУ 12.0173856.015-88</td>
+                                <td>5</td>
+                                <td>18,5</td>
+                                <td>6,0</td>
+                                <td>17</td>
+                                <td>3</td>
+                                <td>5,5</td>
+                                <td>11,0</td>
+                                <td>15</td>
+                                <td>0,5</td>
+                            </tr>
                         </table>
                     </div>
                 </div>
@@ -179,10 +198,10 @@
                     <div class="documents">
                         <div class="text">Вся продукция ОАО «Ковельсельмаш» прошла технические испытания и имеет экспертные заключения на соответствие заявленным стандартам, что подтверждено соответствующими документами:</div>
                         <div class="grid-block">
-                            <a href="" data-fancybox="docs" class="item"><img src="images/jpg/product-doc.jpg" alt=""></a>
-                            <a href="" data-fancybox="docs" class="item"><img src="images/jpg/product-doc.jpg" alt=""></a>
-                            <a href="" data-fancybox="docs" class="item"><img src="images/jpg/product-doc.jpg" alt=""></a>
-                            <a href="" data-fancybox="docs" class="item"><img src="images/jpg/product-doc.jpg" alt=""></a>
+                            <a href="images/jpg/product-doc.jpg" data-fancybox="docs" class="item"><img src="images/jpg/product-doc.jpg" alt=""></a>
+                            <a href="images/jpg/product-doc.jpg" data-fancybox="docs" class="item"><img src="images/jpg/product-doc.jpg" alt=""></a>
+                            <a href="images/jpg/product-doc.jpg" data-fancybox="docs" class="item"><img src="images/jpg/product-doc.jpg" alt=""></a>
+                            <a href="images/jpg/product-doc.jpg" data-fancybox="docs" class="item"><img src="images/jpg/product-doc.jpg" alt=""></a>
                         </div>
 
                     </div>
@@ -263,10 +282,77 @@
                             </div>
                         </div>
                     </div>
-                    <div class="commetns-form"></div>
+                    <div class="commetns-form">
+                        <form action="" class="form-style">
+                            <div class="title">Оставьте свой отзыв</div>
+                            <div class="row">
+                                <div class="left">
+                                    <textarea name="" class="inputbox" required placeholder="Ваш отзыв"></textarea>
+                                </div>
+                                <div class="right">
+                                    <input type="text" name="" class="inputbox" required placeholder="ФИО">
+                                    <input type="email" name="" class="inputbox" required placeholder="Email">
+                                    <input type="text" name="" class="inputbox" required placeholder="Страна, Регион">
+                                    <input type="text" name="" class="inputbox" required placeholder="Должность">
+                                </div>
+                            </div>
+                            <div class="stars-block">
+                                <div class="label">Оценка продукции:</div>
+                                <div class="stars">
+                                    <label for="star-1" class="star" data-star="1"></label>
+                                    <label for="star-2" class="star" data-star="2"></label>
+                                    <label for="star-3" class="star" data-star="3"></label>
+                                    <label for="star-4" class="star" data-star="4"></label>
+                                    <label for="star-5" class="star" data-star="5"></label>
+                                </div>
+                                <div class="hide">
+                                    <input type="radio" name="stars" value="1" id="star-1">
+                                    <input type="radio" name="stars" value="2" id="star-2">
+                                    <input type="radio" name="stars" value="3" id="star-3">
+                                    <input type="radio" name="stars" value="4" id="star-4">
+                                    <input type="radio" name="stars" value="5" id="star-5">
+                                </div>
+                            </div>
+                            <div class="btn-rows">
+                                <label class="radio">
+                                    <input type="checkbox" name="" value="">
+                                    <span>Согласие на обработку персональных данных</span>
+                                </label>
+                                <button class="btn btn-white">отправить</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <div class="delivery-block">
+            <div class="title">Доставка продукции</div>
+            <div class="flex-block">
+                <div class="left">
+                    <p>Сотрудничая с нами, Вы можете быть уверены, что заказанная продукция будет доставлена точно в срок на условиях согласованных в договоре железнодорожным или автомобильным транспортом. Мы используем для этого как собственный автомобильный транспорт и специалистов в логистике, так и специализированные транспортные компании, имеющие представительства в городе Ковель.</p>
+                </div>
+                <div class="sep"></div>
+                <div class="right">
+                    <p>Условия и сроки поставки продукции и информацию по оплате вы можете уточнить по телефонам: </p>
+                    <div class="phones">
+                        <a href="">+38 (03352) 6-10-54</a>
+                        <span>|</span>
+                        <a href="">+38 (03352) 6-10-51</a>
+                    </div>
+                    <p>или через форму обратной связи на странице <a href="">контактов</a></p>
+                </div>
+            </div>
+            <div class="tarifs">При доставке продукции транспортными компаниями сроки и условия по тарифам компаний:</div>
+            <div class="grid-block">
+                <div class="item"><img src="images/png/delivery-logo-1.png" alt=""></div>
+                <div class="item"><img src="images/png/delivery-logo-2.png" alt=""></div>
+                <div class="item"><img src="images/png/delivery-logo-3.png" alt=""></div>
+                <div class="item"><img src="images/png/delivery-logo-4.png" alt=""></div>
+                <div class="item"><img src="images/png/delivery-logo-5.png" alt=""></div>
+            </div>
+        </div>
+
     </div>
 
 
