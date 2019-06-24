@@ -287,7 +287,6 @@ $font2: "Montserrat", sans-serif;*/
 	}
 
 	.content-catalog{
-		padding-bottom: 200px;
 		width: 100%;
 
 		.catalog-title{
@@ -357,6 +356,23 @@ $font2: "Montserrat", sans-serif;*/
 			justify-content: space-between;
 
 			.sort_block{
+
+				.nice-select{
+					display: inline-block;
+					vertical-align: top;
+					float: none;
+					margin-left: 15px;
+					margin-right: 19px;
+					border-radius: 0;
+					height: 48px;
+					line-height: 46px;
+					padding-left: 15px;
+					min-width:204px;
+
+					&:after{
+						right:15px;
+					}
+				}
 				.gray{
 					color: #848e99;
 				}
