@@ -496,6 +496,13 @@ $(document).ready(function() {
         /*singleOpen: false*/
     });
 
+    $('.catalog-page .content-catalog .tab-title').click(function () {
+        $(this).addClass('active').siblings('.tab-title').removeClass('active');
+        var tab = $(this).data('tab');
+        $('#tab-'+tab).addClass('active').siblings('.tab').removeClass('active');
+    });
+
+
 });
 $(document).ready(function() {
     var imageSwiper = new Swiper ('.image-slider .swiper-container', {
