@@ -400,6 +400,11 @@ $(document).ready(function() {
     $('#breadcrumbs li').eq(-2).addClass('prelast');
 
     $('.select-style').niceSelect();
+
+
+    $('#mobile-menu-toggle').click(function () {
+        event.preventDefault();
+    });
 });
 $(document).ready(function() {
     $('.home-page .tabs-menu .tab-title').click(function () {
@@ -426,7 +431,6 @@ $(document).ready(function() {
     $('.home-page .why-block .title-list .title').click(function () {
         $(this).addClass('active').siblings('.title').removeClass('active');
         var why = $(this).data('why');
-        select
         $('#why-content-'+why).addClass('active').siblings('.why-content').removeClass('active');
     });
 
@@ -447,9 +451,21 @@ $(document).ready(function() {
                     nextEl: '.big-tabs #tabb-3 .swiper-button-next',
                     prevEl: '.big-tabs #tabb-3 .swiper-button-prev',
                 },
+                breakpoints: {
+                    1000: {
+                        slidesPerView: 1,
+                    },
+                }
             });
         }
     });
+
+    $('.home-page .news-tabs .news-tabs-titles .tab-title').click(function () {
+        $(this).addClass('active').siblings('.tab-title').removeClass('active');
+        var news = $(this).data('news');
+        $('#news-tab-'+news).addClass('active').siblings('.news-tab').removeClass('active');
+    });
+
 
 });
 
@@ -465,6 +481,12 @@ var popularSwiper = new Swiper ('.popular-spec-products #carousel-1 .swiper-cont
         nextEl: '.popular-spec-products #carousel-1 .swiper-button-next',
         prevEl: '.popular-spec-products #carousel-1 .swiper-button-prev',
     },
+    breakpoints: {
+        1250: {
+            slidesPerView: 3,
+            spaceBetween: 32,
+        },
+    }
 });
 
 var partnersSwiper = new Swiper ('.partners-block .swiper-container', {
@@ -480,6 +502,14 @@ var partnersSwiper = new Swiper ('.partners-block .swiper-container', {
         nextEl: '.partners-block  .swiper-button-next',
         prevEl: '.partners-block  .swiper-button-prev',
     },
+    breakpoints: {
+        1250: {
+            slidesPerView: 4,
+        },
+        1000: {
+            slidesPerView: 3,
+        },
+    }
 });
 $(document).ready(function() {
 

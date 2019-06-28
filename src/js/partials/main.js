@@ -38,4 +38,9 @@ $(document).ready(function() {
     $('#breadcrumbs li').eq(-2).addClass('prelast');
 
     $('.select-style').niceSelect();
+
+
+    $('#mobile-menu-toggle').click(function () {
+        event.preventDefault();
+    });
 });

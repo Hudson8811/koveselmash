@@ -1087,12 +1087,15 @@ footer{
 				font-weight: 500;
 				margin-bottom: 20px;
 			}
+			.phones{
+				margin-top: 14px;
+			}
 			.block{
 				+.block{
 					margin-top: 14px;
-					&.mgn-more{
-						margin-top: 22px;
-					}
+				}
+				&.mgn-more{
+					margin-top: 22px;
 				}
 				.label{
 					color: #848e99;
