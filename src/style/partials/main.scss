@@ -232,6 +232,12 @@ header{
 				color: #848e99;
 				margin-right: 5px;
 			}
+			&:hover{
+				color: #34a963;
+				span{
+					color: #34a963;
+				}
+			}
 		}
 		.select-lang-block{
 			> a{
@@ -264,7 +270,13 @@ header{
 					background: url("../images/svg/arr-lang.svg") center center no-repeat;
 					background-size: contain;
 				}
-				&.active::after{
+				&:hover{
+					color: #34a963;
+				}
+				&:hover::before{
+					background-image: url("../images/png/i-lang-2.png");
+				}
+				&:hover::after{
 					transform: rotate(180deg);
 				}
 			}
@@ -298,10 +310,35 @@ header{
 			display: inline-block;
 			img{
 				display: block;
+				&.hide{
+					display: none;
+				}
+			}
+			&:hover{
+				img:first-child{
+					display: none;
+				}
+				img.hide{
+					display: block;
+				}
 			}
 		}
 		.cart{
 			display: inline-block;
+			img{
+				display: block;
+				&.hide{
+					display: none;
+				}
+			}
+			&:hover{
+				img:first-child{
+					display: none;
+				}
+				img.hide{
+					display: block;
+				}
+			}
 		}
 
 		.no-logo{
@@ -419,10 +456,10 @@ header{
 										height: 15px;
 										background: url("../images/svg/arr-down-menu.svg") center center no-repeat;
 										position: absolute;
-										top: 22px;
+										top: 17px;
 										right: -30px;
 									}
-									&.active{
+									&:hover{
 										padding-bottom: 0;
 										> a{
 											color: #34a963;
@@ -585,10 +622,10 @@ header{
 										height: 15px;
 										background: url("../images/svg/arr-down-menu.svg") center center no-repeat;
 										position: absolute;
-										top: 22px;
+										top: 17px;
 										right: -30px;
 									}
-									&.active{
+									&:hover{
 										padding-bottom: 0;
 										> a{
 											color: #34a963;
@@ -713,6 +750,7 @@ header{
 									border-right: 1px solid #dee2e7;
 									.list-item{
 										padding-bottom: 30px;
+										border-bottom: 1px solid transparent;
 										a{
 											display: flex;
 											align-items: center;
@@ -977,11 +1015,14 @@ header{
 								flex-direction: column;
 								align-items: flex-start;
 								margin-top: 18px;
-								span{
+								a{
 									color: #1c1c1c;
 									font-size: 15px;
 									font-weight: 400;
 									line-height: 22px;
+									&:hover{
+										color: #34a963;
+									}
 								}
 							}
 							.emails{
@@ -1017,16 +1058,31 @@ header{
 					display: inline-block;
 					padding-right: 28px;
 					background: url("../images/svg/arr-down-menu.svg") right center no-repeat;
-					&.active{
+				}
+
+				&:hover{
+					> a{
 						background-image: url("../images/svg/arr-up-menu.svg");
 						color: #34a963;
 						+.drop-block{
+							&::before{
+								content: "";
+								position: absolute;
+								top: -5px;
+								height: 5px;
+								width: 100%;
+								left: 0;
+								display: block;
+							}
 							display: block;
 						}
 					}
 				}
 			}
 			.level-1{
+				height: 100%;
+				display: flex;
+				align-items: center;
 				>a{
 					color: #1c1c1c;
 					font-size: 15px;
@@ -1128,6 +1184,12 @@ footer{
 					display: inline-block;
 					span{
 						font-weight: 400;
+					}
+					&:hover{
+						color: #34a963;
+						span{
+							color: #34a963;
+						}
 					}
 				}
 				.address{

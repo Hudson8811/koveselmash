@@ -22,6 +22,28 @@ $(document).ready(function() {
         $(this).addClass('active').siblings('.carousel-title').removeClass('active');
         var carousel = $(this).data('carousel');
         $('#carousel-'+carousel).addClass('active').siblings('.carousel').removeClass('active');
+        if (carousel == 2){
+            var popularSwiper2 = new Swiper ('.popular-spec-products #carousel-2 .swiper-container', {
+                slidesPerView: 4,
+                spaceBetween: 46,
+                pagination: {
+                    el: '.popular-spec-products #carousel-2 .swiper-pagination',
+                    clickable: true,
+                },
+
+                navigation: {
+                    nextEl: '.popular-spec-products #carousel-2 .swiper-button-next',
+                    prevEl: '.popular-spec-products #carousel-2 .swiper-button-prev',
+                },
+                breakpoints: {
+                    1250: {
+                        slidesPerView: 3,
+                        spaceBetween: 32,
+                    },
+                }
+            });
+
+        }
     });
 
     $('.home-page .why-block .title-list .title').click(function () {
@@ -84,6 +106,8 @@ var popularSwiper = new Swiper ('.popular-spec-products #carousel-1 .swiper-cont
         },
     }
 });
+
+
 
 var partnersSwiper = new Swiper ('.partners-block .swiper-container', {
     spaceBetween: 1,
