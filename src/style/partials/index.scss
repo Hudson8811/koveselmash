@@ -218,14 +218,53 @@
             width: calc((100%/3) * 2 + 2px);
             border-right: 1px solid #dee2e7;
             box-sizing: border-box;
-            padding: 63px 60px 50px;
             .text{
               color: #1c1c1c;
               font-size: 15px;
               line-height: 25px;
+              padding: 63px 60px 50px;
               p{
                 +p{
-                  margin-top: 40px;
+                  margin-top: 22px;
+                }
+              }
+            }
+            .links{
+              display: flex;
+              .item{
+                width: 33.3333%;
+                height: 352px;
+                box-sizing: border-box;
+                border: 1px solid #dee2e7;
+                background-color: #445055;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 15px;
+                flex-grow: 1;
+                +.item{
+                  border-left: 1px solid #dee2e7;
+                }
+                a{
+                  display: flex;
+                  text-align: center;
+                  align-items: center;
+                  justify-content: center;
+                  height: 64px;
+                  width: 100%;
+                  background: #ffffff url("../images/svg/arr-link-d.svg") right 8px top 8px no-repeat;
+                  /* Style for "Кузнечно-п" */
+                  color: #1c1c1c;
+                  font-size: 13px;
+                  font-weight: 500;
+                  &:hover{
+                    color: #ffffff;
+                    background-color: #34a963;
+                    background-image: url("../images/svg/arr-link-w.svg");
+                  }
                 }
               }
             }
@@ -235,8 +274,42 @@
             width: calc(100%/3);
             .items{
               .item{
+                height: 180px;
+                box-sizing: border-box;
+                padding-left: 90px;
+                display: inline-flex;
+                flex-direction: column;
+                justify-content: center;
                 +.item{
                   border-top: 1px solid #dee2e7;
+                }
+                .big-label{
+                  font-family: $font2;
+                  font-size: 60px;
+                  color: #34a963;
+                  font-weight: 600;
+                  line-height: 60px;
+                  span{
+                    font-size: 20px;
+                  }
+                }
+                .label{
+                  color: #1c1c1c;
+                  font-size: 15px;
+                  font-weight: 500;
+                  margin-top: 5px;
+                }
+                &:nth-child(2){
+                  .big-label{
+                    position: relative;
+                    span{
+                      font-size: 25px;
+                      position: absolute;
+                      left: 0;
+                      top: -15px;
+                      line-height: 15px;
+                    }
+                  }
                 }
               }
             }
@@ -1011,10 +1084,55 @@
         align-items: center;
         justify-content: center;
         height: 145px;
+        position: relative;
         img{
           display: block;
           max-width: 100%;
           max-height: 100%;
+        }
+        .text-block{
+          position: absolute;
+          left: 100%;
+          top: 0;
+          display: none;
+          padding: 30px;
+          min-height: 100%;
+          width: 393px;
+          box-sizing: border-box;
+          background-color: #f6f8fb;
+          z-index: 10;
+          .label{
+            color: #1c1c1c;
+            font-size: 13px;
+            font-weight: 500;
+          }
+          .text{
+            color: #1c1c1c;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 23px;
+            margin-top: 15px;
+          }
+        }
+        &:hover{
+          .text-block{
+            display: block;
+          }
+          &::after{
+            content: "";
+            display: block;
+            position: absolute;
+            right: 0;
+            top: calc(50% - 16px);
+            border: 16px solid transparent;
+            border-right: 19px solid #f6f8fb;
+          }
+        }
+        &:nth-child(3n){
+          .text-block{
+            top: auto;
+            bottom: 0;
+          }
         }
       }
     }

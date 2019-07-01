@@ -1155,6 +1155,17 @@ footer{
 					img{
 						display: block;
 					}
+					.hide{
+						display: none;
+					}
+					&:hover{
+						img:nth-child(1){
+							display: none;
+						}
+						img.hide{
+							display: block;
+						}
+					}
 				}
 			}
 		}
