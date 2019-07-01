@@ -33,9 +33,9 @@
   }
   .home-page .tabs-menu .tabs-content .tab#tab-1 .item .list a{
     font-size: 13px;
-    +a{
-      margin-top: 13px;
-    }
+  }
+  .home-page .tabs-menu .tabs-content .tab#tab-1 .item .list >div + div{
+    margin-top: 13px;
   }
   .home-page .popular-spec-products{
     margin-top: 80px;

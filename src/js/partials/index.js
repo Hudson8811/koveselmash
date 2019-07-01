@@ -8,6 +8,10 @@ $(document).ready(function() {
     $('.home-page .tabs-menu #tab-1 .item').hover(function () {
         var bg = $(this).data('bg');
         $('#tab-1').css('background-image', 'url(' + bg + ')');
+        $(this).find('.list').slideDown();
+    });
+    $('.home-page .tabs-menu #tab-1 .item').on("mouseleave", function () {
+        $(this).find('.list').slideUp();
     });
     $('.home-page .tabs-menu #tab-2 .item').hover(function () {
         var bg = $(this).data('bg');

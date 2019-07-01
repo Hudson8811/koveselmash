@@ -11,8 +11,8 @@ $(document).ready(function() {
     });
 
     $('.level-1 > a').click(function () {
-        $('.level-1 > a').removeClass('active');
-        $(this).addClass('active');
+        $('.level-1 > a').not(this).removeClass('active');
+        $(this).toggleClass('active');
     });
 
     $('.level-1 .menu-item.parent > a').click(function () {
@@ -30,7 +30,8 @@ $(document).ready(function() {
 
     $(document).mouseup(function (e){
         var div = $(".drop-block");
-        if (!div.is(e.target) && div.has(e.target).length === 0) {
+        var div2 = $('.level-1 > a');
+        if ( (!div.is(e.target) && div.has(e.target).length === 0) && (!div2.is(e.target) && div2.has(e.target).length === 0)) {
             $('.level-1 > a').removeClass('active');
         }
     });
