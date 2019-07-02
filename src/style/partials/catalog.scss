@@ -133,7 +133,21 @@ $font2: "Montserrat", sans-serif;*/
 								}
 
 								&.open + div{
-									border-top-color:#404b4f;
+									border-top-color: transparent;
+									position: relative;
+									&.open{
+										border-top: 0;
+										&::before{
+											content: "";
+											width: calc(100% + 3px);
+											height: 1px;
+											position: absolute;
+											left: -3px;
+											top: 0;
+											display: block;
+											background: #424d52;
+										}
+									}
 								}
 							}
 
@@ -198,6 +212,7 @@ $font2: "Montserrat", sans-serif;*/
 									border-top-color: transparent;
 								}
 
+
 								& > [data-control]{
 									//margin-bottom: 8px;
 									padding-top: 28px;
@@ -229,6 +244,9 @@ $font2: "Montserrat", sans-serif;*/
 
 								&.open{
 									border-bottom:3px solid #34a963;
+									~div{
+										display: none;
+									}
 								}
 
 								&.open > [data-control]{
