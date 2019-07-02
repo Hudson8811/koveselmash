@@ -49,6 +49,10 @@ $font2: "Montserrat", sans-serif;*/
 							background: #445055;
 							cursor:auto;
 						}
+						&:not(.active):hover{
+							background: #3bc071;
+						}
+
 					}
 
 				}
@@ -124,8 +128,7 @@ $font2: "Montserrat", sans-serif;*/
 									}
 
 									[data-control]:after{
-										background: url("../images/svg/arr-up-menu.svg") no-repeat center top;
-										transform: rotate(0);
+										transform: rotate(180deg);
 									}
 								}
 
@@ -231,6 +234,10 @@ $font2: "Montserrat", sans-serif;*/
 								&.open > [data-control]{
 									background-color: #34a963;
 
+									&:hover{
+										background: #3bc071;
+									}
+
 									 &:after{
 										 width: 20px;
 										 height: 20px;
@@ -275,6 +282,9 @@ $font2: "Montserrat", sans-serif;*/
 									margin-right: auto;
 									margin-bottom: 35px;
 									margin-top: 35px;
+									&:hover{
+										background: #3bc071;
+									}
 								}
 							}
 						}
