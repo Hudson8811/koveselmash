@@ -131,6 +131,63 @@ body{
 	}
 }
 
+.check-sq {
+	display: block;
+	position: relative;
+	padding-left: 24px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.check-sq input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 14px;
+	width: 14px;
+	box-sizing: border-box;
+	background-color: transparent;
+	border: 1px solid #5b696e;
+}
+.check-sq:hover input ~ .checkmark {
+
+}
+.check-sq  .label{
+	color: #c1c9d2;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 17px;
+}
+/* When the checkbox is checked, add a blue background */
+.check-sq input:checked ~ .label {
+	color: #ffffff;
+}
+
+
+.check-sq input:checked ~ .checkmark:after {
+	display: block;
+}
+
+.check-sq .checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+	left: 2px;
+	top: 2px;
+	width: 8px;
+	height: 8px;
+	background-color: #34a963;
+}
+
 .plus-minus{
 	display: flex;
 	width: 120px;

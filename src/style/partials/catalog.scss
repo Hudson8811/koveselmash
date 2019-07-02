@@ -130,12 +130,12 @@ $font2: "Montserrat", sans-serif;*/
 								}
 
 								&.open + div{
-									border-color:transparent;
+									//border-color:transparent;
 								}
 							}
 
 							& > div + div{
-								border-top: 1px solid #5b696e;
+								border-top: 1px solid  #445055;
 
 							}
 
@@ -196,7 +196,7 @@ $font2: "Montserrat", sans-serif;*/
 								}
 
 								& > [data-control]{
-									margin-bottom: 8px;
+									//margin-bottom: 8px;
 									padding-top: 28px;
 									padding-bottom: 26px;
 									border-bottom: 3px solid #34a963;
@@ -279,7 +279,12 @@ $font2: "Montserrat", sans-serif;*/
 							border-bottom: 3px solid #34a963;
 						}
 
-
+						.check-sq{
+							margin-left: 23px;
+							+.check-sq{
+								margin-top: 15px;
+							}
+						}
 					}
 				}
 			}

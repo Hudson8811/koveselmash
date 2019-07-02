@@ -10,7 +10,7 @@ $(document).ready(function() {
 
 
     $('.multiple [data-accordion]').accordion({
-        /*singleOpen: false*/
+        singleOpen: false
     });
 
     $('.catalog-page .content-catalog .tab-title').click(function () {
