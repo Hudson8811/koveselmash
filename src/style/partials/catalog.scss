@@ -563,9 +563,13 @@ $font2: "Montserrat", sans-serif;*/
 				height: 317px;
 				font-weight: 600;
 				color: #fff;
-				background: #39444e;
+				background-color: #39444e;
 				font-size: 18px;
 				line-height: 25px;
+				transition: .2s box-shadow,.3s color;
+				&:hover{
+					box-shadow: 3px 5px 21px 0 rgba(0,0,0,.18);
+				}
 
 				span{
 					z-index: 1;
