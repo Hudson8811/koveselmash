@@ -88,7 +88,7 @@ $font2: "Montserrat", sans-serif;*/
 							&:after{
 								width: 10px;
 								height: 5px;
-								background: url("../images/svg/arr-down-menu.svg") no-repeat center top;
+								background: url("../images/svg/arr-down-w.svg") no-repeat center top;
 								top:39px;
 								right:28px;
 							}
@@ -130,12 +130,12 @@ $font2: "Montserrat", sans-serif;*/
 								}
 
 								&.open + div{
-									//border-color:transparent;
+									border-top-color:#404b4f;
 								}
 							}
 
 							& > div + div{
-								border-top: 1px solid  #445055;
+								border-top: 1px solid  #5b696e;
 
 							}
 
@@ -216,6 +216,11 @@ $font2: "Montserrat", sans-serif;*/
 										border-radius: 50%;
 										background: #34a963 url("../images/svg/arr-down-w.svg") no-repeat center center;
 										transform: rotate(-90deg);
+									}
+									&:hover{
+										&:after{
+											background-color: #3bc071;
+										}
 									}
 								}
 
