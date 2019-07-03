@@ -1421,6 +1421,9 @@ footer{
 				height: 26px;
 				line-height: 26px;
 				border-radius: 50%;
+				&:hover{
+					color:  #34a963;
+				}
 			}
 
 			&.active{
@@ -1442,22 +1445,28 @@ footer{
 			&.control{
 
 				a{
-					border:1px solid #a4acb5;
 					width: 31px;
 					height: 31px;
 
+					background: #34a963;
+					border: 1px solid  #34a963;
 					svg{
 						margin-top: 1px;
 						display: inline-block;
 						vertical-align: middle;
+						path{
+							fill:#fff;
+						}
 					}
 
 					&:hover{
-						background: #34a963;
-						border-color: #34a963;
-
+						background-color: #3bc071;
+					}
+					.disabled{
+						cursor: default;
+						border:1px solid #a4acb5;
 						svg path{
-							fill:#fff;
+							fill:#848e99;
 						}
 					}
 				}

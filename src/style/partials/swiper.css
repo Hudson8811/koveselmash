@@ -165,8 +165,7 @@
   box-sizing: border-box;
 
   border-radius: 100%;
-  border: 1px solid #848e99;
-  background-color: transparent;
+  background-color: #34a963;
 }
 .swiper-button-prev:focus,
 .swiper-button-next:focus{
@@ -174,29 +173,42 @@
 }
 .swiper-button-prev.swiper-button-disabled,
 .swiper-button-next.swiper-button-disabled {
-
+  border: 1px solid #848e99;
+  background-color: transparent;
   cursor: auto;
   pointer-events: none;
 }
-.swiper-button-prev:hover ,
-.swiper-container-rtl .swiper-button-next:hover  {
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
   background-color: #34a963;
   border: 0;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='5' height='9' viewBox='0 0 5 9'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%23eaeff5' d='M5.012-.029L1.742 4.5l3.27 4.529H3.245l-3.27-4.529 3.27-4.528z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
 }
-.swiper-button-next:hover,
-.swiper-container-rtl .swiper-button-prev:hover {
+
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
   background-color: #34a963;
   border: 0;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='5' height='9' viewBox='0 0 5 9'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%23eaeff5' d='M-.002 8.996l3.248-4.497-3.248-4.5h1.755l3.249 4.5-3.249 4.497z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
-.swiper-button-prev,
-.swiper-container-rtl .swiper-button-next {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='5' height='9' viewBox='0 0 5 9'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%23848e99' d='M5.012-.029L1.742 4.5l3.27 4.529H3.245l-3.27-4.529 3.27-4.528z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+.swiper-button-prev:not(.swiper-button-disabled):hover ,
+.swiper-container-rtl .swiper-button-next:not(.swiper-button-disabled):hover  {
+  background-color: #3bc071;
 }
-.swiper-button-next,
-.swiper-container-rtl .swiper-button-prev {
+.swiper-button-next:not(.swiper-button-disabled):hover,
+.swiper-container-rtl .swiper-button-prev:not(.swiper-button-disabled):hover {
+  background-color: #3bc071;
+}
+
+.swiper-button-prev.swiper-button-disabled,
+.swiper-container-rtl .swiper-button-next.swiper-button-disabled {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='5' height='9' viewBox='0 0 5 9'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%23848e99' d='M5.012-.029L1.742 4.5l3.27 4.529H3.245l-3.27-4.529 3.27-4.528z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
+}
+.swiper-button-next.swiper-button-disabled,
+.swiper-container-rtl .swiper-button-prev.swiper-button-disabled {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='5' height='9' viewBox='0 0 5 9'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%23848e99' d='M-.002 8.996l3.248-4.497-3.248-4.5h1.755l3.249 4.5-3.249 4.497z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
