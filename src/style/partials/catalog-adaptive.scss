@@ -1,1 +1,46 @@
+@media screen and (max-width: 1250px) {
+  .catalog-page{
+    display: block;
+  }
+  .big-banner-page{
+    height: 250px;
+    font-size: 27px;
+    line-height: 40px;
+  }
+  .catalog-page .left_side-catalog{
+    display: none;
+  }
 
+  .catalog-page .content-catalog{
+    margin-top: 35px;
+  }
+  .catalog-page .content-catalog .catalog-title{
+    font-size: 23px;
+    line-height: 33px;
+    margin-bottom: 33px;
+  }
+  .catalog-page .content-catalog .big_menu .item a{
+    height: 362px;
+    box-sizing: border-box;
+  }
+  .catalog-page .content-catalog .big_menu .item .image_block{
+    height: 173px;
+  }
+  .catalog-page .content-catalog .big_menu .item .text {
+    padding-left: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+  .catalog-page .content-catalog .sort_row {
+    padding: 24px 30px 24px 30px;
+    font-size: 14px;
+  }
+
+  .catalog-page .content-catalog .catalog.catalog_table .row .item>a {
+    font-size: 14px;
+  }
+  .catalog-page .content-catalog .catalog{
+    margin-bottom: 50px;
+  }
+}
