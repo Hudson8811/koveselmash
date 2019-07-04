@@ -584,7 +584,7 @@ $(document).ready(function () {
       prevEl: '.image-slider .swiper-button-prev',
     },
   });
-
+/*
   function adaptive720(){  if ($(window).width() <= 1250 && document.getElementById("page-wrapper").classList.contains("news-page")) {
     //  alert("yes");
       var b1 = document.getElementById("title-news");
@@ -633,7 +633,7 @@ $(document).ready(function () {
   $(window).resize(function () {
     adaptive720();
   });
-
+*/
 });
 $(document).ready(function() {
     var productSwiper = new Swiper ('.product-main-info-block .swiper-container', {
