@@ -592,7 +592,19 @@ $(document).ready(function () {
       swiper: thumbsSwiper
     }/*
   });
+<<<<<<< HEAD
 
+=======
+/*
+  function adaptive720(){  if ($(window).width() <= 1250 && document.getElementById("page-wrapper").classList.contains("news-page")) {
+    //  alert("yes");
+      var b1 = document.getElementById("title-news");
+      var b2 = document.getElementById("title-events");
+      $('.block.list .title').after($('.block.names .menu-list'));
+      $(b2).appendTo(".block.names");
+      $('.news-menu-block').after($('.flex-block .left-block'));
+      $('.subscribe-block.gray-block').after($('.pagi'));
+>>>>>>> f4cf4ef1270cd345afa43bfbc7258e2405de05e4
 
 
   function adaptive720() {
@@ -657,7 +669,7 @@ $(document).ready(function () {
   $(window).resize(function () {
     adaptive720();
   });
-
+*/
 });
 $(document).ready(function() {
     var productSwiper = new Swiper ('.product-main-info-block .swiper-container', {

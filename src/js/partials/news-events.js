@@ -13,7 +13,7 @@ $(document).ready(function () {
     },
     /*thumbs: {
       swiper: thumbsSwiper
-    }/*
+    }*/
   });
 
 
