@@ -1255,13 +1255,15 @@
         margin-top: 4px;
       }
 
-      .swiper-container {
-        .swiper-wrapper {
-          .swiper-slide {
-            img {
-              display: block;
-              max-width: 100%;
-              height: auto;
+      .image-slider {
+        .swiper-container {
+          .swiper-wrapper {
+            .swiper-slide {
+              img {
+                display: block;
+                max-width: 100%;
+                height: auto;
+              }
             }
           }
         }
@@ -1338,9 +1340,11 @@
           .bottom-links {
             padding-top: 27px;
             margin-top: 80px;
-            .share-block .soc-link{
+
+            .share-block .soc-link {
               margin-left: 15px;
             }
+
             .links-row {
               width: 377px;
 
@@ -1366,11 +1370,23 @@
         .right-block {
           display: none;
         }
+
       }
+    }
+
+  }
+
+}
+
+.image-slider-mini {
+  .swiper-container {
+    margin: 0;
+    width: 100%;
+    .swiper-slide{
+      width: unset;
     }
   }
 }
-
 
 @media screen and (max-width:760px) {
   .container {

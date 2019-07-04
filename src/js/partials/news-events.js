@@ -1,9 +1,9 @@
 $(document).ready(function () {
 
- /* var thumbsSwiper = new Swiper('.image-slider-mini', {
-    slidesPerView: 1
-
-  });*/
+  var thumbsSwiper = new Swiper('.image-slider-mini .swiper-container', {
+    slidesPerView: 8,
+    slidesOffsetAfter: 30,
+  });
 
   var imageSwiper = new Swiper('.image-slider .swiper-container', {
     slidesPerView: 1,
@@ -11,9 +11,9 @@ $(document).ready(function () {
       nextEl: '.image-slider .swiper-button-next',
       prevEl: '.image-slider .swiper-button-prev',
     },
-    /*thumbs: {
+    thumbs: {
       swiper: thumbsSwiper
-    }*/
+    }
   });
 
 
