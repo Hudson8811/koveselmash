@@ -2,16 +2,10 @@ $(document).ready(function () {
 
 
   if (document.getElementById("page-wrapper").classList.contains("events-single-page")) {
-    var thumbsSwiper = new Swiper('.image-slider-mini .swiper-container', {
-      slidesPerView: 8,
-      slidesOffsetAfter: 30,
-    });
-    var imageSwiper = new Swiper('.image-slider .swiper-container', {
-      slidesPerView: 1,
-      thumbs: {
-        swiper: thumbsSwiper
-      }
-    });
+    $('.wrapper').on('click', '._1', function () {
+      alert($(this).parent().index());
+
+    })
   }
   if (document.getElementById("page-wrapper").classList.contains("news-single-page")) {
     var thumbsSwiper = new Swiper('.image-slider-mini .swiper-container', {

@@ -898,7 +898,9 @@
   }
 
   .news-events-page {
-
+    .flex-block .left-block {
+      width: 100%;
+    }
 
     .flex-block {
 
@@ -1536,14 +1538,8 @@
 
 }
 
-
-
-
-@media screen and (max-width:760px) {
-  .container {
-    width: 330px;
-    margin: 0 auto;
-  }
+/////////////////////adaptive320
+@media screen and (max-width:700px) {
 
   .page-wrapper.news-events-page {
 
@@ -1664,7 +1660,7 @@
           }
 
           .pagi {
-            max-width: 270px;
+            max-width: fit-content;
             margin: 0 auto;
             margin-top: 40px;
 
