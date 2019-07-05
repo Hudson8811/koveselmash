@@ -1535,15 +1535,8 @@
   }
 
 }
-
-
-
-
-@media screen and (max-width:760px) {
-  .container {
-    width: 330px;
-    margin: 0 auto;
-  }
+/////////////////////adaptive320
+@media screen and (max-width:700px) {
 
   .page-wrapper.news-events-page {
 
