@@ -1875,12 +1875,180 @@
         font-size: 20px;
       }
 
+      .image-slider .swiper-container .swiper-wrapper .swiper-slide img {
+        height: 267px;
+      }
+
       #map {
         height: 267px;
       }
+
+      .flex-block {
+        .left-block {
+          .bottom-links {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 22px;
+            padding-top: 20px;
+
+            .links-row {
+              order: -1;
+              width: 328px;
+              font-size: 14px;
+
+              .sep {}
+
+              .next-link,
+              .prev-link {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                width: calc(50% - 0.5px);
+
+                span {
+                  display: block;
+                  line-height: 22px
+                }
+
+              }
+
+              .prev-link {
+                svg {
+                  margin-right: 30px;
+                }
+
+              }
+
+              .next-link {
+                justify-content: flex-end;
+
+                span {
+                  padding-left: 29px;
+                }
+              }
+            }
+
+            .share-block {
+
+              margin-top: 33px;
+            }
+          }
+        }
+      }
     }
 
-    &.news-single-page {}
+    &.news-single-page {
+      .page-title {
+        margin-left: -2px;
+        line-height: 29px;
+      }
+
+      .flex-block-title {
+        margin-bottom: 21px;
+
+        .left-block {
+          .date {
+            margin-top: 0;
+          }
+        }
+      }
+
+      .image-slider-mini {
+        margin-top: 20px;
+
+        .swiper-slide {
+          width: 85px !important;
+
+          .image-block {
+            width: 64px;
+            height: 64px;
+          }
+        }
+      }
+
+      .flex-block {
+        .left-block {
+          .text-style {
+            margin-top: 25px;
+            margin-left: -1px;
+
+            .green-block {
+              padding: 26px 30px 25px 22px;
+            }
+
+            h3 {
+              margin-top: 29px;
+              line-height: 24px;
+
+              &+p {
+                margin-top: 17px;
+              }
+            }
+
+            ul {
+              margin-top: 19px;
+
+              li {
+                padding-left: 25px;
+              }
+
+              &+p {
+                margin-top: 17px;
+              }
+            }
+          }
+
+          .subscribe-block.gray-block {
+            margin-top: 33px;
+            padding: 21px 23px 26px 23px;
+
+            form {
+              flex-direction: column;
+              align-items: flex-start;
+              margin-left: 1px;
+
+              .input-row {
+                width: 282px;
+                max-width: 100%;
+              }
+
+              .radio {
+                margin-top: 22px;
+              }
+            }
+          }
+
+          .bottom-links {
+            margin-top: 49px;
+            padding-top: 26px;
+
+            .share-block {
+              margin-top: 36px;
+
+            }
+            .links-row {
+              .prev-link {
+                svg{
+                  margin-right: 27px;
+                }
+                span {}
+              }
+
+              .sep {}
+
+              .next-link {
+                span {
+                  padding-right: 16px;
+                  padding-left: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+
+
+    }
 
     &.events-single-page {
       .flex-block {
@@ -1946,7 +2114,7 @@
           .image-slider-mini {
             margin-top: 26px;
             display: flex;
-           flex-wrap: wrap;
+            flex-wrap: wrap;
 
             .image-block {
               height: 64px;
@@ -1992,7 +2160,7 @@
 
                   .phones {
                     margin-top: -2px;
-margin-bottom: 6px;
+                    margin-bottom: 6px;
                   }
 
                   div a {
@@ -2009,51 +2177,7 @@ margin-bottom: 6px;
 
           }
 
-          .bottom-links {
-            flex-direction: column;
-            align-items: flex-start;
-            margin-top: 22px;
-            padding-top: 20px;
 
-            .links-row {
-              order: -1;
-              width: 328px;
-              font-size: 14px;
-
-              .sep {
-              }
-
-              .next-link,
-              .prev-link {
-                display: flex;
-                align-items: center;
-                justify-content: flex-start;
-                width: calc(50% - 0.5px);
-
-                span {
-                  display: block;
-                  line-height: 22px
-                }
-
-              }
-
-              .prev-link {
-                svg {
-                  margin-right: 30px;
-                }
-
-              }
-
-              .next-link {
-                justify-content: flex-end;
-                span{padding-left: 29px;}
-              }
-            }
-            .share-block{
-
-    margin-top: 33px;
-            }
-          }
         }
       }
     }

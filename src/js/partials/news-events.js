@@ -1,10 +1,8 @@
 var imageSwiper;
 
 $(document).ready(function () {
-
-
   if (document.getElementById("page-wrapper").classList.contains("events-single-page")) {
-     imageSwiper = new Swiper('.image-slider .swiper-container', {
+    imageSwiper = new Swiper('.image-slider .swiper-container', {
       slidesPerView: 1,
       navigation: {
         nextEl: '.image-slider .swiper-button-next',
@@ -14,17 +12,20 @@ $(document).ready(function () {
         swiper: thumbsSwiper
       }
     });
-    $('.image-slider-mini').on('click', '.image-block', function() {
-     // alert($(this).index());
-     imageSwiper.slideTo($(this).index());
-  })
+
+    $('.image-slider-mini').on('click', '.image-block', function () {
+      // alert($(this).index());
+      imageSwiper.slideTo($(this).index());
+    })
 
   }
   if (document.getElementById("page-wrapper").classList.contains("news-single-page")) {
     var thumbsSwiper = new Swiper('.image-slider-mini .swiper-container', {
       slidesPerView: 8,
       slidesOffsetAfter: 30,
+      variableWidth: true,
     });
+
     var imageSwiper = new Swiper('.image-slider .swiper-container', {
       slidesPerView: 1,
       navigation: {
@@ -35,11 +36,12 @@ $(document).ready(function () {
         swiper: thumbsSwiper
       }
     });
+
   }
 
 
 
-  function adaptive720() {
+  function makeAdaptive() {
     if (document.getElementById("page-wrapper").classList.contains("news-page")) {
       if ($(window).width() <= 1250) {
         var b1 = document.getElementById("title-news");
@@ -86,19 +88,26 @@ $(document).ready(function () {
       else {
         $('.other-block.gray-block').after($('.subscribe-block.gray-block'));
       }
+      if ($(window).width() <= 700) {
+        $('.links-row .prev-link span').text("Пред. новость");
+        $('.links-row .next-link span').text("След. новость");
+      }
+      else {
+        $('.links-row .prev-link span').text("Предыдущая новость");
+        $('.links-row .next-link span').text("Следующая новость");
+      }
     }
-
   }
 
 
 
   window.onload = function () {
-    adaptive720();
+    makeAdaptive();
 
   };
 
   $(window).resize(function () {
-    adaptive720();
+    makeAdaptive();
   });
 
 });

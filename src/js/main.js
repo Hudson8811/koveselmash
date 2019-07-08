@@ -15,3 +15,4 @@
 //= partials/catalog.js
 //= partials/news-events.js
 //= partials/product-cart.js
+//= partials/service-page.js
