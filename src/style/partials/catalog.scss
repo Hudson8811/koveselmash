@@ -741,14 +741,17 @@ $font2: "Montserrat", sans-serif;*/
 				min-height: 90px;
 				justify-content: center;
 			}
-			.withPic{
+
+			.withPic {
 				display: flex;
 				justify-content: center;
 				text-align: left;
-				img{
+
+				img {
 					margin-right: 23px;
 				}
 			}
+
 			border-right: 1px solid #dee2e7;
 			text-align: center;
 			padding: 0 22px;
@@ -777,9 +780,12 @@ $font2: "Montserrat", sans-serif;*/
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			&:hover{
-				background-color: #fff;;
+
+			&:hover {
+				background-color: #fff;
+				;
 			}
+
 			th {
 				background-color: #fff;
 				position: absolute;
@@ -791,8 +797,36 @@ $font2: "Montserrat", sans-serif;*/
 				padding: 0;
 
 				.scroll-container {
-					width: 50%;
+					width: 100%;
+					max-width: 441px;
 
+				}
+			}
+
+		}
+
+		#js-rangeslider-0 {
+			height: 10px;
+			box-shadow: unset;
+
+			.rangeslider__fill {
+				background-color: #ffbe46;
+				height: 6px;
+				border-radius: 3px;
+				top: 2px;
+				left: 3px;
+				box-shadow: unset;
+			}
+
+			.rangeslider__handle {
+				height: 22px;
+				width: 22px;
+				background-color: #ffbe46;
+				border: 0;
+				top: -6px;
+				box-shadow: unset;
+				&:after{
+					display: none;
 				}
 			}
 

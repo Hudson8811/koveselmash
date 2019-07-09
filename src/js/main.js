@@ -7,6 +7,7 @@
 //= libs/jquery.nice-select.min.js
 //= libs/jquery.accordion.js
 //= libs/jquery.scrollbar.min.js
+//= libs/rangeslider.min.js
 
 /* my scripts */
 

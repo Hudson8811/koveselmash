@@ -23,19 +23,35 @@ $(document).ready(function () {
 
 
 
-    $('#customScroll').attr("max", $('#scroll table tbody').width() - $('#scroll').width());
+    $('#customScrollOnCatalog').attr("max", $('#scroll table tbody').width() - $('#scroll').width());
 
     $('#scroll').scroll(function () {
         console.log($('#scroll').scrollLeft() + "    width=" + ($('#scroll table tbody').width() - $('#scroll').width()));
-        $('#customScroll').val($('#scroll').scrollLeft());
+        $('#customScrollOnCatalog').val($('#scroll').scrollLeft());
+        $('input[type="range"]').rangeslider('update', true);
     });
 
-    $('#customScroll').on('mousemove change', function () {
-        console.log($('#customScroll').val());
-        $('#scroll').scrollLeft($('#customScroll').val());
-    });
+   /* $('#customScrollOnCatalog').on('mousemove change', function () {
+        console.log($('#customScrollOnCatalog').val());
+        $('#scroll').scrollLeft($('#customScrollOnCatalog').val());
+    });*/
+    function updateValueScroll(pos, value){
+        console.log(value);
+        $('#scroll').scrollLeft(value);
+    }
     $(window).resize(function () {
-        $('#customScroll').attr("max", $('#scroll table tbody').width() - $('#scroll').width());
+        $('#customScrollOnCatalog').attr("max", $('#scroll table tbody').width() - $('#scroll').width());
 
     });
+    $('#customScrollOnCatalog').rangeslider({
+        polyfill: false,
+        onSlide: function(pos, value) {
+            updateValueScroll(pos, value);
+          }
+      });
+
+
+
+
+
 });
