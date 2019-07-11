@@ -463,6 +463,10 @@ $(document).ready(function() {
                         slidesPerView: 3,
                         spaceBetween: 32,
                     },
+                    700: {
+                        slidesPerView: 1,
+                        spaceBetween: 0,
+                    },
                 }
             });
 
@@ -508,6 +512,10 @@ $(document).ready(function() {
     });
 
 
+    $('.why-block .toggle-block').click(function () {
+        $(this).toggleClass('active');
+    });
+
 });
 
 var popularSwiper = new Swiper ('.popular-spec-products #carousel-1 .swiper-container', {
@@ -526,6 +534,10 @@ var popularSwiper = new Swiper ('.popular-spec-products #carousel-1 .swiper-cont
         1250: {
             slidesPerView: 3,
             spaceBetween: 32,
+        },
+        700: {
+            slidesPerView: 1,
+            spaceBetween: 0,
         },
     }
 });
