@@ -372,11 +372,135 @@
       background-color: rgba(68, 80, 85, 0.6);
       display: flex;
       align-items: center;
+      justify-content: space-between;
       .search-block{
+        flex-grow: 1;
         form{
           display: flex;
           .search-icon{
+            width: 26px;
+            height: 26px;
+            display: block;
+            background: url("../images/png/i-search-w.png") center center no-repeat;
+          }
+          input{
+            flex-grow: 1;
+            margin-left: 11px;
+            box-sizing: border-box;
+            padding: 0;
+            height: 26px;
+            border: none;
+            border-bottom: 1px solid #5b696e;
+            background: transparent;
+            color: #ffffff;
+            &:focus{
+              outline: none;
+              border-color: #ffffff;
+            }
+          }
+        }
+      }
+      .sep{
+        width: 1px;
+        height: 35px;
+        background-color: #5b696e;
+        display: block;
+        margin: 0 16px;
+      }
+      .select-lang-block{
+        height: 35px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        > a{
+          color: #ffffff;
+          font-size: 15px;
+          font-weight: 400;
+          padding: 0 24px 0 39px;
+          position: relative;
+          display: inline-block;
+          &::before{
+            content: "";
+            display: block;
+            width: 23px;
+            height: 23px;
+            position: absolute;
+            left: 0;
+            top: calc(50% - 11px);
+            background: url("../images/png/i-lang-w.png") center center no-repeat;
+            background-size: contain;
+          }
 
+          &::after{
+            content: "";
+            display: block;
+            width: 10px;
+            height: 5px;
+            position: absolute;
+            right: 0;
+            top: calc(50% - 1px);
+            background: url("../images/svg/arr-down-w.svg") center center no-repeat;
+            background-size: contain;
+          }
+        }
+        .more-langs{
+          padding: 17px;
+          background: #ffffff;
+          filter: drop-shadow(0 0 1px #dee2e7);
+          position: absolute;
+          top: calc(100% - 1px);
+          left: -17px;
+          display: none;
+          flex-direction: column;
+          z-index: 6;
+          width: 100%;
+          &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 21px;
+            top: -14px;
+            border: 7px solid transparent;
+            border-bottom: 7px solid #ffffff;
+          }
+          a{
+            font-size: 15px;
+            font-weight: 400;
+            color: #1c1c1c;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            img{
+              opacity: 0.6;
+              display: block;
+            }
+            span{
+              margin-left: 18px;
+              display: inline-block;
+            }
+            &:hover{
+              color: #34a963;
+              img{
+                opacity: 1;
+              }
+            }
+            +a{
+              margin-top: 18px;
+            }
+          }
+        }
+        &:hover{
+          >a{
+            color: #34a963;
+            &::before{
+              background-image: url("../images/png/i-lang-2.png");
+            }
+            &::after{
+              transform: rotate(180deg);
+            }
+          }
+          .more-langs{
+            display: flex;
           }
         }
       }
