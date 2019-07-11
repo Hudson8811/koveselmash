@@ -361,6 +361,26 @@
   }
   .home-page .home-banner{
     height: 640px;
+    position: relative;
+    .mobile-block{
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 15px;
+      background-color: rgba(68, 80, 85, 0.6);
+      display: flex;
+      align-items: center;
+      .search-block{
+        form{
+          display: flex;
+          .search-icon{
+
+          }
+        }
+      }
+    }
   }
   .home-page .home-banner .container .text-block .big-text{
     font-size: 22px;
