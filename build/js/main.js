@@ -570,8 +570,36 @@ var partnersSwiper = new Swiper ('.partners-block .swiper-container', {
         1250: {
             slidesPerView: 3,
         },
+    },
+    on: {
+        init: function () {
+            var curRow = 0;
+            $('.partners-block .swiper-container').find('.swiper-slide').each(function () {
+                var thisRow = $(this).data('swiper-column');
+                var between = thisRow - curRow;
+                $(this).addClass('textleft-'+between);
+            });
+        },
+        slideChange: function () {
+            var curRow = partnersSwiper.realIndex;
+            $('.partners-block .swiper-container').find('.swiper-slide').each(function () {
+               var thisRow = $(this).data('swiper-column');
+               var between = thisRow - curRow;
+               $(this).removeClassWild('textleft-*');
+               $(this).addClass('textleft-'+between);
+            });
+        },
     }
 });
+
+(function($) {
+    $.fn.removeClassWild = function(mask) {
+        return this.removeClass(function(index, cls) {
+            var re = mask.replace(/\*/g, '\\S+');
+            return (cls.match(new RegExp('\\b' + re + '', 'g')) || []).join(' ');
+        });
+    };
+})(jQuery);
 $(document).ready(function () {
 
     $('.left_side-catalog_tabs .dt ul a').click(function () {
