@@ -516,6 +516,15 @@ $(document).ready(function() {
         $(this).toggleClass('active');
     });
 
+    $('.home-page .partners-block .swiper-container .swiper-slide').click(function () {
+        if ($(this).hasClass('show')){
+            $(this).removeClass('show');
+        } else {
+            $('.home-page .partners-block .swiper-container .swiper-slide').removeClass('show');
+            $(this).addClass('show');
+        }
+    });
+
 });
 
 var popularSwiper = new Swiper ('.popular-spec-products #carousel-1 .swiper-container', {
@@ -559,9 +568,6 @@ var partnersSwiper = new Swiper ('.partners-block .swiper-container', {
     },
     breakpoints: {
         1250: {
-            slidesPerView: 4,
-        },
-        1000: {
             slidesPerView: 3,
         },
     }

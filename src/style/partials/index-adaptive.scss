@@ -349,6 +349,47 @@
   .home-page .tabs-menu .tabs-content .tab#tab-3 .item-left .links .item {
     height: 240px;
   }
+
+
+
+  .home-page .partners-block .swiper-container .swiper-slide:hover::after,
+  .home-page .partners-block .swiper-container .swiper-slide:hover .text-block{
+    display: none;
+  }
+  .home-page .partners-block .swiper-container .swiper-slide{
+    padding-bottom: 0;
+    transition: padding 0.5s linear;
+  }
+  .home-page .partners-block .swiper-container .swiper-slide.show{
+    padding-bottom: 150px;
+  }
+  .home-page .partners-block .swiper-container .swiper-slide .text-block{
+    left: 0;
+    top: auto;
+    bottom: 0;
+    width: calc(300% + 2px);
+    padding: 0 30px;
+    display: block !important;
+    height: 0;
+    transition: all 0.5s linear;
+    overflow: hidden;
+    min-height: 0;
+    background-color: #f6f8fb;
+  }
+  .home-page .partners-block .swiper-container .swiper-slide.show::after{
+    display: block!important;
+    border: 16px solid transparent;
+    border-bottom: 19px solid #f6f8fb;
+    top: 115px;
+    right: auto;
+    left: calc(50% - 16px);
+    content: "";
+    position: absolute;
+  }
+  .home-page .partners-block .swiper-container .swiper-slide.show .text-block{
+    height: 150px;
+    padding: 20px 30px;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -643,58 +684,6 @@
     }
   }
 
-  footer .menu-line {
-    padding: 44px 0 35px;
-  }
-  footer .menu-line .col:not(:last-child){
-    display: none;
-  }
-  footer .menu-line .col:nth-child(4){
-    margin-top: 0;
-    padding-top: 0;
-    border-top: 0;
-  }
-  footer .menu-line .contacts-block .phones{
-    display: block;
-  }
-  footer .menu-line .contacts-block .phones .block{
-    width: 100%;
-  }
 
-  footer .menu-line .contacts-block .address-email-block,
-  footer .menu-line .contacts-block .block+.block{
-    margin-top: 20px;
-  }
-  footer .menu-line .contacts-block .address-email-block{
-    display: block;
-  }
-  footer .menu-line .contacts-block .address-email-block>.mgn-more{
-    width: 100%;
-  }
-  footer .menu-line .contacts-block .soc-email-block{
-    width: 100%;
-    margin-top: 20px;
-  }
-  footer .menu-line .contacts-block .soc-block{
-    display: none;
-  }
-  footer .copy-line .col:nth-child(1) .copy-2{
-    display: none;
-  }
-  footer .copy-line .col:nth-child(2){
-    display: none;
-  }
-  footer .copy-line{
-    display: block;
-  }
-  footer .copy-line .col:nth-child(3) a{
-    margin-top: 30px;
-    .image{
-      display: none;
-    }
-    .label,
-    span{
-      display: inline;
-    }
-  }
+
 }
