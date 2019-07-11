@@ -1877,6 +1877,9 @@
 
       .image-slider .swiper-container .swiper-wrapper .swiper-slide img {
         height: 267px;
+        object-fit: cover;
+        object-position: center;
+
       }
 
       #map {
@@ -2026,11 +2029,13 @@
               margin-top: 36px;
 
             }
+
             .links-row {
               .prev-link {
-                svg{
+                svg {
                   margin-right: 27px;
                 }
+
                 span {}
               }
 

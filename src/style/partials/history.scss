@@ -1,0 +1,141 @@
+.breadcrumbs-history {
+
+    .menu {}
+}
+
+@font-face {
+    font-family: "Futura Demi C";
+    src: url('../fonts/FuturaDemiC.woff2') format('woff2'),
+        url('../fonts/FuturaDemiC.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.history-page {
+    .history-card {
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 50px;
+            box-sizing: border-box;
+
+            height: 536px;
+            border: 1px solid #dee2e7;
+            border-top: 0;
+            position: relative;
+
+
+
+
+            &::before {
+                content: "";
+                background-color: #34a963;
+
+                position: absolute;
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+                top: calc(50% - 8px);
+                left: calc(50% - 8px);
+
+            }
+
+            &::after {
+                content: "";
+                background-color: #34a963;
+
+                position: absolute;
+                width: 2px;
+                height: calc(100% + 1px);
+                left: calc(50% - 1px);
+                z-index: 1;
+            }
+
+
+
+            .left,
+            .right {
+                max-width: 520px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .title {
+                    color: #34a963;
+                    font-family: "Futura Demi C";
+                    font-size: 80px;
+                    font-weight: 400;
+                    width: 100%;
+                    text-align: left;
+                    margin-left: -2px;
+                    margin-top: 83px;
+                    margin-bottom: 52px;
+                }
+
+                .text {
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 25px;
+                    margin-left: 12px;
+
+                    max-width: 484px;
+                    margin-left: -13px;
+                }
+
+                img {
+                    // border: 1px solid #dee2e7;
+                    margin-top: auto;
+                    margin-bottom: 50px;
+
+                }
+            }
+
+            .left {}
+
+            .right {
+                .title {
+                    margin-left: 6px;
+                }
+
+                .text {
+                    margin-left: -5px;
+                    max-width: 485px;
+                }
+            }
+        }
+
+
+        &:first-child {
+            .container {
+                height: 537px;
+                border: 1px solid #dee2e7;
+
+                &::after {
+                    height: 50%;
+                    bottom: -1px;
+                }
+            }
+
+        }
+
+        &.pre-full-width {
+            .container {
+                height: 535px;
+                border-bottom: 0;
+            }
+        }
+
+        &-full-width {
+            border: 1px solid #dee2e7;
+            border-left: 0;
+           border-right: 0;
+            .container {
+                width: 100%;
+                height: 535px;
+                border: 0;
+            }
+        }
+    }
+}
