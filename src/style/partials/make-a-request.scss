@@ -1,0 +1,25 @@
+.make-req-page {
+    .title-page {
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 35px;
+        text-align: center;
+    }
+}
+
+.main-CF {
+    input{
+        height: 53px;
+        border: 1px solid #dee2e7;
+        background-color: #ffffff;
+        width: 100%;
+    }
+    .flex-cols {
+        display: flex;
+        .left, .right{
+            max-width: 50%;
+width: 100% ;
+        }
+
+    }
+}
