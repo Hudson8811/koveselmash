@@ -2188,3 +2188,11 @@
     }
   }
 }
+
+@media screen and (min-width:1251px) {
+  .news-events-page .flex-block .left-block {
+    width: 100%;
+    margin-right: 30px;
+    max-width: 816px;
+  }
+}
