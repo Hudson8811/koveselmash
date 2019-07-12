@@ -3,6 +3,19 @@ $font2: "Montserrat", sans-serif;*/
 
 .catalog-page {
 	background: white;
+
+	.scrollbar {
+		position: sticky;
+		top: 500px;
+		z-index: 1;
+		width: 100%;
+		background: #fff;
+
+		.scroll-container {
+			width: 90%;
+			max-width: 441px;
+		}
+	}
 }
 
 
@@ -664,7 +677,8 @@ $font2: "Montserrat", sans-serif;*/
 		}
 
 		.outer {
-			position: relative
+			position: relative;
+
 		}
 
 		.inner {
@@ -678,6 +692,21 @@ $font2: "Montserrat", sans-serif;*/
 
 			&::-webkit-scrollbar {
 				display: none; // Safari and Chrome
+			}
+		}
+
+		.row-name {
+			cursor: pointer;
+
+			a {
+				color: #1c1c1c;
+			}
+
+			&:hover {
+				a {
+					color: #34a963;
+
+				}
 			}
 		}
 
@@ -825,11 +854,25 @@ $font2: "Montserrat", sans-serif;*/
 				border: 0;
 				top: -6px;
 				box-shadow: unset;
-				&:after{
+
+				&:after {
 					display: none;
 				}
 			}
 
+		}
+	}
+
+	&.catalog-pokovky {
+		.catalog_table-2 {
+			.scrollbar {
+				display: none;
+			}
+
+			td,
+			.catalog-page .catalog_table-2 th {
+				padding: 0px 14px;
+			}
 		}
 	}
 }
