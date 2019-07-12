@@ -746,6 +746,7 @@
             }
           }
           .container{
+            pointer-events: none;
             display: flex;
             justify-content: space-between;
             padding-top: 190px;
