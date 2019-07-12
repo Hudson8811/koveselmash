@@ -8,17 +8,24 @@
 }
 
 .main-CF {
-    input{
+    max-width: 880px;
+    margin: 0 auto;
+    background-color: #f6f8fb;
+
+    input {
         height: 53px;
         border: 1px solid #dee2e7;
         background-color: #ffffff;
         width: 100%;
     }
+
     .flex-cols {
         display: flex;
-        .left, .right{
+
+        .left,
+        .right {
             max-width: 50%;
-width: 100% ;
+            width: 100%;
         }
 
     }
