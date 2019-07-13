@@ -17,3 +17,4 @@
 //= partials/news-events.js
 //= partials/product-cart.js
 //= partials/service-page.js
+//= partials/contacts.js
