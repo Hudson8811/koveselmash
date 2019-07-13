@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    //= template/head.html
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body>
+    //= template/header.html
+    <div class="big-banner-page" style="background-color: #445055">
+        <div class="container">
+            <p>Чёрный список</p>
+        </div>
+    </div>
+
+    <nav id="breadcrumbs" class="container breadcrumbs-history">
+        <ul>
+            <li><a href="">Главная</a></li>
+            <li><span>Чёрный список</span></li>
+        </ul>
+    </nav>
+
+    <div id="page-wrapper" class="page-wrapper black-list-page">
+        <div class="container">
+            <div class="flex-block">
+                <div class="left">
+                    <div class="description">
+                        Раздел посвящен недобросовестным организациям, связанным с украинским рынком металлопроката, в
+                        отношении которых известно, что они не выполняют договорные обязательства и имеют просроченные
+                        непогашенные задолженности перед своими кредиторами.
+                    </div>
+                    <div class="search">
+                        <p>Поиск организации:</p>
+                        <input type="text">
+                    </div>
+                    <div class="flex-table">
+                        <div class="flex-row flex-table-head">
+                            <div class="date flex-table__cell ">Дата<br>внесения</div>
+                            <div class="debtor flex-table__cell">Должник</div>
+                            <div class="inn flex-table__cell">ИНН должника</div>
+                            <div class="summ flex-table__cell">Сумма<br>долга (грн)</div>
+                            <div class="date-delay flex-table__cell">Дата<br>просрочки</div>
+                        </div>
+                        <a href="" class="flex-row">
+                            <div class="date flex-table__cell">20.03.2019</div>
+                            <div class="debtor flex-table__cell">ООО «УКРТРУБОПРОКАТ»</div>
+                            <div class="inn flex-table__cell">40611113</div>
+                            <div class="summ flex-table__cell">0.00</div>
+                            <div class="date-delay flex-table__cell">20.01.2019</div>
+                        </a>
+                        <a href="" class="flex-row">
+                            <div class="date flex-table__cell">20.03.2019</div>
+                            <div class="debtor flex-table__cell">ООО «УКРТРУБОПРОКАТ»</div>
+                            <div class="inn flex-table__cell">40611113</div>
+                            <div class="summ flex-table__cell">0.00</div>
+                            <div class="date-delay flex-table__cell">20.01.2019</div>
+                        </a>
+                        <a href="" class="flex-row">
+                            <div class="date flex-table__cell">20.03.2019</div>
+                            <div class="debtor flex-table__cell">ООО «УКРТРУБОПРОКАТ»</div>
+                            <div class="inn flex-table__cell">40611113</div>
+                            <div class="summ flex-table__cell">0.00</div>
+                            <div class="date-delay flex-table__cell">20.01.2019</div>
+                        </a>
+                        <a href="" class="flex-row">
+                            <div class="date flex-table__cell">20.03.2019</div>
+                            <div class="debtor flex-table__cell">ООО «УКРТРУБОПРОКАТ»</div>
+                            <div class="inn flex-table__cell">40611113</div>
+                            <div class="summ flex-table__cell">0.00</div>
+                            <div class="date-delay flex-table__cell">20.01.2019</div>
+                        </a>
+                        <a href="" class="flex-row">
+                            <div class="date flex-table__cell">20.03.2019</div>
+                            <div class="debtor flex-table__cell">ООО «УКРТРУБОПРОКАТ»</div>
+                            <div class="inn flex-table__cell">40611113</div>
+                            <div class="summ flex-table__cell">0.00</div>
+                            <div class="date-delay flex-table__cell">20.01.2019</div>
+                        </a>
+
+
+                    </div>
+                    <nav class="pagi-v2">
+                        <ul>
+                            <li class="control"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="5" height="9"
+                                        viewBox="0 0 5 9">
+                                        <g>
+                                            <g>
+                                                <path
+                                                    d="M5.012-.029L1.742 4.5l3.27 4.529H3.245l-3.27-4.529 3.27-4.528z" />
+                                            </g>
+                                        </g>
+                                    </svg></a></li>
+                            <li><a href="">1</a></li>
+                            <li class="active"><a href="">2</a></li>
+                            <li><a href="">3</a></li>
+                            <li class="dots">...</li>
+                            <li><a href="">10</a></li>
+                            <li class="control"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="5" height="9"
+                                        viewBox="0 0 5 9">
+                                        <g>
+                                            <g>
+                                                <path
+                                                    d="M-.002 8.996l3.248-4.497-3.248-4.5h1.755l3.249 4.5-3.249 4.497z" />
+                                            </g>
+                                        </g>
+                                    </svg></a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+                <div class="right">
+                    <div class="simple-menu">
+                        <div class="title">Обеспечение</div>
+                        <ul>
+                            <li><a href="">Список поставщиков</a></li>
+                            <li><a href="">Как стать поставщиком</a></li>
+                            <li><a href="">Порядок закупок</a></li>
+                            <li><a href="">Реестр закупок</a></li>
+                            <li><a href="">Тендеры</a></li>
+                            <li><a class="active" href="">Черный список</a></li>
+                            <li><a href="">Сделать заказ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    //= template/footer.html
+    //= template/scripts.html
+
+</body>
+
+</html>

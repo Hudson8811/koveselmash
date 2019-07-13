@@ -3,7 +3,8 @@
 
 <head>
     //= template/head.html
-    <style></style>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -14,30 +15,133 @@
             <li><span>Оформить заявку</span></li>
         </ul>
     </nav>
-    hudson88@yandex.ru
 
     <div id="page-wrapper" class="page-wrapper make-req-page">
         <div class="container">
-            <div class="title-page">
+            <h3 class="title-page">
                 Оформить заявку
-            </div>
+            </h3>
             <div class="main-CF">
-                <div class="flex-cols">
-                    <div class="left">
-                        <input type="text">
-                        <input type="text">
+                <form action="">
+                    <div class="flex-cols">
+                        <div class="left">
+                            <input type="text" placeholder="ФИО*">
+                            <input type="text" placeholder="Email*">
+                        </div>
+                        <div class="right">
+                            <input type="text" placeholder="Телефон*">
+                            <input type="text" placeholder="Организация">
+                        </div>
                     </div>
-                    <div class="right">
-                        <input type="text">
-                        <input type="text">
+
+                    <input type="text" placeholder="Адрес">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Примечание"></textarea>
+
+                    <div class="myCustom__file-upload-choosed">
+                        <div class="myCustom__file-upload-close-btn">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.2847 15.1421L1.14258 1" stroke="#573BFF" />
+                                <path d="M1.00044 15.1421L15.1426 1" stroke="#573BFF" />
+                            </svg>
+                        </div>
+                    </div>
+                    <label class="myCustom__file-upload">
+                        <img src="images/png/file-upload.png" alt="">
+                        <div class="fileField">Загрузить чертежи, архивы, файлы</div>
+                        <input type="file" class="myCustom__file">
+                    </label>
+                    <div class="flex-cols f-c-mt">
+                        <div class="left">
+                            <div class="g-recaptcha" data-sitekey="6LfLc60UAAAAAMqxoAhA-65GSgyN5BcFwQbJkXbQ" ></div>
+                        </div>
+                        <div class="right">
+                            <button type="submit" class="smbtBtn">Отправить <div class="arrow"><img
+                                        src="/images/svg/arr-bread.svg" alt=""> </div></button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+            <h3 class="title-section">
+                Новые заказы
+            </h3>
+            <div class="requests-block">
+                <div class="item">
+                    <div class="flex-container">
+
+                        <div class="left"><img src="/images/jpg/request-test-1.jpg" alt=""></div>
+                        <div class="right">
+                            <div class="main-info">
+                                <div class="left">
+                                    <div class="title">Заказ 1259</div>
+                                    <div class="date">7 июля 2019</div>
+                                    <div class="city"><span class="bold">Город:</span> Пенза</div>
+                                    <div class="status"><span class="bold">Статус заказа:</span> <span
+                                            class="open">открыт</span></div>
+                                </div>
+                                <div class="right">
+                                    <div class="urgently">Срочно</div>
+                                </div>
+                            </div>
+                            <div class="description">Интересует изготовление деталей по приложенному чертежу в
+                                количестве 2
+                                шт. в очень короткий срок. Изготовление из листа. Прошу сообщить о возможности,
+                                стоимости и
+                                сроках. Прошу также рассмотреть возможность изготовления как из собственного металла,
+                                так и
+                                из нашей заготовки.</div>
+                            <div class="uploads">
+                                <div class="title">Вложения:</div>
+                                <div class="item">Чертеж.docx</div>
+                            </div>
+                            <details class="contacts">
+                                <summary>Контакты заказчика</summary>
+                                <div class="item">Иванов Иван Иванович</div>
+                                <div class="item"> +38 (03352) 5-12-55</div>
+                                <div class="item"> ivanov@gmail.ru</div>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="flex-container">
+                        <div class="left"><img src="/images/jpg/request-test-1.jpg" alt=""></div>
+                        <div class="right">
+                            <div class="main-info">
+                                <div class="left">
+                                    <div class="title">Заказ 1259</div>
+                                    <div class="date">7 июля 2019</div>
+                                    <div class="city"><span class="bold">Город:</span> Пенза</div>
+                                    <div class="status"><span class="bold">Статус заказа:</span> <span
+                                            class="closed">закрыт</span></div>
+                                </div>
+                                <div class="right">
+                                </div>
+                            </div>
+                            <div class="description">Интересует изготовление деталей по приложенному чертежу в
+                                количестве 2
+                                шт. в очень короткий срок. Изготовление из листа. Прошу сообщить о возможности,
+                                стоимости и
+                                сроках. Прошу также рассмотреть возможность изготовления как из собственного металла,
+                                так и
+                                из нашей заготовки.</div>
+                            <div class="uploads">
+                                <div class="title">Вложения:</div>
+                                <div class="item">Чертеж.docx</div>
+                            </div>
+                            <details class="contacts">
+                                <summary>Контакты заказчика</summary>
+                                <div class="item">Иванов Иван Иванович</div>
+                                <div class="item"> +38 (03352) 5-12-55</div>
+                                <div class="item"> ivanov@gmail.ru</div>
+                            </details>
+                        </div>
                     </div>
                 </div>
 
-                <input type="text">
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-                <input type="file">
             </div>
-
+            //= template/pagination.html
         </div>
     </div>
 
@@ -47,6 +151,7 @@
 
     //= template/footer.html
     //= template/scripts.html
+
 </body>
 
 </html>
