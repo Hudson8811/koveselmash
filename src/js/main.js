@@ -18,3 +18,4 @@
 //= partials/product-cart.js
 //= partials/service-page.js
 //= partials/make-a-request.js
+//= partials/contacts.js
