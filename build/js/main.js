@@ -899,7 +899,6 @@ $(document).ready(function() {
         var tab = $(this).data('tab');
         $('#tab-'+tab).addClass('active').siblings('.tab').removeClass('active');
     });
-<<<<<<< HEAD
 });
 $(document).ready(function () {
     var req_items = $('.flex-table > .flex-row');
@@ -965,6 +964,4 @@ $(document).ready(function () {
 
 
 
-=======
->>>>>>> 73461b36df115b266069509bd9b0c9b360b9f820
 });
