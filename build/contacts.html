@@ -940,7 +940,9 @@
                         </div>
                     </div>
                     <div class="flex-block-map">
-                        <div class="map"></div>
+                        <div class="map">
+                            <div id="map"></div>
+                        </div>
                         <div class="image"><img src="images/jpg/contacts-image.jpg" alt=""></div>
                     </div>
                     <div class="table-contacts">
@@ -1030,7 +1032,7 @@
             <div class="tab" id="tab-2">
                 <div class="container">
                     <div class="role-block">
-                        <div class="title"></div>
+                        <div class="title">Руководство</div>
                         <div class="flex-block">
                             <div class="item">
                                 <div class="image-block"><img src="images/jpg/staf-1.jpg" alt=""></div>
@@ -1045,7 +1047,7 @@
                         </div>
                     </div>
                     <div class="role-block">
-                        <div class="title"></div>
+                        <div class="title">Менеджемент</div>
                         <div class="flex-block">
                             <div class="item">
                                 <div class="image-block"><img src="images/jpg/staf-1.jpg" alt=""></div>
@@ -1083,7 +1085,7 @@
             </div>
             <div class="tab" id="tab-3">
                 <div class="container">
-                    <div class="title"></div>
+                    <div class="title">Напишите нам</div>
                     <form action="">
                         <select class="select-style" required>
                             <option>Тема обращения</option>
@@ -1103,7 +1105,7 @@
                         <input type="file" id="file-input" class="hide">
                         <label for="file-input" class="file-upload">
                             <span class="icon"><img src="images/png/file-upload.png" alt=""></span>
-                            <span class="text"></span>
+                            <span class="text">Прикрепить документ или фотографию</span>
                             <span class="plus-btn"></span>
                         </label>
                         <div class="btn-row">
@@ -1238,6 +1240,24 @@
     </div>
 </footer>
 <script src="js/main.js"></script>
+
+<script type="text/javascript">
+    var map;
+    function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 55.760186, lng: 37.618711},
+            zoom: 8
+        });
+    }
+    var marker = new google.maps.Marker({
+        position: {lat: 55.760186, lng: 37.618711},
+        map: map,
+        icon: '/images/png/i-map.png'
+    });
+</script>
+
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDf_tMt3-vngDQb3FkJSL8BxfL5Sdg-RE&callback=initMap" type="text/javascript"></script>
 </body>
 
 </html>
