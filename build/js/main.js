@@ -899,6 +899,8 @@ $(document).ready(function() {
         var tab = $(this).data('tab');
         $('#tab-'+tab).addClass('active').siblings('.tab').removeClass('active');
     });
+
+
 });
 $(document).ready(function () {
     var req_items = $('.flex-table > .flex-row');
