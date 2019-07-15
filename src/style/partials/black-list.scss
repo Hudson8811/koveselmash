@@ -371,15 +371,6 @@
                         flex-basis: 14.6239554317549%;
                         padding-left: 15px;
                     }
-
-                    .flex-row {
-                        &:hover:not(:first-child) {
-                            .debtor {
-                                color: #34a963;
-                            }
-                        }
-
-                    }
                 }
             }
         }
@@ -389,5 +380,115 @@
             margin-top: 64px;
         }
 
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .black-list-page {
+        .page-title-display-only-mobile {
+
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 48px;
+        }
+
+        .flex-block {
+
+            .left {
+
+
+                .description {
+                    margin-top: 7px;
+                }
+
+                .search {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin-top: 26px;
+
+                    p {
+                        font-size: 14px;
+                        margin-bottom: 8px;
+
+                    }
+
+                    input {
+                        margin-left: 0;
+                        width: 100%;
+                    }
+
+                }
+
+                .flex-table {
+
+                    .debtor {
+                        padding-left: 0;
+                        order: -1;
+                    }
+
+                    .date,
+                    .debtor,
+                    .inn,
+                    .summ,
+                    .date-delay {
+                        padding: 0px 22px
+                    }
+
+                }
+
+            }
+        }
+
+        .pagi-v2 {
+            margin: 64px auto 0 auto;
+        }
+
+
+
+    }
+
+    .flex-table {
+        .flex-row {
+            flex-direction: column;
+            height: unset;
+            border-bottom: 1px solid #dee2e7;
+            padding-bottom: 16px;
+
+            &:nth-child(even) {
+                background: unset;
+            }
+
+            .flex-table__cell {
+                width: 100% !important;
+                border-right: 0;
+                min-height: 43px;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid #dee2e7;
+                }
+
+                &:last-child {
+                    min-height: 42px;
+                    border-bottom: 0;
+                }
+
+                justify-content: space-between;
+
+                .bold {
+                    font-weight: 500;
+                }
+            }
+
+            &.flex-table-head {
+                display: none;
+            }
+
+            .flex-table__main-cell:not(:last-child) {
+                min-height: 58px;
+                border-bottom: 2px solid #34a963;
+                margin-bottom: 6px;
+                font-weight: 600;
+            }
+        }
     }
 }
