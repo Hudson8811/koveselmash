@@ -13,6 +13,8 @@
     
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -869,7 +871,7 @@
                                 </div>
                             </div>
                             <div class="menu-item">
-                                <a href="">История компан��и</a>
+                                <a href="">История компании</a>
                             </div>
                             <div class="menu-item">
                                 <a href="">Фото видео галерея</a>
@@ -880,925 +882,108 @@
             </div>
         </div>
     </header>
-    <div class="big-banner-page" style="background-image: url('images/jpg/bg-catalog-2.jpg')">
-        <div class="container">
-            <p><span>1200 км</span> цепей <br> произведено в 2019 году</p>
-        </div>
-    </div>
-    <nav id="breadcrumbs" class="container">
+
+
+    <nav id="breadcrumbs" class="container breadcrumbs-black-list-single">
         <ul>
             <li><a href="">Главная</a></li>
-            <li><a href="">Каталог</a></li>
-            <li><a href="">Цепи</a></li>
-            <li><span>Цепи круглозвенные для сельскохозяйственной техники</span></li>
+            <li><span>Анкета клиента</span></li>
+
         </ul>
     </nav>
 
-    <div class="page-wrapper catalog-page container">
-        <aside class="left_side-catalog">
-            <div class="left_side-catalog_tabs">
-                <div class="dt rL hid">
-                    <ul>
-                        <li><a class="active">По продукции</a></li>
-                        <li><a>По отраслям</a></li>
-                    </ul>
-                </div>
-
-                <div class="dd rL ">
-                    <div class="item rL active">
-                        <div class="multiple" data-accordion-group>
-                            <div data-accordion class="open">
-                                <button data-control>Цепи</button>
-                                <div data-content>
-                                    <div data-accordion id="filter">
-                                        <button data-control>Фильтр по цепям</button>
-                                        <div data-content>
-                                            <div data-accordion>
-                                                <button data-control>Тип</button>
-                                                <div data-content>
-                                                    <label class="check-sq">
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
-                                                        <span class="label">Длиннозвенные</span>
-                                                    </label>
-                                                    <label class="check-sq">
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
-                                                        <span class="label">Короткозвенные</span>
-                                                    </label>
-                                                    <label class="check-sq">
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
-                                                        <span class="label">Среднезвенные</span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div data-accordion>
-                                                <button data-control>Название из каталога</button>
-                                                <div data-content>
-                                                    <label class="check-sq">
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
-                                                        <span class="label">Цепи высокопрочные для горного
-                                                            оборудования</span>
-                                                    </label>
-                                                    <label class="check-sq">
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
-                                                        <span class="label">Цепи для завес вращающихся цементных печей,
-                                                            навесные сварные</span>
-                                                    </label>
-                                                    <label class="check-sq">
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
-                                                        <span class="label">Цепи калиброванные для конвейеров</span>
-                                                    </label>
-                                                    <label class="check-sq">
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
-                                                        <span class="label">Цепи круглозвенные для конвейеров
-                                                            непрерывного действия</span>
-                                                    </label>
-                                                    <label class="check-sq">
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
-                                                        <span class="label">Цепи круглозвенные испытанные,
-                                                            некалиброванные</span>
-                                                    </label>
-                                                    <label class="check-sq">
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
-                                                        <span class="label">Цепи круглозвенные калиброванные</span>
-                                                    </label>
-                                                    <label class="check-sq">
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
-                                                        <span class="label">Цепи круглозвенные калиброванные для
-                                                            грузоподъемных механизмов</span>
-                                                    </label>
-                                                    <label class="check-sq">
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
-                                                        <span class="label">Цепи круглозвенные некалиброванные</span>
-                                                    </label>
-                                                    <label class="check-sq">
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
-                                                        <span class="label">Цепи круглозвенные тяговые для конвейеров и
-                                                            транспортеров</span>
-                                                    </label>
-                                                    <label class="check-sq">
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
-                                                        <span class="label">Цепи круглозвенные, не испытанные</span>
-                                                    </label>
-                                                    <label class="check-sq">
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
-                                                        <span class="label">Цепи повышенной твердости для рыболовецкой
-                                                            промышленности</span>
-                                                    </label>
-                                                    <label class="check-sq">
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
-                                                        <span class="label">Цепи скребковые для конвейеров</span>
-                                                    </label>
-                                                    <label class="check-sq">
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
-                                                        <span class="label">Цепи скребковые для конвейеров, Цепи
-                                                            высокопрочные для горного оборудования</span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div data-accordion>
-                                                <button data-control>Сталь</button>
-                                                <div data-content>
-                                                    <label class="check-sq">
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
-                                                        <span class="label">Легированная</span>
-                                                    </label>
-                                                    <label class="check-sq">
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
-                                                        <span class="label">Сталь</span>
-                                                    </label>
-
-                                                </div>
-                                            </div>
-                                            <div data-accordion>
-                                                <button data-control>Калибр/некалибр</button>
-                                                <div data-content>
-                                                    <label class="check-sq">
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
-                                                        <span class="label">Калиброванные</span>
-                                                    </label>
-                                                    <label class="check-sq">
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
-                                                        <span class="label">Некалиброванные</span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div data-accordion>
-                                                <button data-control>Применение</button>
-                                                <div data-content>
-
-                                                    <label class="check-sq">
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
-                                                        <span class="label">Для горного оборудования</span>
-                                                    </label>
-                                                    <label class="check-sq">
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
-                                                        <span class="label">Для грузоподъемных механизмов</span>
-                                                    </label>
-                                                    <label class="check-sq">
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
-                                                        <span class="label">Для завес вращающихся цементных печей</span>
-                                                    </label>
-                                                    <label class="check-sq">
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
-                                                        <span class="label">Для конвейеров и транспортеров</span>
-                                                    </label>
-                                                    <label class="check-sq">
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
-                                                        <span class="label">Для конвейеров непрерывного действия</span>
-                                                    </label>
-                                                    <label class="check-sq">
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
-                                                        <span class="label">Для конвейеров, для горного
-                                                            оборудования</span>
-                                                    </label>
-                                                    <label class="check-sq">
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
-                                                        <span class="label">Для конвейеров, подъемно-транспортные и
-                                                            тяговые механизмы</span>
-                                                    </label>
-                                                    <label class="check-sq">
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
-                                                        <span class="label">Для конвейров, но не для грузозахватного,
-                                                            стропового приспособления или несущего средства</span>
-                                                    </label>
-                                                    <label class="check-sq">
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
-                                                        <span class="label">Для подъема и перемещения грузов</span>
-                                                    </label>
-                                                    <label class="check-sq">
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
-                                                        <span class="label">Для противоскольжения, привязи скота,
-                                                            привязи собак, колодезных цепей</span>
-                                                    </label>
-                                                    <label class="check-sq">
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
-                                                        <span class="label">Для рыболовецкой промышленности</span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div data-accordion>
-                                                <button data-control>Класс прочности</button>
-                                                <div data-content>
-                                                    <label class="check-sq">
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
-                                                        <span class="label">Класс 5</span>
-                                                    </label>
-                                                    <label class="check-sq">
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
-                                                        <span class="label">Класс 8</span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <button class="filter_button">Сбросить фильтр</button>
-                                        </div>
-                                    </div>
-                                    <div><a href="">Цепи круглозвенные короткозвенные</a></div>
-                                    <div><a href="">Цепи круглозвенные среднезвенные
-                                            для конвейеров непрерывного действия</a></div>
-                                    <div><a href="">Цепи круглозвенные длиннозвенные</a></div>
-                                    <div><a href="">Цепи круглозвенные высокопрочные
-                                            для горно-шахтного оборудования,
-                                            класс прочности "В", "С"</a></div>
-                                    <div><a href="">Цепи круглозвенные тягового органа
-                                            горно-шахтного оборудования
-                                            (скребковых конвейеров)</a></div>
-                                    <div data-accordion>
-                                        <button data-control>Цепи круглозвенные для
-                                            сельскохозяйственной техники</button>
-                                        <div data-content>
-                                            <a href="">Цепи для скребковых цепных
-                                                конвейеров с кронштейном</a>
-                                            <a href="">Донные транспортеры для
-                                                разбрасывателей удобрений</a>
-                                            <a href="">Цепи 3-х концевые для привязи скота</a>
-                                        </div>
-                                    </div>
-                                    <div><a href="">Цепи круглозвенные для подъемных
-                                            механизмов, стропы цепные, такелаж</a></div>
-                                    <div><a href="">Цепи круглозвенные тягового органа
-                                            горно-шахтного оборудования
-                                            (скребковых конвейеров)</a></div>
-                                    <div><a href="">Цепи круглозвенные сварные
-                                            для цементной промышленности</a></div>
-                                    <div><a href="">Цепи противоскольжения
-                                            для автомобилей</a></div>
-                                    <div><a href="">Защитная цепь для карьерных шин</a></div>
-                                </div>
-                            </div>
-
-                            <div data-accordion>
-                                <button data-control>Поковки и штамповки</button>
-                                <div data-content>
-                                    <div><a href="">Цепи круглозвенные короткозвенные</a></div>
-                                    <div><a href="">Цепи круглозвенные среднезвенные
-                                            для конвейеров непрерывного действия</a></div>
-                                    <div><a href="">Цепи круглозвенные длиннозвенные</a></div>
-                                    <div><a href="">Цепи круглозвенные высокопрочные
-                                            для горно-шахтного оборудования,
-                                            класс прочности "В", "С"</a></div>
-                                    <div><a href="">Цепи круглозвенные тягового органа
-                                            горно-шахтного оборудования
-                                            (скребковых конвейеров)</a></div>
-                                    <div data-accordion>
-                                        <button data-control>Цепи круглозвенные для
-                                            сельскохозяйственной техники</button>
-                                        <div data-content>
-                                            <a href="">Цепи для скребковых цепных
-                                                конвейеров с кронштейном</a>
-                                            <a href="">Донные транспортеры для
-                                                разбрасывателей удобрений</a>
-                                            <a href="">Цепи 3-х концевые для привязи скота</a>
-                                        </div>
-                                    </div>
-
-                                    <div><a href="">Цепи круглозвенные тягового органа
-                                            горно-шахтного оборудования
-                                            (скребковых конвейеров)</a></div>
-                                </div>
-                            </div>
-
-                            <div data-accordion>
-                                <button data-control>Машиностроение</button>
-                                <div data-content>
-                                    <div><a href="">Цепи круглозвенные короткозвенные</a></div>
-                                    <div><a href="">Цепи круглозвенные среднезвенные
-                                            для конвейеров непрерывного действия</a></div>
-                                    <div><a href="">Цепи круглозвенные длиннозвенные</a></div>
-                                    <div><a href="">Цепи круглозвенные высокопрочные
-                                            для горно-шахтного оборудования,
-                                            класс прочности "В", "С"</a></div>
-                                    <div><a href="">Цепи круглозвенные тягового органа
-                                            горно-шахтного оборудования
-                                            (скребковых конвейеров)</a></div>
-                                    <div data-accordion>
-                                        <button data-control>Цепи круглозвенные для
-                                            сельскохозяйственной техники</button>
-                                        <div data-content>
-                                            <a href="">Цепи для скребковых цепных
-                                                конвейеров с кронштейном</a>
-                                            <a href="">Донные транспортеры для
-                                                разбрасывателей удобрений</a>
-                                            <a href="">Цепи 3-х концевые для привязи скота</a>
-                                        </div>
-                                    </div>
-
-                                    <div><a href="">Цепи круглозвенные тягового органа
-                                            горно-шахтного оборудования
-                                            (скребковых конвейеров)</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--end item-->
-                    <div class="item rL">
-                        <div class="multiple" data-accordion-group>
-
-                            <div data-accordion>
-                                <button data-control>Горно-шахтная промышленность</button>
-                                <div data-content>
-                                    <div><a href="">Цепи круглозвенные короткозвенные</a></div>
-                                    <div><a href="">Цепи круглозвенные среднезвенные
-                                            для конвейеров непрерывного действия</a></div>
-                                    <div><a href="">Цепи круглозвенные длиннозвенные</a></div>
-                                    <div><a href="">Цепи круглозвенные высокопрочные
-                                            для горно-шахтного оборудования,
-                                            класс прочности "В", "С"</a></div>
-                                    <div><a href="">Цепи круглозвенные тягового органа
-                                            горно-шахтного оборудования
-                                            (скребковых конвейеров)</a></div>
-                                    <div data-accordion>
-                                        <button data-control>Цепи круглозвенные для
-                                            сельскохозяйственной техники</button>
-                                        <div data-content>
-                                            <a href="">Цепи для скребковых цепных
-                                                конвейеров с кронштейном</a>
-                                            <a href="">Донные транспортеры для
-                                                разбрасывателей удобрений</a>
-                                            <a href="">Цепи 3-х концевые для привязи скота</a>
-                                        </div>
-                                    </div>
-
-                                    <div><a href="">Цепи круглозвенные тягового органа
-                                            горно-шахтного оборудования
-                                            (скребковых конвейеров)</a></div>
-                                </div>
-                            </div>
-
-                            <div data-accordion>
-                                <button data-control>Железнодорожная отрасль</button>
-                                <div data-content>
-                                    <div><a href="">Цепи круглозвенные короткозвенные</a></div>
-                                    <div><a href="">Цепи круглозвенные среднезвенные
-                                            для конвейеров непрерывного действия</a></div>
-                                    <div><a href="">Цепи круглозвенные длиннозвенные</a></div>
-                                    <div><a href="">Цепи круглозвенные высокопрочные
-                                            для горно-шахтного оборудования,
-                                            класс прочности "В", "С"</a></div>
-                                    <div><a href="">Цепи круглозвенные тягового органа
-                                            горно-шахтного оборудования
-                                            (скребковых конвейеров)</a></div>
-                                    <div data-accordion>
-                                        <button data-control>Цепи круглозвенные для
-                                            сельскохозяйственной техники</button>
-                                        <div data-content>
-                                            <a href="">Цепи для скребковых цепных
-                                                конвейеров с кронштейном</a>
-                                            <a href="">Донные транспортеры для
-                                                разбрасывателей удобрений</a>
-                                            <a href="">Цепи 3-х концевые для привязи скота</a>
-                                        </div>
-                                    </div>
-
-                                    <div><a href="">Цепи круглозвенные тягового органа
-                                            горно-шахтного оборудования
-                                            (скребковых конвейеров)</a></div>
-                                </div>
-                            </div>
-
-                            <div data-accordion>
-                                <button data-control>Энергетическая отрасль</button>
-                                <div data-content>
-                                    <div><a href="">Цепи круглозвенные короткозвенные</a></div>
-                                    <div><a href="">Цепи круглозвенные среднезвенные
-                                            для конвейеров непрерывного действия</a></div>
-                                    <div><a href="">Цепи круглозвенные длиннозвенные</a></div>
-                                    <div><a href="">Цепи круглозвенные высокопрочные
-                                            для горно-шахтного оборудования,
-                                            класс прочности "В", "С"</a></div>
-                                    <div><a href="">Цепи круглозвенные тягового органа
-                                            горно-шахтного оборудования
-                                            (скребковых конвейеров)</a></div>
-                                    <div data-accordion>
-                                        <button data-control>Цепи круглозвенные для
-                                            сельскохозяйственной техники</button>
-                                        <div data-content>
-                                            <a href="">Цепи для скребковых цепных
-                                                конвейеров с кронштейном</a>
-                                            <a href="">Донные транспортеры для
-                                                разбрасывателей удобрений</a>
-                                            <a href="">Цепи 3-х концевые для привязи скота</a>
-                                        </div>
-                                    </div>
-
-                                    <div><a href="">Цепи круглозвенные тягового органа
-                                            горно-шахтного оборудования
-                                            (скребковых конвейеров)</a></div>
-                                </div>
-                            </div>
-
-                            <div data-accordion>
-                                <button data-control>Сельское хозяйство</button>
-                                <div data-content>
-                                    <div><a href="">Цепи круглозвенные короткозвенные</a></div>
-                                    <div><a href="">Цепи круглозвенные среднезвенные
-                                            для конвейеров непрерывного действия</a></div>
-                                    <div><a href="">Цепи круглозвенные длиннозвенные</a></div>
-                                    <div><a href="">Цепи круглозвенные высокопрочные
-                                            для горно-шахтного оборудования,
-                                            класс прочности "В", "С"</a></div>
-                                    <div><a href="">Цепи круглозвенные тягового органа
-                                            горно-шахтного оборудования
-                                            (скребковых конвейеров)</a></div>
-                                    <div data-accordion>
-                                        <button data-control>Цепи круглозвенные для
-                                            сельскохозяйственной техники</button>
-                                        <div data-content>
-                                            <a href="">Цепи для скребковых цепных
-                                                конвейеров с кронштейном</a>
-                                            <a href="">Донные транспортеры для
-                                                разбрасывателей удобрений</a>
-                                            <a href="">Цепи 3-х концевые для привязи скота</a>
-                                        </div>
-                                    </div>
-
-                                    <div><a href="">Цепи круглозвенные тягового органа
-                                            горно-шахтного оборудования
-                                            (скребковых конвейеров)</a></div>
-                                </div>
-                            </div>
-
-                            <div data-accordion>
-                                <button data-control>Машиностроение</button>
-                                <div data-content>
-                                    <div><a href="">Цепи круглозвенные короткозвенные</a></div>
-                                    <div><a href="">Цепи круглозвенные среднезвенные
-                                            для конвейеров непрерывного действия</a></div>
-                                    <div><a href="">Цепи круглозвенные длиннозвенные</a></div>
-                                    <div><a href="">Цепи круглозвенные высокопрочные
-                                            для горно-шахтного оборудования,
-                                            класс прочности "В", "С"</a></div>
-                                    <div><a href="">Цепи круглозвенные тягового органа
-                                            горно-шахтного оборудования
-                                            (скребковых конвейеров)</a></div>
-                                    <div data-accordion>
-                                        <button data-control>Цепи круглозвенные для
-                                            сельскохозяйственной техники</button>
-                                        <div data-content>
-                                            <a href="">Цепи для скребковых цепных
-                                                конвейеров с кронштейном</a>
-                                            <a href="">Донные транспортеры для
-                                                разбрасывателей удобрений</a>
-                                            <a href="">Цепи 3-х концевые для привязи скота</a>
-                                        </div>
-                                    </div>
-
-                                    <div><a href="">Цепи круглозвенные тягового органа
-                                            горно-шахтного оборудования
-                                            (скребковых конвейеров)</a></div>
-                                </div>
-                            </div>
-
-                            <div data-accordion>
-                                <button data-control>Прочее</button>
-                                <div data-content>
-                                    <div><a href="">Цепи круглозвенные короткозвенные</a></div>
-                                    <div><a href="">Цепи круглозвенные среднезвенные
-                                            для конвейеров непрерывного действия</a></div>
-                                    <div><a href="">Цепи круглозвенные длиннозвенные</a></div>
-                                    <div><a href="">Цепи круглозвенные высокопрочные
-                                            для горно-шахтного оборудования,
-                                            класс прочности "В", "С"</a></div>
-                                    <div><a href="">Цепи круглозвенные тягового органа
-                                            горно-шахтного оборудования
-                                            (скребковых конвейеров)</a></div>
-                                    <div data-accordion>
-                                        <button data-control>Цепи круглозвенные для
-                                            сельскохозяйственной техники</button>
-                                        <div data-content>
-                                            <a href="">Цепи для скребковых цепных
-                                                конвейеров с кронштейном</a>
-                                            <a href="">Донные транспортеры для
-                                                разбрасывателей удобрений</a>
-                                            <a href="">Цепи 3-х концевые для привязи скота</a>
-                                        </div>
-                                    </div>
-
-                                    <div><a href="">Цепи круглозвенные тягового органа
-                                            горно-шахтного оборудования
-                                            (скребковых конвейеров)</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--end item-->
-                </div>
-            </div>
-        </aside>
-        <div class="content-catalog">
-
-            <h1 class="catalog-title">Цепи круглозвенные для сельскохозяйственной техники</h1>
-            <div class="big_menu">
-                <div class="row">
-                    <div class="item">
-                        <a href="">
-                            <span class="image_block" style="background-image: url('images/jpg/cep-1.jpg')"></span>
-                            <span class="text">Цепи для скребковых цепных конвейеров с кронштейном</span>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="">
-                            <span class="image_block" style="background-image: url('images/jpg/cep-2.jpg')"></span>
-                            <span class="text">Цепи для скребковых цепных конвейеров с кронштейном</span>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="">
-                            <span class="image_block" style="background-image: url('images/jpg/cep-3.jpg')"></span>
-                            <span class="text">Цепи для скребковых цепных конвейеров с кронштейном</span>
-                        </a>
-                    </div>
-                    <div class="clear"></div>
-                </div>
-            </div>
-            <div class="sort_row">
-                <div class="sort_block">
-                    Сортировать по:
-                    <select class="select-style">
-                        <option value="">Размеру цепи</option>
-                        <option value="">Возрастанию цены</option>
-                        <option value="">Возрастанию цены</option>
-                    </select>
-                    <span class="gray">200 наименований</span>
-                </div>
-                <div class="trig_block">
-                    Вид:
-                    <a class="sep1"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+    <div id="page-wrapper" class="page-wrapper customer-profile-page">
+        <div class="container">
+            <div class="page-title-line">
+                <p>ООО «УКРТРУБОПРОКАТ»</p>
+                <a href="" class="back-btn">
+                    <div class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="5" height="9" viewBox="0 0 5 9">
                             <g>
                                 <g>
-                                    <g>
-                                        <path fill="#dee2e7" d="M0 0h11v11H0z" />
-                                    </g>
-                                    <g>
-                                        <path fill="#dee2e7" d="M0 12h11v11H0z" />
-                                    </g>
-                                    <g>
-                                        <path fill="#dee2e7" d="M12 0h11v11H12z" />
-                                    </g>
-                                    <g>
-                                        <path fill="#dee2e7" d="M12 12h11v11H12z" />
-                                    </g>
+                                    <path fill="#eaeff5"
+                                        d="M5.012-.027L1.742 4.5l3.27 4.528H3.245l-3.27-4.528 3.27-4.528z" />
                                 </g>
                             </g>
-                        </svg></a>
-                    <a class="sep2 active"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23"
-                            viewBox="0 0 23 23">
-                            <g>
-                                <g>
-                                    <g>
-                                        <path fill="#dee2e7" d="M0 0h7v7H0z" />
-                                    </g>
-                                    <g>
-                                        <path fill="#dee2e7" d="M8 3V-.002h15v3z" />
-                                    </g>
-                                    <g>
-                                        <path fill="#dee2e7" d="M8 7V4h15v3z" />
-                                    </g>
-                                    <g>
-                                        <path fill="#dee2e7" d="M8 11V7.998h15v3z" />
-                                    </g>
-                                    <g>
-                                        <path fill="#dee2e7" d="M8 15v-3h15v3z" />
-                                    </g>
-                                    <g>
-                                        <path fill="#dee2e7" d="M8 18.999v-3h15v3z" />
-                                    </g>
-                                    <g>
-                                        <path fill="#dee2e7" d="M8 22.999v-3h15v3z" />
-                                    </g>
-                                    <g>
-                                        <path fill="#323640" d="M23 6H8" />
-                                    </g>
-                                    <g>
-                                        <path fill="#dee2e7" d="M0 8h7v7H0z" />
-                                    </g>
-                                    <g>
-                                        <path fill="#dee2e7" d="M0 16h7v7H0z" />
-                                    </g>
-                                </g>
-                            </g>
-                        </svg></a>
-                </div>
+                        </svg></div>
+                    <p>Вернуться к списку</p>
+                </a>
             </div>
+            <div class="flex-block">
+                <div class="left">
 
-            <div class="catalog catalog_table-2">
-                <div class="outer">
-                    <div class="scrollbar">
-                        <div class="scroll-container"> <input type="range" id="customScrollOnCatalog" min="0" max="100"
-                                value="0"></div>
+                    <div class="flex-table flex-table-cards-on-mobile flex-table-1">
+                        <div class="flex-row flex-table-head">
+                            <div class="debtor flex-table__cell">Должник</div>
+                            <div class="inn flex-table__cell">ИНН должника</div>
+                            <div class="summ flex-table__cell">Сумма<br>долга (грн)</div>
+                            <div class="date-delay flex-table__cell">Дата<br>просрочки</div>
+                        </div>
+                        <div href="" class="flex-row">
+                            <div class="debtor flex-table__cell flex-table__main-cell">ООО «УКРТРУБОПРОКАТ»</div>
+                            <div class="inn flex-table__cell">40611113</div>
+                            <div class="summ flex-table__cell">0.00</div>
+                            <div class="date-delay flex-table__cell">20.01.2019</div>
+                        </div>
+
 
                     </div>
-                    <div class="inner" id="scroll">
 
-                        <table>
+                    <div class="info">
+                        <div class="item"><span class="bold">Адрес должника: </span>Днепропетровская обл., г. Никополь,
+                            ул. Героев Чернобыля 102, кв. 0</div>
+                        <div class="item"><span class="bold">Подтверждающие документы: </span>письмо, приказ</div>
+                        <div class="item"><span class="bold">Контактное лицо: </span>Руководитель</div>
+                        <div class="item"><span class="bold">Телефон контактного лица: </span>0567677576</div>
+                        <div class="item details">
+                            <p class="title"><span class="bold">Детальное описание: </span></p>
+                            <p>
+                                Михайлов Олег Александрович, он же директор ООО УКРТРУБОПРОКАТ, работая <span
+                                    class="nw">в ООО УКРСТАРЛАЙН ИНКОРПОРЕЙТЕД</span> похитил базу данных контрагентов,
+                                наработки компании, рекламные площадки, уволившись стал представлятся контрагентам от
+                                имени <span
+                                class="nw">ООО "УКРСТАРЛАЙН ИНКОРПОРЕЙТЕД",</span> вводя клиентов в заблуждение, мошенническими
+                                действиями реализовывал продукцию, оскверняя имя предыдущего работодателя.
+                            </p>
 
-                            <tbody>
-                                <tr class="headline-main">
-                                    <td  class="table-headline-border">Название</td>
-                                    <td  class="table-headline-border"><span class="nw">Вид машины</span> КСМ
-                                    </td>
-                                    <td  class="table-headline-border">Тип</td>
-                                    <td  class="table-headline-border">Агрегатируемость с тракторами класса
-                                    </td>
-                                    <td  class="table-headline-border">Длина <span
-                                            class="nw">катка/сцепки,</span> мм</td>
-                                    <td " class="table-headline-border"><span class="nw">Диаметр катка (d)/
-                                        </span><span class="nw">ширина плуга (w), </span>мм</td>
-                                    <td  class="table-headline-border">Высота мм</td>
-                                    <td  class="table-headline-border"><span class="nw">Масса,</span> кг</td>
-                                    <td class="cart cart-double table-headline-border" >Заказ</td>
-                                </tr>
-                                <tr>
+                        </div>
+                    </div>
+                    <div class="flex-table flex-table-2">
+                        <div class="flex-row flex-table-head">
+                            <div class="file flex-table__cell">Прикрепленный файл</div>
+                            <div class="size flex-table__cell">Размер</div>
+                        </div>
+                        <a href="" class="flex-row">
+                            <div class="file flex-table__cell flex-table__main-cell">труба Евромет+.jpg</div>
+                            <div class="size flex-table__cell">828.76 кб</div>
+                        </a>
+                        <a href="" class="flex-row">
+                            <div class="file flex-table__cell flex-table__main-cell">труба Евромет+.jpg</div>
+                            <div class="size flex-table__cell">828.76 кб</div>
+                        </a>
+                        <a href="" class="flex-row">
+                            <div class="file flex-table__cell flex-table__main-cell">труба Евромет+.jpg</div>
+                            <div class="size flex-table__cell">828.76 кб</div>
+                        </a>
 
-                                        <td>
-                                            <div class="centred row-name">
-                                                <a href="">
-                                                    <div class="withPic"><img class="thumb"
-                                                            src="/images/jpg/catalog-table-test.png" alt="">Прицеп тракторный НПТ-6</div>
-                                                </a>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="centred">
-                                                <div>Прицеп</div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="centred">
-                                                <div>Полуприцеп</div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="centred">
-                                                <div>1,4</div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="centred">
-                                                <div>5630</div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="centred">
-                                                <div>w 2380</div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="centred">
-                                                <div>1800</div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="centred">
-                                                <div></div>
-                                            </div>
-                                        </td>
 
-                                        <th class="cart"><a href=""><img src="/images/png/i-cart.png" alt=""></a></th>
-                                    </tr>
-                                    <tr>
+                    </div>
 
-                                            <td>
-                                                <div class="centred row-name">
-                                                    <a href="">
-                                                        <div class="withPic"><img class="thumb"
-                                                                src="/images/jpg/catalog-table-test.png" alt="">Прицеп тракторный НПТ-6</div>
-                                                    </a>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="centred">
-                                                    <div>Прицеп</div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="centred">
-                                                    <div>Полуприцеп</div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="centred">
-                                                    <div>1,4</div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="centred">
-                                                    <div>5630</div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="centred">
-                                                    <div>w 2380</div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="centred">
-                                                    <div>1800</div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="centred">
-                                                    <div></div>
-                                                </div>
-                                            </td>
-
-                                            <th class="cart"><a href=""><img src="/images/png/i-cart.png" alt=""></a></th>
-                                        </tr>
-                                        <tr>
-
-                                                <td>
-                                                    <div class="centred row-name">
-                                                        <a href="">
-                                                            <div class="withPic"><img class="thumb"
-                                                                    src="/images/jpg/catalog-table-test.png" alt="">Прицеп тракторный НПТ-6</div>
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="centred">
-                                                        <div>Прицеп</div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="centred">
-                                                        <div>Полуприцеп</div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="centred">
-                                                        <div>1,4</div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="centred">
-                                                        <div>5630</div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="centred">
-                                                        <div>w 2380</div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="centred">
-                                                        <div>1800</div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="centred">
-                                                        <div></div>
-                                                    </div>
-                                                </td>
-
-                                                <th class="cart"><a href=""><img src="/images/png/i-cart.png" alt=""></a></th>
-                                            </tr>
-                                            <tr>
-
-                                                    <td>
-                                                        <div class="centred row-name">
-                                                            <a href="">
-                                                                <div class="withPic"><img class="thumb"
-                                                                        src="/images/jpg/catalog-table-test.png" alt="">Прицеп тракторный НПТ-6</div>
-                                                            </a>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="centred">
-                                                            <div>Прицеп</div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="centred">
-                                                            <div>Полуприцеп</div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="centred">
-                                                            <div>1,4</div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="centred">
-                                                            <div>5630</div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="centred">
-                                                            <div>w 2380</div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="centred">
-                                                            <div>1800</div>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="centred">
-                                                            <div></div>
-                                                        </div>
-                                                    </td>
-
-                                                    <th class="cart"><a href=""><img src="/images/png/i-cart.png" alt=""></a></th>
-                                                </tr>
-                                                <tr>
-
-                                                        <td>
-                                                            <div class="centred row-name">
-                                                                <a href="">
-                                                                    <div class="withPic"><img class="thumb"
-                                                                            src="/images/jpg/catalog-table-test.png" alt="">Прицеп тракторный НПТ-6</div>
-                                                                </a>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <div class="centred">
-                                                                <div>Прицеп</div>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <div class="centred">
-                                                                <div>Полуприцеп</div>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <div class="centred">
-                                                                <div>1,4</div>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <div class="centred">
-                                                                <div>5630</div>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <div class="centred">
-                                                                <div>w 2380</div>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <div class="centred">
-                                                                <div>1800</div>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <div class="centred">
-                                                                <div></div>
-                                                            </div>
-                                                        </td>
-
-                                                        <th class="cart"><a href=""><img src="/images/png/i-cart.png" alt=""></a></th>
-                                                    </tr>
-
-                            </tbody>
-                        </table>
+                </div>
+                <div class="right">
+                    <div class="simple-menu">
+                        <div class="title">Обеспечение</div>
+                        <ul>
+                            <li><a href="">Список поставщиков</a></li>
+                            <li><a href="">Как стать поставщиком</a></li>
+                            <li><a href="">Порядок закупок</a></li>
+                            <li><a href="">Реестр закупок</a></li>
+                            <li><a href="">Тендеры</a></li>
+                            <li><a class="active" href="">Черный список</a></li>
+                            <li><a href="">Сделать заказ</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-
-            <nav class="pagi">
-                <ul>
-                    <li class="control"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="5" height="9" viewBox="0 0 5 9"><g><g><path fill="#848e99" d="M5.012-.029L1.742 4.5l3.27 4.529H3.245l-3.27-4.529 3.27-4.528z"/></g></g></svg></a></li>
-                    <li><a href="">1</a></li>
-                    <li class="active"><a href="">2</a></li>
-                    <li><a href="">3</a></li>
-                    <li><a href="">4</a></li>
-                    <li>...</li>
-                    <li><a href="">10</a></li>
-                    <li class="control"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="5" height="9" viewBox="0 0 5 9"><g><g><path fill="#848e99" d="M-.002 8.996l3.248-4.497-3.248-4.5h1.755l3.249 4.5-3.249 4.497z"/></g></g></svg></a></li>
-                </ul>
-            </nav>
         </div>
     </div>
 
@@ -1921,7 +1106,6 @@
         </div>
     </footer>
     <script src="js/main.js"></script>
-
 </body>
 
 </html>
