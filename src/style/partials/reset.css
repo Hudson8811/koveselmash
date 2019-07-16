@@ -24,18 +24,18 @@ i{
 	font-style: italic;
 }
 
-.inputbox::-webkit-input-placeholder{opacity: 1; transition: opacity 0.3s ease;color: #2c2c2c;}
-.inputbox::-moz-placeholder{opacity: 1; transition: opacity 0.3s ease;color: #2c2c2c;}
-.inputbox:-moz-placeholder{opacity: 1; transition: opacity 0.3s ease;color: #2c2c2c;}
-.inputbox:-ms-input-placeholder{opacity: 1; transition: opacity 0.3s ease;color: #2c2c2c;}
+.inputbox::-webkit-input-placeholder{opacity: 1; transition: opacity 0.3s ease;color: #848e99;}
+.inputbox::-moz-placeholder{opacity: 1; transition: opacity 0.3s ease;color: #848e99;}
+.inputbox:-moz-placeholder{opacity: 1; transition: opacity 0.3s ease;color: #848e99;}
+.inputbox:-ms-input-placeholder{opacity: 1; transition: opacity 0.3s ease;color: #848e99;}
 .inputbox:focus::-webkit-input-placeholder{opacity: 0; transition: opacity 0.3s ease;}
 .inputbox:focus::-moz-placeholder{opacity: 0; transition: opacity 0.3s ease;}
 .inputbox:focus:-moz-placeholder{opacity: 0; transition: opacity 0.3s ease;}
 .inputbox:focus:-ms-input-placeholder{opacity: 0; transition: opacity 0.3s ease;}
-.textarea::-webkit-input-placeholder{opacity: 1; transition: opacity 0.3s ease;}
-.textarea::-moz-placeholder{opacity: 1; transition: opacity 0.3s ease;}
-.textarea:-moz-placeholder{opacity: 1; transition: opacity 0.3s ease;}
-.textarea:-ms-input-placeholder{opacity: 1; transition: opacity 0.3s ease;}
+.textarea::-webkit-input-placeholder{opacity: 1; transition: opacity 0.3s ease;color: #848e99;}
+.textarea::-moz-placeholder{opacity: 1; transition: opacity 0.3s ease;color: #848e99;}
+.textarea:-moz-placeholder{opacity: 1; transition: opacity 0.3s ease;color: #848e99;}
+.textarea:-ms-input-placeholder{opacity: 1; transition: opacity 0.3s ease;color: #848e99;}
 .textarea:focus::-webkit-input-placeholder{opacity: 0; transition: opacity 0.3s ease;}
 .textarea:focus::-moz-placeholder{opacity: 0; transition: opacity 0.3s ease;}
 .textarea:focus:-moz-placeholder{opacity: 0; transition: opacity 0.3s ease;}
