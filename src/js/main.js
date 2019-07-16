@@ -20,4 +20,4 @@
 //= partials/make-a-request.js
 //= partials/contacts.js
 //= partials/black-list.js
-//= partials/customer profile.js
+//= partials/customer-profile.js
