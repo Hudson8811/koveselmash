@@ -1,0 +1,85 @@
+@media screen and (min-width: 1250px) {
+  .contacts-page .tabs .tabs-content .tab#tab-1 .table-contacts .item:nth-child(3n-2) {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .contacts-page .tabs .tabs-titles .tab-title{
+    font-size: 15px;
+    height: 57px;
+  }
+  .contacts-page .tabs .tabs-content .tab#tab-1 .flex-block-contacts .left-block{
+    display: block;
+    width: 53%;
+  }
+  .contacts-page .tabs .tabs-content .tab#tab-1 .flex-block-contacts .right-block{
+    display: block;
+    width: 47%;
+  }
+  .contacts-page .tabs .tabs-content .tab#tab-1 .flex-block-contacts .label{
+    font-size: 14px;
+  }
+  .contacts-page .tabs .tabs-content .tab#tab-1 .flex-block-contacts .text{
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .contacts-page .tabs .tabs-content .tab#tab-1 .flex-block-contacts .item {
+    min-height: 80px;
+    + .item{
+      margin-top: 30px;
+    }
+  }
+  .contacts-page .tabs .tabs-content .tab#tab-1 .flex-block-map{
+    margin-top: 50px;
+  }
+  .contacts-page .tabs .tabs-content .tab#tab-1 .flex-block-map .map{
+    width: 53%;
+  }
+  .contacts-page .tabs .tabs-content .tab#tab-1 .flex-block-map .image{
+    width: 47%;
+  }
+  .contacts-page .tabs .tabs-content .tab#tab-1 .table-contacts{
+    grid-template-columns: 1fr 1fr;
+  }
+  .contacts-page .tabs .tabs-content .tab#tab-1 .table-contacts::after{
+    display: block;
+    content: "";
+    background: #f6f8fb;
+  }
+
+  .contacts-page .tabs .tabs-content .tab#tab-1 .table-contacts .item:nth-child(odd) {
+    padding-left: 0;
+  }
+  .contacts-page .tabs .tabs-content .tab#tab-1 .table-contacts .item .email a,
+  .contacts-page .tabs .tabs-content .tab#tab-1 .table-contacts .item .phones a,
+  .contacts-page .tabs .tabs-content .tab#tab-1 .table-contacts .item .label{
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .contacts-page .tabs .tabs-content .tab{
+    padding: 80px 0;
+  }
+  .contacts-page .tabs .tabs-content .tab#tab-2 .role-block .title{
+    font-size: 23px;
+    margin-bottom: 25px;
+  }
+  .contacts-page .tabs .tabs-content .tab#tab-2 .role-block .flex-block .item{
+    width: 218px;
+  }
+  .contacts-page .tabs .tabs-content .tab#tab-2 .role-block .flex-block .item .image-block{
+    height: 268px;
+  }
+  .contacts-page .tabs .tabs-content .tab#tab-2 .role-block .flex-block .item .name{
+    margin-top: 20px;
+  }
+  .contacts-page .tabs .tabs-content .tab#tab-2 .role-block .flex-block .item{
+    margin-bottom: 40px;
+  }
+  .contacts-page .tabs .tabs-content .tab#tab-2 .role-block .flex-block .item{
+    margin-top: 30px;
+  }
+  .contacts-page .tabs .tabs-content .tab#tab-2 .role-block .flex-block .item .name{
+    font-size: 14px;
+    line-height: 21px;
+  }
+}

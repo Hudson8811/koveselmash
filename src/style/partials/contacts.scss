@@ -1,4 +1,5 @@
 .contacts-page{
+  margin-top: 15px;
   .tabs{
     .tabs-titles{
       display: flex;
@@ -151,9 +152,6 @@
               padding: 45px 45px;
               background: #f6f8fb;
               box-sizing: border-box;
-              &:nth-child(3n-2){
-                padding-left: 0;
-              }
               .label{
                 color: #1c1c1c;
                 font-size: 15px;
