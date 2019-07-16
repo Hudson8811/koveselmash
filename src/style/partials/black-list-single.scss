@@ -317,7 +317,7 @@
 }
 
 
-@media screen and (max-width:720 px) {
+@media screen and (max-width:700px) {
     #breadcrumbs.breadcrumbs-black-list-single ul {
         padding-bottom: 20px;
     }
@@ -327,5 +327,86 @@
             font-size: 20px;
             line-height: 22px;
         }
+
+        .flex-block {
+            margin-top: 30px;
+
+
+            .left {
+                width: 100%;
+                margin-right: 0;
+
+                .flex-table-1 {
+                    margin-top: -2px;
+
+
+                    .inn,
+                    .summ,
+                    .date-delay {
+                        flex-basis: 100%;
+                        width: calc(100% - 22px - 23px);
+                        padding-left: 0;
+                        margin-left: 22px;
+                        margin-right: 23px;
+                    }
+
+                    .debtor {
+                        padding-left: 22px;
+                        flex-basis: 100%;
+                        width: 100%;
+                    }
+
+                    .flex-row:not(:first-child) {
+                        height: unset;
+                    }
+                }
+
+                .info {
+
+                    .item {
+                        &:first-child {
+                            margin-top: 25px;
+                        }
+
+                        .bold {
+                            display: block;
+                            margin-bottom: 8px;
+                        }
+
+                    }
+
+                    .details {
+                        p {}
+                    }
+                }
+
+                .flex-table-2 {
+
+                    margin-top: 33px;
+
+                    .file {
+                        width: 68.2926829268293%;
+
+                        flex-basis: 68.2926829268293%;
+                        padding-left: 15px;
+                    }
+
+                    .size {
+                        width: 31.7073170731707%;
+
+                        flex-basis: 31.7073170731707%;
+                        padding-left: 15px;
+                    }
+
+
+                }
+            }
+        }
+
+
+
+
+
     }
+
 }
