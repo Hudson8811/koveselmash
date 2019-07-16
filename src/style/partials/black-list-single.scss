@@ -183,8 +183,10 @@
         padding-bottom: 24px;
         padding-top: 25px;
     }
+
     .black-list-single-page {
         padding-bottom: 0;
+
         .page-title-line {
             p {
                 font-size: 23px;
@@ -195,7 +197,7 @@
             justify-content: flex-start;
 
             .back-btn {
-             display: none;
+                display: none;
 
             }
         }
@@ -250,8 +252,10 @@
                         &:first-child {
                             margin-top: 26px;
                         }
+
                         font-size: 14px;
                     }
+
                     .details {
                         p {
                             margin-top: 7px;
@@ -308,6 +312,20 @@
                 display: none;
             }
 
+        }
+    }
+}
+
+
+@media screen and (max-width:720 px) {
+    #breadcrumbs.breadcrumbs-black-list-single ul {
+        padding-bottom: 20px;
+    }
+
+    .black-list-single-page {
+        .page-title-line p {
+            font-size: 20px;
+            line-height: 22px;
         }
     }
 }
