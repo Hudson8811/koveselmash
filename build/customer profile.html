@@ -13,7 +13,8 @@
     
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-    <style></style>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -114,7 +115,7 @@
                                             <a href="">Местное сообщество</a>
                                         </div>
                                         <div class="menu-item parent">
-                                            <a href="">Качество пр��дукции</a>
+                                            <a href="">Качество продукции</a>
                                             <div class="inner-menu">
                                                 <div><a href="">Качество</a></div>
                                             </div>
@@ -881,293 +882,114 @@
             </div>
         </div>
     </header>
-    <div class="big-banner-page" style="background-image: url('images/jpg/history.jpg')">
+    <div class="big-banner-page" style="background-color: #445055">
         <div class="container">
-            <p>История завода</p>
+            <p>Чёрный список</p>
         </div>
     </div>
-    <nav id="breadcrumbs" class="container breadcrumbs-history">
+
+    <nav id="breadcrumbs" class="container breadcrumbs-black-list-single">
         <ul>
             <li><a href="">Главная</a></li>
-            <li><span>История завода</span></li>
+            <li><a href="">Чёрный список</a></li>
+            <li><span>ООО «УКРТРУБОПРОКАТ»</span></li>
+
         </ul>
-        <div class="drop-menu closed">
-            <div class="head">
-                <div class="burger" id="menuToggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="title">Компания</div>
-            </div>
-            <div class="bottom">
-                <div class="item"><a href="">О предприятии</a></div>
-                <div class="item"><a href="">Наша миссия</a></div>
-                <div class="item"><a href="">Производство</a></div>
-                <div class="item"><a class="active" href="">История завода</a></div>
-                <div class="item"><a href="">Фото видео галерея</a></div>
-                <div class="item"><a href="">Представители</a></div>
-                <div class="item"><a href="">Публичная информация</a></div>
-            </div>
-
-        </div>
-
     </nav>
 
-
-
-    <div class="page-wrapper history-page">
+    <div id="page-wrapper" class="page-wrapper black-list-single-page">
         <div class="container">
-            <div class="title-page">
-                История завода
+            <div class="page-title-line">
+                <p>ООО «УКРТРУБОПРОКАТ»</p>
+                <a href="" class="back-btn">
+                    <div class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="5" height="9" viewBox="0 0 5 9">
+                            <g>
+                                <g>
+                                    <path fill="#eaeff5"
+                                        d="M5.012-.027L1.742 4.5l3.27 4.528H3.245l-3.27-4.528 3.27-4.528z" />
+                                </g>
+                            </g>
+                        </svg></div>
+                    <p>Вернуться к списку</p>
+                </a>
             </div>
-        </div>
-    </div>
-
-
-
-    <div id="page-wrapper" class="page-wrapper history-page">
-        <div class="history-card">
-            <div class="container">
-
-
+            <div class="flex-block">
                 <div class="left">
-                    <div class="title">
-                        1966
-                    </div>
-                    <div class="text">
-                        На основании распоряжения Совета Министров СССР и постановления Совета Министров Украинской ССР
-                        на северо-западной окраине города было начато строительство завода, который в дальнейшем был
-                        назван ОАО „Ковельсельмаш". Он проектировался для изготовления машин по механизации
-                        кормопроизводства и уборки животноводческих ферм.
-                    </div>
-                </div>
-                <div class="right">
-                    <img src="images/jpg/history-1.jpg" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="history-card  pre-full-width change-order-320">
-            <div class="container">
 
-                <div class="left">
-                    <div id="comboimg-1">
-                        <img src="images/jpg/history-2-1.jpg" alt="">
-                        <div class="box">
-                            <img src="images/jpg/history-2-2.jpg" alt="">
+                    <div class="flex-table flex-table-cards-on-mobile flex-table-1">
+                        <div class="flex-row flex-table-head">
+                            <div class="debtor flex-table__cell">Должник</div>
+                            <div class="inn flex-table__cell">ИНН должника</div>
+                            <div class="summ flex-table__cell">Сумма<br>долга (грн)</div>
+                            <div class="date-delay flex-table__cell">Дата<br>просрочки</div>
+                        </div>
+                        <div href="" class="flex-row">
+                            <div class="debtor flex-table__cell flex-table__main-cell">ООО «УКРТРУБОПРОКАТ»</div>
+                            <div class="inn flex-table__cell">40611113</div>
+                            <div class="summ flex-table__cell">0.00</div>
+                            <div class="date-delay flex-table__cell">20.01.2019</div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="info">
+                        <div class="item"><span class="bold">Адрес должника: </span>Днепропетровская обл., г. Никополь,
+                            ул. Героев Чернобыля 102, кв. 0</div>
+                        <div class="item"><span class="bold">Подтверждающие документы: </span>письмо, приказ</div>
+                        <div class="item"><span class="bold">Контактное лицо: </span>Руководитель</div>
+                        <div class="item"><span class="bold">Телефон контактного лица: </span>0567677576</div>
+                        <div class="item details">
+                            <p class="title"><span class="bold">Детальное описание: </span></p>
+                            <p>
+                                Михайлов Олег Александрович, он же директор ООО УКРТРУБОПРОКАТ, работая <span
+                                    class="nw">в ООО УКРСТАРЛАЙН ИНКОРПОРЕЙТЕД</span> похитил базу данных контрагентов,
+                                наработки компании, рекламные площадки, уволившись стал представлятся контрагентам от
+                                имени <span
+                                class="nw">ООО "УКРСТАРЛАЙН ИНКОРПОРЕЙТЕД",</span> вводя клиентов в заблуждение, мошенническими
+                                действиями реализовывал продукцию, оскверняя имя предыдущего работодателя.
+                            </p>
+
                         </div>
                     </div>
-
-                </div>
-                <div class="right">
-                    <div class="title">
-                        1970
-                    </div>
-                    <div class="text">
-                        В течение июля были изготовлены первые 80 транспортеров ТВК-80А. Первую продукцию предприятия
-                        получили животноводческие хозяйства Волынской, Одесской, Днепропетровской, <span
-                            class="nw">Ивано-Франковской</span>
-                        областей.
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="history-card  history-card-full-width">
-            <div class="container">
-
-                <div class="left">
-                    <div class="title">
-                        1972
-                    </div>
-                    <div class="text">
-                        24 декабря 1972 года члены Государственной комиссии подписали акт о сдаче в эксплуатацию первой
-                        очереди завода, части административно бытового корпуса, многих инженерных коммуникаций.
-                    </div>
-                </div>
-                <div class="right">
-                    <div class="title">
-                        1974
-                    </div>
-                    <div class="text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis
-                        unde omnis iste natus error sit voluptatem
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="history-card">
-            <div class="container">
+                    <div class="flex-table flex-table-2">
+                        <div class="flex-row flex-table-head">
+                            <div class="file flex-table__cell">Прикрепленный файл</div>
+                            <div class="size flex-table__cell">Размер</div>
+                        </div>
+                        <a href="" class="flex-row">
+                            <div class="file flex-table__cell flex-table__main-cell">труба Евромет+.jpg</div>
+                            <div class="size flex-table__cell">828.76 кб</div>
+                        </a>
+                        <a href="" class="flex-row">
+                            <div class="file flex-table__cell flex-table__main-cell">труба Евромет+.jpg</div>
+                            <div class="size flex-table__cell">828.76 кб</div>
+                        </a>
+                        <a href="" class="flex-row">
+                            <div class="file flex-table__cell flex-table__main-cell">труба Евромет+.jpg</div>
+                            <div class="size flex-table__cell">828.76 кб</div>
+                        </a>
 
 
-                <div class="left">
-                    <div class="title">
-                        1975
-                    </div>
-                    <div class="text">
-                        В 1975 году основанное специализированное производство для изготовления разнотипных
-                        круглозвенных цепей диаметром от 3 до 26 мм, которое на данное время переросло в современное
-                        производство и является одним из наибольших отечественных предприятий в этой отрасли.
-                    </div>
-                </div>
-                <div class="right">
-                    <img src="images/jpg/history-3.jpg" id="pic-720-custom-size-1" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="history-card change-order-320">
-            <div class="container">
-
-
-                <div class="left">
-                    <img src="images/jpg/history-4.jpg" id="pic-720-custom-size-2" alt="">
-
-                </div>
-                <div class="right">
-                    <div class="title">
-                        1978
-                    </div>
-                    <div class="text">
-                        В 1978 году начало выпускать продукцию для сельскохозяйственного машиностроения,
-                        нефтеперерабатывающей, угледобывающей, металлургической промышленности <span class="nw">кузнечно-прессовое</span>
-                        предприятие, которое является филиалом
-                        „Ковельсельмаш".
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="history-card  pre-full-width">
-            <div class="container">
-
-
-                <div class="left">
-                    <div class="title">
-                        1980
-                    </div>
-                    <div class="text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis
-                        unde omnis iste natus error sit voluptatem accusantium doloremque
-                    </div>
-                </div>
-                <div class="right">
-                    <img src="images/jpg/history-5.jpg" id="pic-720-custom-size-3" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="history-card  history-card-full-width">
-            <div class="container">
-
-                <div class="left">
-                    <div class="title">
-                        1984
-                    </div>
-                    <div class="text">
-                        На "Ковельсельмаш", согласно приказа по Министерству машиностроения для животноводства и
-                        кормопроизводства №ВС-32/185, 05 июня 1984 года внедрена „Система управления промышленным
-                        предприятием". В ее состав входит подсистема КСУКП „Комплексная система управления качеством
-                        продукции" (49 стандартов предприятия).
-                    </div>
-                </div>
-                <div class="right">
-                    <div class="title">
-                        1991
-                    </div>
-                    <div class="text">
-                        В 1991 году состоялось изменение формы собственности предприятия из государственной на
-                        коллективную, на данное время государственной частицы собственности нет.
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="history-card">
-            <div class="container">
-
-
-                <div class="left">
-                    <div class="title">
-                        2000-2003
-                    </div>
-                    <div class="text">
-                        На протяжении 2000-2003 гг. на „Ковельсельмаш" было проведено обновление номенклатуры
-                        машиностроительной техники для АПК. Завод начал изготавливать машины для внесения твердых
-                        органических удобрений серии МТО, грабли-ворошилки, технику для посадки и уборки картофеля,
-                        конвейер скребковый навозоуборочный на кованой цепи КСГ-9.
-                    </div>
-                </div>
-                <div class="right">
-                    <div id="comboimg-2">
-                        <img src="images/jpg/history-6-1.jpg" alt="">
-                        <img src="images/jpg/history-6-2.jpg" alt="">
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <div class="history-card pre-full-width change-order-320">
-            <div class="container">
-
-
-                <div class="left">
-                    <img src="images/jpg/history-7.jpg" id="pic-720-custom-size-4" alt="">
-
-                </div>
-                <div class="right">
-                    <div class="title">
-                        2005-2006
-                    </div>
-                    <div class="text">
-                        В 2005-2006 гг. был расширен ассортимент машин для внесения твердых органических удобрений,
-                        начался серийный выпуск разбрасывателей серии РТД.
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="history-card  history-card-full-width">
-            <div class="container">
-
-                <div class="left">
-                    <div class="title">
-                        2019
-                    </div>
-                    <div class="text">
-                        Предприятие не стоит на месте, учитывая пожелания клиентов, постоянно модернизует свою технику,
-                        разрабатывает ее новые виды.
-                    </div>
-                    <div class="text">
-                        Сегодня в трех производственных корпусах площадью 166 тысяч квадратных метров размещены 9
-                        основных и 12 вспомогательных цехов.
-                    </div>
-                    <div class="text">
-                        На сегодняшний день ведется разработка машин для внесения жидких органических удобрений объемом
-                        12
-                        м3, машин для внесения минеральных удобрений объемом до 10 м3, тракторных прицепов
-                        грузоподемностью
-                        2 тонны.
                     </div>
 
                 </div>
                 <div class="right">
-
-                    <div class="text">
-                        «Ковельсельмаш» постоянно расширяет свои рынки сбыта, продукция завода хорошо знают не только в
-                        Украине, но и в России, Беларуси, Польше, Германии, Прибалтике.
-
+                    <div class="simple-menu">
+                        <div class="title">Обеспечение</div>
+                        <ul>
+                            <li><a href="">Список поставщиков</a></li>
+                            <li><a href="">Как стать поставщиком</a></li>
+                            <li><a href="">Порядок закупок</a></li>
+                            <li><a href="">Реестр закупок</a></li>
+                            <li><a href="">Тендеры</a></li>
+                            <li><a class="active" href="">Черный список</a></li>
+                            <li><a href="">Сделать заказ</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="bottom-map">
-            <img src="/images/png/history-map.png" alt="">
-        </div>
-
     </div>
 
     <footer>
@@ -1289,13 +1111,6 @@
         </div>
     </footer>
     <script src="js/main.js"></script>
-    <script>
-        var menu = $('.drop-menu');
-        $('#menuToggle').on('click', function () {
-            menu.toggleClass("active");
-            menu.toggleClass("closed");
-        });
-    </script>
 </body>
 
 </html>
