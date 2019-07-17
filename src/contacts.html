@@ -3,6 +3,8 @@
 
 <head>
     //= template/head.html
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body class="contacts-body">
@@ -33,6 +35,11 @@
                 <div class="tab-title" data-tab="2">География поставок</div>
                 <div class="tab-title" data-tab="3">Отзывы</div>
             </div>
+            <select class="select-style hide drop-titles">
+                <option selected value="1">Факты</option>
+                <option value="2">География поставок</option>
+                <option value="3">Отзывы</option>
+            </select>
         </div>
         <div class="tabs-content">
             <div class="tab active" id="tab-1">
@@ -75,82 +82,100 @@
                     <div class="table-contacts">
                         <div class="item">
                             <div class="label">Приемная</div>
-                            <div class="phones">
-                                <div class="div"><a href="tel:">+38 (03352) 6-10-02</a>,</div>
-                                <div class="div"><a href="tel:">+38 (03352) 6-10-52 </a></div>
-                            </div>
-                            <div class="email">
-                                <div><a href="mailto:reception@kovelselmash.com">reception@kovelselmash.com</a></div>
+                            <div class="text">
+                                <div class="phones">
+                                    <div class="div"><a href="tel:">+38 (03352) 6-10-02</a>,</div>
+                                    <div class="div"><a href="tel:">+38 (03352) 6-10-52 </a></div>
+                                </div>
+                                <div class="email">
+                                    <div><a href="mailto:reception@kovelselmash.com">reception@kovelselmash.com</a></div>
+                                </div>
                             </div>
                         </div>
                         <div class="item">
                             <div class="label">Директор маркетинга <br>и продаж</div>
-                            <div class="phones">
-                                <div class="div"><a href="tel:">+38 (03352) 6-10-64</a></div>
-                            </div>
-                            <div class="email">
-                                <div><a href="mailto:kovelselmash1966@gmail.com">kovelselmash1966@gmail.com</a></div>
+                            <div class="text">
+                                <div class="phones">
+                                    <div class="div"><a href="tel:">+38 (03352) 6-10-64</a></div>
+                                </div>
+                                <div class="email">
+                                    <div><a href="mailto:kovelselmash1966@gmail.com">kovelselmash1966@gmail.com</a></div>
+                                </div>
                             </div>
                         </div>
                         <div class="item">
                             <div class="label">Главный инженер</div>
-                            <div class="phones">
-                                <div class="div"><a href="tel:">+38 (03352) 6-10-25</a></div>
-                            </div>
-                            <div class="email">
-                                <div><a href="mailto:mykhzkn@kovelselmash.com">mykhzkn@kovelselmash.com</a></div>
+                            <div class="text">
+                                <div class="phones">
+                                    <div class="div"><a href="tel:">+38 (03352) 6-10-25</a></div>
+                                </div>
+                                <div class="email">
+                                    <div><a href="mailto:mykhzkn@kovelselmash.com">mykhzkn@kovelselmash.com</a></div>
+                                </div>
                             </div>
                         </div>
                         <div class="item">
                             <div class="label">Генеральный директор</div>
-                            <div class="phones">
-                                <div class="div"><a href="tel:">+38 (03352) 6-10-01</a></div>
+                            <div class="text">
+                                <div class="phones">
+                                    <div class="div"><a href="tel:">+38 (03352) 6-10-01</a></div>
+                                </div>
                             </div>
                         </div>
                         <div class="item">
                             <div class="label">Отдел реализации</div>
-                            <div class="phones">
-                                <div class="div"><a href="tel:">+38 (03352) 6-10-41</a>,</div>
-                                <div class="div"><a href="tel:">+38 (03352) 6-10-70</a>,</div>
-                                <div class="div"><a href="tel:">+38 (03352) 6-10-31</a></div>
-                            </div>
-                            <div class="email">
-                                <div><a href="mailto:kovelsilmash.zbut@gmail.com">kovelsilmash.zbut@gmail.com</a></div>
+                            <div class="text">
+                                <div class="phones">
+                                    <div class="div"><a href="tel:">+38 (03352) 6-10-41</a>,</div>
+                                    <div class="div"><a href="tel:">+38 (03352) 6-10-70</a>,</div>
+                                    <div class="div"><a href="tel:">+38 (03352) 6-10-31</a></div>
+                                </div>
+                                <div class="email">
+                                    <div><a href="mailto:kovelsilmash.zbut@gmail.com">kovelsilmash.zbut@gmail.com</a></div>
+                                </div>
                             </div>
                         </div>
                         <div class="item">
                             <div class="label">Отдел внешнеэкономических <br>связей</div>
-                            <div class="phones">
-                                <div class="div"><a href="tel:">+38 (03352) 6-10-30</a>,</div>
-                                <div class="div"><a href="tel:">+38 (03352) 6-10-64</a>,</div>
-                                <div class="div"><a href="tel:">+38 (03352) 6-10-82</a></div>
+                            <div class="text">
+                                <div class="phones">
+                                    <div class="div"><a href="tel:">+38 (03352) 6-10-30</a>,</div>
+                                    <div class="div"><a href="tel:">+38 (03352) 6-10-64</a>,</div>
+                                    <div class="div"><a href="tel:">+38 (03352) 6-10-82</a></div>
+                                </div>
                             </div>
                         </div>
                         <div class="item">
                             <div class="label">Отдел маркетинга</div>
-                            <div class="phones">
-                                <div class="div"><a href="tel:">+38 (03352) 6-10-94</a></div>
-                            </div>
-                            <div class="email">
-                                <div><a href="mailto:kovelsilmash.zbut@gmail.com">kovelsilmash.zbut@gmail.com</a></div>
-                                <div><a href="mailto:post@kovelselmash.com">post@kovelselmash.com</a></div>
+                            <div class="text">
+                                <div class="phones">
+                                    <div class="div"><a href="tel:">+38 (03352) 6-10-94</a></div>
+                                </div>
+                                <div class="email">
+                                    <div><a href="mailto:kovelsilmash.zbut@gmail.com">kovelsilmash.zbut@gmail.com</a></div>
+                                    <div><a href="mailto:post@kovelselmash.com">post@kovelselmash.com</a></div>
+                                </div>
                             </div>
                         </div>
                         <div class="item">
                             <div class="label">Отдел снабжения</div>
-                            <div class="phones">
-                                <div class="div"><a href="tel:">+38 (03352) 6-10-54</a>,</div>
-                                <div class="div"><a href="tel:">+38 (03352) 6-10-51</a></div>
-                            </div>
-                            <div class="email">
-                                <div><a href="mailto:snab@kovelselmash.com">snab@kovelselmash.com</a></div>
-                                <div><a href="mailto:lagoda@kovelselmash.com">lagoda@kovelselmash.com</a></div>
+                            <div class="text">
+                                <div class="phones">
+                                    <div class="div"><a href="tel:">+38 (03352) 6-10-54</a>,</div>
+                                    <div class="div"><a href="tel:">+38 (03352) 6-10-51</a></div>
+                                </div>
+                                <div class="email">
+                                    <div><a href="mailto:snab@kovelselmash.com">snab@kovelselmash.com</a></div>
+                                    <div><a href="mailto:lagoda@kovelselmash.com">lagoda@kovelselmash.com</a></div>
+                                </div>
                             </div>
                         </div>
                         <div class="item">
                             <div class="label">Президент</div>
-                            <div class="phones">
-                                <div class="div"><a href="tel:">+38 (03352) 6-10-00</a></div>
+                            <div class="text">
+                                <div class="phones">
+                                    <div class="div"><a href="tel:">+38 (03352) 6-10-00</a></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -160,51 +185,65 @@
                 <div class="container">
                     <div class="role-block">
                         <div class="title">Руководство</div>
-                        <div class="flex-block">
-                            <div class="item">
-                                <div class="image-block"><img src="images/jpg/staf-1.jpg" alt=""></div>
-                                <div class="name">Заикин Николай Михайлович</div>
-                                <div class="role">Президент</div>
+                        <div class="swiper-container">
+                            <div class="flex-block swiper-wrapper">
+                                <div class="item swiper-slide">
+                                    <div class="image-block"><img src="images/jpg/staf-1.jpg" alt=""></div>
+                                    <div class="name">Заикин Николай Михайлович</div>
+                                    <div class="role">Президент</div>
+                                </div>
+                                <div class="item swiper-slide">
+                                    <div class="image-block"><img src="images/jpg/staf-2.jpg" alt=""></div>
+                                    <div class="name">Жиров Ефим Михайлович</div>
+                                    <div class="role">Генеральный директор</div>
+                                </div>
                             </div>
-                            <div class="item">
-                                <div class="image-block"><img src="images/jpg/staf-2.jpg" alt=""></div>
-                                <div class="name">Жиров Ефим Михайлович</div>
-                                <div class="role">Генеральный директор</div>
+                            <div class="swipper-control hide">
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper-button-next"></div>
                             </div>
                         </div>
                     </div>
                     <div class="role-block">
                         <div class="title">Менеджемент</div>
-                        <div class="flex-block">
-                            <div class="item">
-                                <div class="image-block"><img src="images/jpg/staf-1.jpg" alt=""></div>
-                                <div class="name">Заикин Николай Михайлович</div>
-                                <div class="role">Менеджер отдела маркетинга</div>
+                        <div class="swiper-container">
+                            <div class="flex-block swiper-wrapper">
+                                <div class="item swiper-slide">
+                                    <div class="image-block"><img src="images/jpg/staf-1.jpg" alt=""></div>
+                                    <div class="name">Заикин Николай Михайлович</div>
+                                    <div class="role">Менеджер отдела маркетинга</div>
+                                </div>
+                                <div class="item swiper-slide">
+                                    <div class="image-block"><img src="images/jpg/staf-2.jpg" alt=""></div>
+                                    <div class="name">Жиров Ефим Михайлович</div>
+                                    <div class="role">Менеджер отдела продаж</div>
+                                </div>
+                                <div class="item swiper-slide">
+                                    <div class="image-block"><img src="images/jpg/staf-3.jpg" alt=""></div>
+                                    <div class="name">Мешков Анатолий Николаевич</div>
+                                    <div class="role">Менеджер отдела снабжения</div>
+                                </div>
+                                <div class="item swiper-slide">
+                                    <div class="image-block"><img src="images/jpg/staf-4.jpg" alt=""></div>
+                                    <div class="name">Ющенко Анатолий Николаевич</div>
+                                    <div class="role">Главный инженер</div>
+                                </div>
+                                <div class="item swiper-slide">
+                                    <div class="image-block"><img src="images/jpg/staf-3.jpg" alt=""></div>
+                                    <div class="name">Мешков Анатолий Николаевич</div>
+                                    <div class="role">Менеджер отдела снабжения</div>
+                                </div>
+                                <div class="item swiper-slide">
+                                    <div class="image-block"><img src="images/jpg/staf-4.jpg" alt=""></div>
+                                    <div class="name">Ющенко Анатолий Николаевич</div>
+                                    <div class="role">Главный инженер</div>
+                                </div>
                             </div>
-                            <div class="item">
-                                <div class="image-block"><img src="images/jpg/staf-2.jpg" alt=""></div>
-                                <div class="name">Жиров Ефим Михайлович</div>
-                                <div class="role">Менеджер отдела продаж</div>
-                            </div>
-                            <div class="item">
-                                <div class="image-block"><img src="images/jpg/staf-3.jpg" alt=""></div>
-                                <div class="name">Мешков Анатолий Николаевич</div>
-                                <div class="role">Менеджер отдела снабжения</div>
-                            </div>
-                            <div class="item">
-                                <div class="image-block"><img src="images/jpg/staf-4.jpg" alt=""></div>
-                                <div class="name">Ющенко Анатолий Николаевич</div>
-                                <div class="role">Главный инженер</div>
-                            </div>
-                            <div class="item">
-                                <div class="image-block"><img src="images/jpg/staf-3.jpg" alt=""></div>
-                                <div class="name">Мешков Анатолий Николаевич</div>
-                                <div class="role">Менеджер отдела снабжения</div>
-                            </div>
-                            <div class="item">
-                                <div class="image-block"><img src="images/jpg/staf-4.jpg" alt=""></div>
-                                <div class="name">Ющенко Анатолий Николаевич</div>
-                                <div class="role">Главный инженер</div>
+                            <div class="swipper-control hide">
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper-button-next"></div>
                             </div>
                         </div>
                     </div>
@@ -220,23 +259,35 @@
                             <option value="">Претензия</option>
                         </select>
                         <div class="row">
-                            <input type="text" placeholder="Имя*" required>
-                            <input type="text" placeholder="Телефон*" required>
+                            <input type="text" placeholder="Имя*" required class="inputbox">
+                            <input type="text" placeholder="Телефон*" required class="inputbox">
                         </div>
                         <div class="row">
-                            <input type="email" placeholder="Email*" required>
-                            <input type="text" placeholder="Организация" >
+                            <input type="email" placeholder="Email*" required class="inputbox">
+                            <input type="text" placeholder="Организация"  class="inputbox">
                         </div>
-                        <input type="text" placeholder="Адрес">
-                        <textarea placeholder="Примечание"></textarea>
-                        <input type="file" id="file-input" class="hide">
-                        <label for="file-input" class="file-upload">
-                            <span class="icon"><img src="images/png/file-upload.png" alt=""></span>
-                            <span class="text">Прикрепить документ или фотографию</span>
-                            <span class="plus-btn"></span>
+                        <input type="text" placeholder="Адрес" class="inputbox">
+                        <textarea placeholder="Примечание" class="inputbox"></textarea>
+
+                        <div class="myCustom__file-upload-choosed">
+                            <div class="myCustom__file-upload-close-btn">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.2847 15.1421L1.14258 1" stroke="#573BFF" />
+                                    <path d="M1.00044 15.1421L15.1426 1" stroke="#573BFF" />
+                                </svg>
+                            </div>
+                        </div>
+                        <label class="myCustom__file-upload">
+                            <img src="images/png/file-upload.png" alt="">
+                            <div class="fileField">Загрузить чертежи, архивы, файлы</div>
+                            <input type="file" class="myCustom__file">
                         </label>
+
                         <div class="btn-row">
-                            <div class="captcha-block"><img src="images/png/captcha.png" alt=""></div>
+                            <div class="captcha-block">
+                                <div class="g-recaptcha" data-sitekey="6LfLc60UAAAAAMqxoAhA-65GSgyN5BcFwQbJkXbQ" ></div>
+                            </div>
                             <div class="btn btn-green"><span>ОТПРАВИТЬ</span></div>
                         </div>
                     </form>

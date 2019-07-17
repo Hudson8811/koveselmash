@@ -50,7 +50,6 @@
   .contacts-page .tabs .tabs-content .tab#tab-1 .table-contacts .item:nth-child(odd) {
     padding-left: 0;
   }
-  .contacts-page .tabs .tabs-content .tab#tab-1 .table-contacts .item .email a,
   .contacts-page .tabs .tabs-content .tab#tab-1 .table-contacts .item .phones a,
   .contacts-page .tabs .tabs-content .tab#tab-1 .table-contacts .item .label{
     font-size: 14px;
@@ -65,21 +64,208 @@
   }
   .contacts-page .tabs .tabs-content .tab#tab-2 .role-block .flex-block .item{
     width: 218px;
+    margin-bottom: 30px;
   }
   .contacts-page .tabs .tabs-content .tab#tab-2 .role-block .flex-block .item .image-block{
     height: 268px;
   }
   .contacts-page .tabs .tabs-content .tab#tab-2 .role-block .flex-block .item .name{
     margin-top: 20px;
-  }
-  .contacts-page .tabs .tabs-content .tab#tab-2 .role-block .flex-block .item{
-    margin-bottom: 40px;
-  }
-  .contacts-page .tabs .tabs-content .tab#tab-2 .role-block .flex-block .item{
-    margin-top: 30px;
-  }
-  .contacts-page .tabs .tabs-content .tab#tab-2 .role-block .flex-block .item .name{
     font-size: 14px;
     line-height: 21px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .contacts-page .tabs .tabs-content .tab {
+    padding: 60px 0;
+  }
+  .contacts-page .tabs .tabs-content .tab#tab-1 .flex-block-contacts {
+    display: block;
+  }
+  .contacts-page .tabs .tabs-content .tab#tab-1 .flex-block-contacts .item {
+    min-height: 0;
+  }
+  .contacts-page .tabs .tabs-content .tab#tab-1 .flex-block-contacts .left-block {
+    width: 100%;
+  }
+  .contacts-page .tabs .tabs-content .tab#tab-1 .flex-block-contacts .right-block {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+
+  .contacts-page .tabs .tabs-content .tab#tab-1 .flex-block-map {
+    display: block;
+    margin-top: 40px;
+  }
+  .contacts-page .tabs .tabs-content .tab#tab-1 .flex-block-map .map {
+    width: 100%;
+    height: 301px;
+  }
+  .contacts-page .tabs .tabs-content .tab#tab-1 .flex-block-map .image {
+    width: 100%;
+  }
+
+
+  .contacts-page .tabs .tabs-content .tab#tab-1 .table-contacts {
+    display: block;
+    margin-top: 45px;
+  }
+  .contacts-page .tabs .tabs-content .tab#tab-1 .table-contacts::after {
+    display: none;
+  }
+
+  .contacts-page .tabs .tabs-content .tab#tab-1 .table-contacts .item {
+    padding: 0;
+
+    .label {
+      width: 100%;
+      height: 69px;
+      border: 1px solid #dee2e7;
+      background-color: #ffffff;
+      display: flex;
+      align-items: center;
+      padding: 10px 60px 10px 30px;
+      cursor: pointer;
+      position: relative;
+      box-sizing: border-box;
+
+      br {
+        display: none;
+      }
+
+      &::after {
+        display: block;
+        content: "";
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        right: 35px;
+        top: calc(50% - 5px);
+        background: url("../images/svg/arr-lang.svg") center center no-repeat;
+      }
+    }
+
+    .text {
+      display: none;
+      padding: 30px 35px;
+      box-sizing: border-box;
+      border: 1px solid #dee2e7;
+      border-top: 0;
+    }
+
+    .phones {
+      margin-top: 0;
+    }
+
+    .email {
+      margin-top: 15px;
+    }
+
+    + .item {
+      .label {
+        border-top: 0;
+      }
+    }
+
+    &.active {
+      .label {
+        &::after {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+
+  .contacts-page .tabs .tabs-content .tab#tab-2 .role-block .title {
+    font-size: 20px;
+  }
+
+  .contacts-page .tabs .tabs-content .tab#tab-2 .role-block .flex-block .item {
+    margin: 0;
+    text-align: center;
+    width: auto;
+
+    .image-block {
+      width: 220px;
+      margin: 0 auto;
+    }
+  }
+  .contacts-page .tabs .tabs-content .tab#tab-2 .role-block{
+    .swipper-control {
+      display: flex;
+      margin: 33px auto 0;
+      .swiper-pagination{
+        justify-content: center;
+        font-weight: 500;
+        .swiper-pagination-total{
+          color: #1c1c1c;
+        }
+      }
+    }
+  }
+
+
+
+  .contacts-page .tabs .tabs-content .tab#tab-3 .title{
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .contacts-page .tabs .tabs-content .tab#tab-3 form>*+*{
+    margin-top: 20px;
+  }
+  .contacts-page .tabs .tabs-content .tab#tab-3 form .row{
+    display: block;
+    input{
+      width: 100%;
+      +input{
+        margin-top: 20px;
+      }
+    }
+  }
+  .contacts-page .tabs .tabs-content .tab#tab-3 form textarea{
+    height: 202px;
+  }
+  .contacts-page .tabs .tabs-content .tab#tab-3 form .btn-row{
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+    .btn{
+      margin-top: 30px;
+    }
+  }
+
+  .contacts-page .tabs .tabs-content .tab#tab-2 .role-block .flex-block{
+    margin-left: 0;
+    flex-wrap: nowrap;
+  }
+
+  .contacts-page .tabs{
+    .tabs-titles{
+      display: none;
+    }
+    .drop-titles{
+      display: block;
+      height: 56px;
+      border-radius: 0;
+      float: none;
+      line-height: 53px;
+      font-weight: 500;
+      font-size: 14px;
+      border: 1px solid #dee2e7 !important;
+      border-bottom: none !important;
+      top: 1px;
+      background-color: #f6f8fb;
+      .list{
+        padding: 10px 0;
+      }
+      .option{
+        font-weight: 500;
+        &.selected{
+          display: none;
+        }
+      }
+    }
   }
 }

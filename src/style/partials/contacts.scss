@@ -302,40 +302,6 @@
                 width: 47.7%;
               }
             }
-            .file-upload{
-              height: 53px;
-              border: 1px solid #dee2e7;
-              background: #FFFFFF;
-              box-sizing: border-box;
-              position: relative;
-              display: flex;
-              align-items: center;
-              cursor: pointer;
-              .icon{
-                height: 100%;
-                width: 70px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                img{
-                  display: block;
-                }
-              }
-              .text{
-                color: #848e99;
-                font-size: 15px;
-                font-weight: 400;
-              }
-              .plus-btn{
-                width: 59px;
-                border-left: 1px solid #dee2e7;
-                height: 100%;
-                background: url("../images/svg/plus-add.svg") center center no-repeat;
-                top: 0;
-                right: 0;
-                position: absolute;
-              }
-            }
 
             .btn-row{
               margin-top: 56px;
