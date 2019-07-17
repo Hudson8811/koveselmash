@@ -6,7 +6,7 @@
 
 </head>
 
-<body class="contacts-body">
+<body>
 //= template/header.html
 
 
@@ -20,26 +20,59 @@
 
 <div id="page-wrapper" class="page-wrapper gallery-page">
 
-    <div class="page-title">Фото видео галерея</div>
+    <div class="container">
+
+        <div class="page-title">Фото видео галерея</div>
 
 
-    <div class="gallery-slider">
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="image-block"><img src="images/jpg/gallery/w1.jpg" alt=""></div>
-                    <div class="date">11 ноября 2018</div>
-                    <div class="label">Территория завода</div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="image-block"><img src="images/jpg/gallery/w2.jpg" alt=""></div>
-                    <div class="date">11 ноября 2018</div>
-                    <div class="label">Территория завода</div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="image-block"><img src="images/jpg/gallery/w3.jpg" alt=""></div>
-                    <div class="date">11 ноября 2018</div>
-                    <div class="label">Территория завода</div>
+        <div class="gallery-slider">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide gallery-item">
+                        <a href="" class="image-block">
+                            <img src="images/jpg/gallery/w1.jpg" alt="">
+                            <span class="counts">
+                                <span class="images-count"><span>30</span></span>
+                            </span>
+                        </a>
+                        <div class="date">11 ноября 2018</div>
+                        <a href="" class="label">Территория завода</a>
+                    </div>
+                    <div class="swiper-slide gallery-item">
+                        <a href="" class="image-block">
+                            <img src="images/jpg/gallery/w2.jpg" alt="">
+                            <span class="counts">
+                                <span class="images-count"><span>10</span></span>
+                            </span>
+                        </a>
+                        <div class="date">9 сентября 2018</div>
+                        <a href="" class="label">Цех по производству цепей</a>
+                    </div>
+                    <div class="swiper-slide gallery-item">
+                        <a href="" class="image-block">
+                            <img src="images/jpg/gallery/w3.jpg" alt="">
+                            <span class="counts">
+                                <span class="images-count"><span>120</span></span>
+                            </span>
+                        </a>
+                        <div class="date">2 июля 2018</div>
+                        <a href="" class="label">Современное оборудование</a>
+                    </div>
+                    <div class="swiper-slide gallery-item">
+                        <a href="" class="image-block"><img src="images/jpg/gallery/w1.jpg" alt=""></a>
+                        <div class="date">11 ноября 2018</div>
+                        <a href="" class="label">Территория завода</a>
+                    </div>
+                    <div class="swiper-slide gallery-item">
+                        <a href="" class="image-block"><img src="images/jpg/gallery/w2.jpg" alt=""></a>
+                        <div class="date">9 сентября 2018</div>
+                        <a href="" class="label">Цех по производству цепей</a>
+                    </div>
+                    <div class="swiper-slide gallery-item">
+                        <a href="" class="image-block"><img src="images/jpg/gallery/w3.jpg" alt=""></a>
+                        <div class="date">2 июля 2018</div>
+                        <a href="" class="label">Современное оборудование</a>
+                    </div>
                 </div>
             </div>
             <div class="swipper-control">
@@ -48,9 +81,131 @@
                 <div class="swiper-button-next"></div>
             </div>
         </div>
+
+
+        <div class="sep-line"></div>
+
+        <select class="select-style hide drop-type-filter">
+            <option selected value="1">Все</option>
+            <option value="2">Фото</option>
+            <option value="3">Видео</option>
+        </select>
+
+        <div class="filter-row">
+            <div class="type-filter">
+                <a href="#" class="active">Все</a>
+                <a href="#">Фото</a>
+                <a href="#">Видео</a>
+            </div>
+            <div class="years-filter makeMeScrollable">
+                <a href="#" class="active">2019г</a>
+                <a href="#">2018г</a>
+                <a href="#">2017г</a>
+                <a href="#">2016г</a>
+                <a href="#">2015г</a>
+                <a href="#">2014г</a>
+            </div>
+        </div>
+
+
+        <div class="gallery-grid">
+            <div class="item gallery-item">
+                <a href="" class="image-block">
+                    <img src="images/jpg/gallery/g1.jpg" alt="">
+                    <span class="counts">
+                        <span class="images-count"><span>17</span></span>
+                    </span>
+                </a>
+                <div class="date">4 мая 2019</div>
+                <a href="" class="label">ОАО “Ковельсельмаш”. Основные производства</a>
+            </div>
+            <div class="item gallery-item">
+                <a href="" class="image-block">
+                    <img src="images/jpg/gallery/g2.jpg" alt="">
+                    <span class="counts">
+                        <span class="images-count"><span>20</span></span>
+                    </span>
+                </a>
+                <div class="date">30 марта 2019</div>
+                <a href="" class="label">Конференция по реинжинирингу</a>
+            </div>
+            <div class="item gallery-item">
+                <a href="" class="image-block">
+                    <img src="images/jpg/gallery/g3.jpg" alt="">
+                    <span class="counts">
+                        <span class="video-count"></span>
+                    </span>
+                </a>
+                <div class="date">3 февраля 2019</div>
+                <a href="" class="label">Экскурсия по “Ковельсельмаш”</a>
+            </div>
+            <div class="item gallery-item">
+                <a href="" class="image-block">
+                    <img src="images/jpg/gallery/g4.jpg" alt="">
+                    <span class="counts">
+                        <span class="images-count"><span>30</span></span>
+                    </span>
+                </a>
+                <div class="date">11 ноября 2018</div>
+                <a href="" class="label">Международная промышленная выставка «Металл-Экспо 2018»</a>
+            </div>
+            <div class="item gallery-item">
+                <a href="" class="image-block">
+                    <img src="images/jpg/gallery/g5.jpg" alt="">
+                    <span class="counts">
+                        <span class="images-count"><span>10</span></span>
+                    </span>
+                </a>
+                <div class="date">9 сентября 2018</div>
+                <a href="" class="label">Церемония награждения победителей конкурса "Герой безопасности Ковельсельмаш". </a>
+            </div>
+            <div class="item gallery-item">
+                <a href="" class="image-block">
+                    <img src="images/jpg/gallery/g6.jpg" alt="">
+                    <span class="counts">
+                        <span class="images-count"><span>120</span></span>
+                    </span>
+                </a>
+                <div class="date">2 июля 2018</div>
+                <a href="" class="label">Конференция подрядчиков</a>
+            </div>
+            <div class="item gallery-item">
+                <a href="" class="image-block">
+                    <img src="images/jpg/gallery/g7.jpg" alt="">
+                    <span class="counts">
+                        <span class="images-count"><span>70</span></span>
+                    </span>
+                </a>
+                <div class="date">11 июня 2018</div>
+                <a href="" class="label">Ярмарка вакансий</a>
+            </div>
+            <div class="item gallery-item">
+                <a href="" class="image-block">
+                    <img src="images/jpg/gallery/g8.jpg" alt="">
+                    <span class="counts">
+                        <span class="images-count"><span>70</span></span>
+                        <span class="video-count"></span>
+                    </span>
+                </a>
+                <div class="date">5 июня 2018</div>
+                <a href="" class="label">Цех по производству поковок</a>
+            </div>
+            <div class="item gallery-item">
+                <a href="" class="image-block">
+                    <img src="images/jpg/gallery/g9.jpg" alt="">
+                    <span class="counts">
+                        <span class="images-count"><span>3</span></span>
+                    </span>
+                </a>
+                <div class="date">19 преля 2018</div>
+                <a href="" class="label">Международная выставка металлообрабатывающего оборудования «EMO Hannover 2019»  в Ганновере</a>
+            </div>
+        </div>
+
+
+        //= template/pagination.html
+
     </div>
-
-
 
 </div>
 

@@ -8,6 +8,10 @@
 //= libs/jquery.accordion.js
 //= libs/jquery.scrollbar.min.js
 //= libs/rangeslider.min.js
+//= libs/jquery-ui-1.10.3.custom.min.js
+//= libs/jquery.kinetic.min.js
+//= libs/jquery.mousewheel.min.js
+//= libs/jquery.smoothdivscroll-1.3-min.js
 
 /* my scripts */
 
@@ -21,3 +25,4 @@
 //= partials/contacts.js
 //= partials/black-list.js
 //= partials/customer-profile.js
+//= partials/gallery.js
