@@ -298,12 +298,6 @@
     max-width: 880px;
     width: 100%;
     margin: 0 auto;
-    background-color: #f6f8fb;
-
-    form {
-
-      padding: 85px 85px;
-    }
 
     input {
       height: 53px;
@@ -320,6 +314,7 @@
     }
 
     .flex-cols {
+      background-color: #f6f8fb;
       display: flex;
       justify-content: space-between;
 
