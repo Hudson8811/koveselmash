@@ -16,7 +16,7 @@
 //= partials/catalog.js
 //= partials/news-events.js
 //= partials/product-cart.js
-//= partials/service-page.js
+//= partials/service-page_and_CZL.js
 //= partials/make-a-request.js
 //= partials/contacts.js
 //= partials/black-list.js
