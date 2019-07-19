@@ -1237,3 +1237,12 @@ var gallerySwiper = new Swiper ('.gallery-slider .swiper-container', {
         },
     }
 });
+
+
+var imageSwiper = new Swiper('.gallery-single-page .image-slider .swiper-container', {
+    slidesPerView: 1,
+    navigation: {
+        nextEl: '.gallery-single-page  .image-slider .swiper-button-next',
+        prevEl: '.gallery-single-page  .image-slider .swiper-button-prev',
+    }
+});

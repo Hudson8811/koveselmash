@@ -1506,3 +1506,9 @@ footer{
 }
 
 
+.fancybox-bg {
+	background: #445055;
+}
+.fancybox-is-open .fancybox-bg {
+	opacity: .5;
+}
