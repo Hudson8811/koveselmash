@@ -600,7 +600,7 @@ input {
                 align-items: center;
 
                 #menuToggle.burger {
-                    left: 70px;
+                    left: calc(50% - 95px);
 
                     span {}
                 }
@@ -664,7 +664,7 @@ input {
                     background-color: #34a963;
 
                     #menuToggle.burger {
-                        left: 70px;
+                        left: calc(50% - 95px);
 
                         span {
                             background: #fff;
