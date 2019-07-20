@@ -1237,6 +1237,7 @@ var gallerySwiper = new Swiper ('.gallery-slider .swiper-container', {
         },
     }
 });
+<<<<<<< HEAD
 $(document).ready(function () {
     if (document.getElementById("page-wrapper").classList.contains("shopping-cart-page")) {
 
@@ -1403,5 +1404,14 @@ $(document).ready(function () {
 
 
 
+=======
+
+
+var imageSwiper = new Swiper('.gallery-single-page .image-slider .swiper-container', {
+    slidesPerView: 1,
+    navigation: {
+        nextEl: '.gallery-single-page  .image-slider .swiper-button-next',
+        prevEl: '.gallery-single-page  .image-slider .swiper-button-prev',
+>>>>>>> d9390b51417c7897e033661701274b5a8bf24487
     }
 });

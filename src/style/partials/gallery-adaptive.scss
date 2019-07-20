@@ -53,6 +53,54 @@
     }
 
   }
+
+  .gallery-single-page{
+    .flex-block-title{
+      .left-block{
+        width: 100%;
+      }
+      .right-block{
+        display: none;
+      }
+    }
+    .flex-block{
+      .left-block{
+        width: 100%;
+      }
+      .right-block{
+        display: none;
+      }
+    }
+  }
+
+  .news-events-page.gallery-single-page .flex-block .left-block .bottom-links {
+    padding-top: 27px;
+    margin-top: 80px;
+  }
+  .news-events-page.gallery-single-page .flex-block .left-block .bottom-links .links-row {
+    width: 377px;
+  }
+  .news-events-page.gallery-single-page .page-title {
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 33px;
+    margin-top: 4px;
+  }
+  .news-events-page.gallery-single-page .flex-block-title .left-block .date {
+    margin-top: 1px;
+  }
+  .news-events-page.gallery-single-page .flex-block .left-block .text-style {
+    margin-top: 33px;
+  }
+  .news-events-page.gallery-single-page .flex-block .left-block .bottom-links .share-block .soc-link {
+    margin-left: 15px;
+  }
+  .gallery-single-page .image-slider .image-block img{
+    height: 480px;
+  }
+  .news-events-page.gallery-single-page .links-row a{
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -125,5 +173,49 @@
         }
       }
     }
+  }
+
+  .gallery-single-page .image-slider .image-block img{
+    height: 267px;
+  }
+  .page-wrapper.news-events-page.gallery-single-page .page-title {
+    font-size: 20px;
+    margin-left: -2px;
+    line-height: 29px;
+  }
+  .page-wrapper.news-events-page.gallery-single-page .flex-block-title {
+    margin-bottom: 21px;
+  }
+  .news-events-page.gallery-single-page .flex-block .left-block .text-style {
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+  .gallery-single-page  .gallery-single-grid{
+    @include flex-row(20px, 20px);
+    .item{
+      @include flex-block(150px, 20px, 20px, true, 3);
+      display: block;
+      img{
+        width: 100%;
+      }
+    }
+  }
+
+  .page-wrapper.news-events-page.gallery-single-page .flex-block .left-block .bottom-links {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 22px;
+    padding-top: 20px;
+  }
+  .news-events-page.gallery-single-page .flex-block .left-block .bottom-links {
+    margin-top: 49px;
+    padding-top: 26px;
+  }
+  .news-events-page.gallery-single-page .flex-block .left-block .bottom-links .links-row {
+    order: -1;
+    width: 100%;
+  }
+  .page-wrapper.news-events-page.gallery-single-page .flex-block .left-block .bottom-links .share-block {
+    margin-top: 36px;
   }
 }
