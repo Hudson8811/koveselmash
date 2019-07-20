@@ -13,6 +13,8 @@
     
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -881,154 +883,49 @@
         </div>
     </header>
 
-    <nav id="breadcrumbs" class="container breadcrums-shopping-cart-page">
+    <nav id="breadcrumbs" class="container breadcrumbs-black-list-single">
         <ul>
             <li><a href="">Главная</a></li>
-            <li><span>Корзина</span></li>
+            <li><span>Результаты поиска</span></li>
+
         </ul>
-        <div class="shopping-cart-wrap">
-            <a href="" class="shopping-cart">
-                <div class="num-of-items">
-                    5
-                </div>
-            </a>
-        </div>
     </nav>
 
-
-    <div id="page-wrapper" class="page-wrapper shopping-cart-page">
-
+    <div id="page-wrapper" class="page-wrapper search-results-page">
         <div class="container">
-
-            <div class="title-page">
-                Корзина
+            <div class="page-title">
+                Результаты поиска
             </div>
-
-            <div class="cart-table">
-                <div class="headline">
-                    <div class="field name">Название товара</div>
-                    <div class="field art">Артикул</div>
-                    <div class="field count">Количество</div>
-                    <div class="field remove"></div>
-                </div>
-                <div class="row">
-                    <div class="field name">
-                        <img src="images/jpg/shopping-cart-test.jpg" alt="">
-                        <div class="text">
-                            <div class="title">Цепь 5х18,5 мм</div>
-                            <div class="description">Цепи круглозвенные короткозвенные</div>
-                        </div>
+            <div class="search-resuts">
+                <div class="item">
+                    <div class="breadcrumbs">
+                        <ul>
+                            <li><a href="">Главная</a></li>
+                            <li><a href="">Каталог</a></li>
+                            <li><a href="">Цепи</a></li>
+                            <li><span>Результаты поиска</span></li>
+                        </ul>
                     </div>
-                    <div class="field art">400035</div>
-                    <div class="field count">
-                        <div class="plus-minus">
-                            <div class="minus_with_arg"><img src="images/svg/i-minus.svg" alt=""></div>
-                            <input type="text" data-ed_type="кг" value="1 кг">
-                            <div class="plus_with_arg"><img src="images/svg/i-plus.svg" alt=""></div>
-                        </div>
-                    </div>
-                    <div class="field remove">
-                        <a href=""></a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="field name">
-                        <img src="images/jpg/shopping-cart-test.jpg" alt="">
-                        <div class="text">
-                            <div class="title">Цепь 5х18,5 мм</div>
-                            <div class="description">Цепи круглозвенные повышенной твердости
-                                для рыболовецкой промышленности</div>
-                        </div>
-                    </div>
-                    <div class="field art">400035</div>
-                    <div class="field count">
-                        <div class="plus-minus">
-                            <div class="minus_with_arg"><img src="images/svg/i-minus.svg" alt=""></div>
-                            <input type="text" data-ed_type="кг" value="1 кг">
-                            <div class="plus_with_arg"><img src="images/svg/i-plus.svg" alt=""></div>
-                        </div>
-                    </div>
-                    <div class="field remove">
-                        <a href=""></a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="field name">
-                        <img src="images/jpg/shopping-cart-test.jpg" alt="">
-                        <div class="text">
-                            <div class="title">Конвейер скребковый навозоуборочный
-                                КСГ-1-01 (ТСН-2,0Б)</div>
-                            <div class="description">Цепи круглозвенные повышенной твердости
-                                для рыболовецкой промышленности
-                            </div>
-                        </div>
-                    </div>
-                    <div class="field art">400035</div>
-                    <div class="field count">
-                        <div class="plus-minus">
-                            <div class="minus_with_arg"><img src="images/svg/i-minus.svg" alt=""></div>
-                            <input type="text" data-ed_type="шт" value="1 шт">
-                            <div class="plus_with_arg"><img src="images/svg/i-plus.svg" alt=""></div>
-                        </div>
-                    </div>
-                    <div class="field remove">
-                        <a href=""></a>
+                    <div class="title"><span class="search_text">Цепи круглозвенные</span> короткозвенные</div>
+                    <div class="content">
+                            <p>Цепь 6х18 мм</p>
+                            <p>Цепь 5х15 мм</p>
+                            <p>Цепь 6х18 мм</p>
+                            <p>Цепь 5х15 мм</p>
+                            <p>Цепь 6х18 мм</p>
+                            <p>Цепь 5х15 мм</p>
+                            <p>Цепь 6х18 мм</p>
+                            <p>Цепь 5х15 мм</p>
+                            <p>Цепь 6х18 мм</p>
+                            <p>Цепь 5х15 мм</p>
+                            <p>Цепь 6х18 мм</p>
+                            <p>Цепь 5х15 мм</p>
+                            <p>Цепь 6х18 мм</p>
+                            <p>Цепь 5х15 мм</p>
                     </div>
                 </div>
             </div>
-            <div class="contact-us-module contact-us-module_shopping-cart">
-                <div class="title">Оформить заказ</div>
-                <form action="">
-                    <div class="left">
-                        <input type="text" name="" class="name" placeholder="ФИО">
-                        <input type="text" name="" class="organization" placeholder="Организация">
-                        <input type="text" name="phone" class="phone" placeholder="Телефон">
-                        <input type="text" name="" class="email" placeholder="Email">
-                        <div class="files-wr" data-count-files="1">
-                            <div class="one-file">
-                                <label for="file-1"><img src="images/png/file-upload-big.png" alt="">Загрузите фотографию, чертеж детали, или техническое задание</label>
-                                <input name="file-1" id="file-1" type="file">
-                                <div class="file-item hide-btn">
-                                    <span class="file-name"></span>
-                                    <span class="btn-del-file"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="right"><textarea name="comment" id="" cols="30" rows="10"
-                            placeholder="Примечание"></textarea>
-
-                        <div class="bottom">
-
-                            <label class="radio">
-                                <input type="checkbox" name="" value="">
-                                <span>Согласие на обработку персональных данных</span>
-                            </label>
-                            <button type="submit">Отправить <div class="arrow">
-                                    <?xml version="1.0" encoding="UTF-8"?>
-                                    <svg id="SVGDoc" width="9" height="11" xmlns="http://www.w3.org/2000/svg"
-                                        version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                        xmlns:avocode="https://avocode.com/" viewBox="0 0 9 11">
-                                        <defs></defs>
-                                        <desc>Generated with Avocode.</desc>
-                                        <g>
-                                            <g>
-                                                <title>Shape 14</title>
-                                                <path
-                                                    d="M1.99772,9.99748v0l3.24829,-4.49809v0l-3.24829,-4.49901v0h1.75541v0l3.24852,4.49901v0l-3.24852,4.49809v0z"
-                                                    fill="#eaeff5" fill-opacity="1"></path>
-                                            </g>
-                                        </g>
-                                    </svg></div></button>
-                        </div>
-                    </div>
-
-                </form>
-            </div>
-
         </div>
-
-
     </div>
 
     <footer>

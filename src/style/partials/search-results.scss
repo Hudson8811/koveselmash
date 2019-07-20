@@ -1,0 +1,54 @@
+.search-results-page {
+    .page-title {
+        font-size: 25px;
+        font-weight: 500;
+        width: 100%;
+
+        margin-top: 2px;
+        padding-bottom: 42px;
+    }
+
+    .search-resuts {
+        .item {
+            border-top: 1px solid #dee2e7;
+
+            .breadcrumbs {
+                ul {
+                    li {
+                        display: inline-block;
+                        vertical-align: top;
+                        margin-right: 15px;
+                        a{
+                            color: #848e99;
+                        }
+
+                    }
+                }
+            }
+
+            .breadcrumbs {
+                ul {}
+
+                li {
+                    span {}
+
+                    a {
+                        &:hover {}
+
+                        &:active {}
+
+                        &:focus {}
+                    }
+                }
+            }
+
+            .title {
+                .search_text {}
+            }
+
+            .content {
+                p {}
+            }
+        }
+    }
+}
