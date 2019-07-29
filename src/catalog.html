@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
 	//= template/head.html
 </head>
@@ -9,12 +10,19 @@
 	//= template/big-banner.html
 	//= template/breadcrumbs.html
 
-	<div class="page-wrapper catalog-page container">
+	<div id="page-wrapper" class="page-wrapper catalog-page container">
 		<aside class="left_side-catalog">
-			<div class="left_side-catalog_tabs">
+			<div class="left_side-catalog_tabs closed">
 				<div class="dt rL hid">
+					<div class="catalog_tov">
+						<div id="menuToggle">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>Каталог товаров
+					</div>
 					<ul>
-						<li><a class="active">По продукции</a></li>
+						<li class="active"><a class="active">По продукции</a></li>
 						<li><a>По отраслям</a></li>
 					</ul>
 				</div>
@@ -22,9 +30,9 @@
 				<div class="dd rL ">
 					<div class="item rL active">
 						<div class="multiple" data-accordion-group>
-							<div data-accordion  class="open">
+							<div data-accordion class="open">
 								<button data-control>Цепи</button>
-								<div data-content >
+								<div data-content>
 									<div data-accordion id="filter">
 										<button data-control>Фильтр по цепям</button>
 										<div data-content>
@@ -54,12 +62,14 @@
 													<label class="check-sq">
 														<input type="checkbox">
 														<span class="checkmark"></span>
-														<span class="label">Цепи высокопрочные для горного оборудования</span>
+														<span class="label">Цепи высокопрочные для горного
+															оборудования</span>
 													</label>
 													<label class="check-sq">
 														<input type="checkbox">
 														<span class="checkmark"></span>
-														<span class="label">Цепи для завес вращающихся цементных печей, навесные сварные</span>
+														<span class="label">Цепи для завес вращающихся цементных печей,
+															навесные сварные</span>
 													</label>
 													<label class="check-sq">
 														<input type="checkbox">
@@ -69,12 +79,14 @@
 													<label class="check-sq">
 														<input type="checkbox">
 														<span class="checkmark"></span>
-														<span class="label">Цепи круглозвенные для конвейеров непрерывного действия</span>
+														<span class="label">Цепи круглозвенные для конвейеров
+															непрерывного действия</span>
 													</label>
 													<label class="check-sq">
 														<input type="checkbox">
 														<span class="checkmark"></span>
-														<span class="label">Цепи круглозвенные испытанные, некалиброванные</span>
+														<span class="label">Цепи круглозвенные испытанные,
+															некалиброванные</span>
 													</label>
 													<label class="check-sq">
 														<input type="checkbox">
@@ -84,7 +96,8 @@
 													<label class="check-sq">
 														<input type="checkbox">
 														<span class="checkmark"></span>
-														<span class="label">Цепи круглозвенные калиброванные для грузоподъемных механизмов</span>
+														<span class="label">Цепи круглозвенные калиброванные для
+															грузоподъемных механизмов</span>
 													</label>
 													<label class="check-sq">
 														<input type="checkbox">
@@ -94,7 +107,8 @@
 													<label class="check-sq">
 														<input type="checkbox">
 														<span class="checkmark"></span>
-														<span class="label">Цепи круглозвенные тяговые для конвейеров и транспортеров</span>
+														<span class="label">Цепи круглозвенные тяговые для конвейеров и
+															транспортеров</span>
 													</label>
 													<label class="check-sq">
 														<input type="checkbox">
@@ -104,7 +118,8 @@
 													<label class="check-sq">
 														<input type="checkbox">
 														<span class="checkmark"></span>
-														<span class="label">Цепи повышенной твердости для рыболовецкой промышленности</span>
+														<span class="label">Цепи повышенной твердости для рыболовецкой
+															промышленности</span>
 													</label>
 													<label class="check-sq">
 														<input type="checkbox">
@@ -114,7 +129,8 @@
 													<label class="check-sq">
 														<input type="checkbox">
 														<span class="checkmark"></span>
-														<span class="label">Цепи скребковые для конвейеров, Цепи высокопрочные для горного оборудования</span>
+														<span class="label">Цепи скребковые для конвейеров, Цепи
+															высокопрочные для горного оборудования</span>
 													</label>
 												</div>
 											</div>
@@ -181,17 +197,20 @@
 													<label class="check-sq">
 														<input type="checkbox">
 														<span class="checkmark"></span>
-														<span class="label">Для конвейеров, для горного оборудования</span>
+														<span class="label">Для конвейеров, для горного
+															оборудования</span>
 													</label>
 													<label class="check-sq">
 														<input type="checkbox">
 														<span class="checkmark"></span>
-														<span class="label">Для конвейеров, подъемно-транспортные и тяговые механизмы</span>
+														<span class="label">Для конвейеров, подъемно-транспортные и
+															тяговые механизмы</span>
 													</label>
 													<label class="check-sq">
 														<input type="checkbox">
 														<span class="checkmark"></span>
-														<span class="label">Для конвейров, но не для грузозахватного, стропового приспособления или несущего средства</span>
+														<span class="label">Для конвейров, но не для грузозахватного,
+															стропового приспособления или несущего средства</span>
 													</label>
 													<label class="check-sq">
 														<input type="checkbox">
@@ -201,7 +220,8 @@
 													<label class="check-sq">
 														<input type="checkbox">
 														<span class="checkmark"></span>
-														<span class="label">Для противоскольжения, привязи скота, привязи собак, колодезных цепей</span>
+														<span class="label">Для противоскольжения, привязи скота,
+															привязи собак, колодезных цепей</span>
 													</label>
 													<label class="check-sq">
 														<input type="checkbox">
@@ -230,14 +250,14 @@
 									</div>
 									<div><a href="">Цепи круглозвенные короткозвенные</a></div>
 									<div><a href="">Цепи круглозвенные среднезвенные
-										для конвейеров непрерывного действия</a></div>
+											для конвейеров непрерывного действия</a></div>
 									<div><a href="">Цепи круглозвенные длиннозвенные</a></div>
 									<div><a href="">Цепи круглозвенные высокопрочные
-										для горно-шахтного оборудования,
-										класс прочности "В", "С"</a></div>
+											для горно-шахтного оборудования,
+											класс прочности "В", "С"</a></div>
 									<div><a href="">Цепи круглозвенные тягового органа
-										горно-шахтного оборудования
-										(скребковых конвейеров)</a></div>
+											горно-шахтного оборудования
+											(скребковых конвейеров)</a></div>
 									<div data-accordion>
 										<button data-control>Цепи круглозвенные для
 											сельскохозяйственной техники</button>
@@ -250,31 +270,31 @@
 										</div>
 									</div>
 									<div><a href="">Цепи круглозвенные для подъемных
-										механизмов, стропы цепные, такелаж</a></div>
+											механизмов, стропы цепные, такелаж</a></div>
 									<div><a href="">Цепи круглозвенные тягового органа
-										горно-шахтного оборудования
-										(скребковых конвейеров)</a></div>
+											горно-шахтного оборудования
+											(скребковых конвейеров)</a></div>
 									<div><a href="">Цепи круглозвенные сварные
-										для цементной промышленности</a></div>
+											для цементной промышленности</a></div>
 									<div><a href="">Цепи противоскольжения
-										для автомобилей</a></div>
+											для автомобилей</a></div>
 									<div><a href="">Защитная цепь для карьерных шин</a></div>
 								</div>
 							</div>
 
 							<div data-accordion>
 								<button data-control>Поковки и штамповки</button>
-								<div data-content >
+								<div data-content>
 									<div><a href="">Цепи круглозвенные короткозвенные</a></div>
 									<div><a href="">Цепи круглозвенные среднезвенные
-										для конвейеров непрерывного действия</a></div>
+											для конвейеров непрерывного действия</a></div>
 									<div><a href="">Цепи круглозвенные длиннозвенные</a></div>
 									<div><a href="">Цепи круглозвенные высокопрочные
-										для горно-шахтного оборудования,
-										класс прочности "В", "С"</a></div>
+											для горно-шахтного оборудования,
+											класс прочности "В", "С"</a></div>
 									<div><a href="">Цепи круглозвенные тягового органа
-										горно-шахтного оборудования
-										(скребковых конвейеров)</a></div>
+											горно-шахтного оборудования
+											(скребковых конвейеров)</a></div>
 									<div data-accordion>
 										<button data-control>Цепи круглозвенные для
 											сельскохозяйственной техники</button>
@@ -288,24 +308,24 @@
 									</div>
 
 									<div><a href="">Цепи круглозвенные тягового органа
-										горно-шахтного оборудования
-										(скребковых конвейеров)</a></div>
+											горно-шахтного оборудования
+											(скребковых конвейеров)</a></div>
 								</div>
 							</div>
 
 							<div data-accordion>
 								<button data-control>Машиностроение</button>
-								<div data-content >
+								<div data-content>
 									<div><a href="">Цепи круглозвенные короткозвенные</a></div>
 									<div><a href="">Цепи круглозвенные среднезвенные
-										для конвейеров непрерывного действия</a></div>
+											для конвейеров непрерывного действия</a></div>
 									<div><a href="">Цепи круглозвенные длиннозвенные</a></div>
 									<div><a href="">Цепи круглозвенные высокопрочные
-										для горно-шахтного оборудования,
-										класс прочности "В", "С"</a></div>
+											для горно-шахтного оборудования,
+											класс прочности "В", "С"</a></div>
 									<div><a href="">Цепи круглозвенные тягового органа
-										горно-шахтного оборудования
-										(скребковых конвейеров)</a></div>
+											горно-шахтного оборудования
+											(скребковых конвейеров)</a></div>
 									<div data-accordion>
 										<button data-control>Цепи круглозвенные для
 											сельскохозяйственной техники</button>
@@ -319,28 +339,29 @@
 									</div>
 
 									<div><a href="">Цепи круглозвенные тягового органа
-										горно-шахтного оборудования
-										(скребковых конвейеров)</a></div>
+											горно-шахтного оборудования
+											(скребковых конвейеров)</a></div>
 								</div>
 							</div>
 						</div>
-					</div><!--end item-->
+					</div>
+					<!--end item-->
 					<div class="item rL">
 						<div class="multiple" data-accordion-group>
 
 							<div data-accordion>
 								<button data-control>Горно-шахтная промышленность</button>
-								<div data-content >
+								<div data-content>
 									<div><a href="">Цепи круглозвенные короткозвенные</a></div>
 									<div><a href="">Цепи круглозвенные среднезвенные
-										для конвейеров непрерывного действия</a></div>
+											для конвейеров непрерывного действия</a></div>
 									<div><a href="">Цепи круглозвенные длиннозвенные</a></div>
 									<div><a href="">Цепи круглозвенные высокопрочные
-										для горно-шахтного оборудования,
-										класс прочности "В", "С"</a></div>
+											для горно-шахтного оборудования,
+											класс прочности "В", "С"</a></div>
 									<div><a href="">Цепи круглозвенные тягового органа
-										горно-шахтного оборудования
-										(скребковых конвейеров)</a></div>
+											горно-шахтного оборудования
+											(скребковых конвейеров)</a></div>
 									<div data-accordion>
 										<button data-control>Цепи круглозвенные для
 											сельскохозяйственной техники</button>
@@ -354,24 +375,24 @@
 									</div>
 
 									<div><a href="">Цепи круглозвенные тягового органа
-										горно-шахтного оборудования
-										(скребковых конвейеров)</a></div>
+											горно-шахтного оборудования
+											(скребковых конвейеров)</a></div>
 								</div>
 							</div>
 
 							<div data-accordion>
 								<button data-control>Железнодорожная отрасль</button>
-								<div data-content >
+								<div data-content>
 									<div><a href="">Цепи круглозвенные короткозвенные</a></div>
 									<div><a href="">Цепи круглозвенные среднезвенные
-										для конвейеров непрерывного действия</a></div>
+											для конвейеров непрерывного действия</a></div>
 									<div><a href="">Цепи круглозвенные длиннозвенные</a></div>
 									<div><a href="">Цепи круглозвенные высокопрочные
-										для горно-шахтного оборудования,
-										класс прочности "В", "С"</a></div>
+											для горно-шахтного оборудования,
+											класс прочности "В", "С"</a></div>
 									<div><a href="">Цепи круглозвенные тягового органа
-										горно-шахтного оборудования
-										(скребковых конвейеров)</a></div>
+											горно-шахтного оборудования
+											(скребковых конвейеров)</a></div>
 									<div data-accordion>
 										<button data-control>Цепи круглозвенные для
 											сельскохозяйственной техники</button>
@@ -385,24 +406,24 @@
 									</div>
 
 									<div><a href="">Цепи круглозвенные тягового органа
-										горно-шахтного оборудования
-										(скребковых конвейеров)</a></div>
+											горно-шахтного оборудования
+											(скребковых конвейеров)</a></div>
 								</div>
 							</div>
 
 							<div data-accordion>
 								<button data-control>Энергетическая отрасль</button>
-								<div data-content >
+								<div data-content>
 									<div><a href="">Цепи круглозвенные короткозвенные</a></div>
 									<div><a href="">Цепи круглозвенные среднезвенные
-										для конвейеров непрерывного действия</a></div>
+											для конвейеров непрерывного действия</a></div>
 									<div><a href="">Цепи круглозвенные длиннозвенные</a></div>
 									<div><a href="">Цепи круглозвенные высокопрочные
-										для горно-шахтного оборудования,
-										класс прочности "В", "С"</a></div>
+											для горно-шахтного оборудования,
+											класс прочности "В", "С"</a></div>
 									<div><a href="">Цепи круглозвенные тягового органа
-										горно-шахтного оборудования
-										(скребковых конвейеров)</a></div>
+											горно-шахтного оборудования
+											(скребковых конвейеров)</a></div>
 									<div data-accordion>
 										<button data-control>Цепи круглозвенные для
 											сельскохозяйственной техники</button>
@@ -416,24 +437,24 @@
 									</div>
 
 									<div><a href="">Цепи круглозвенные тягового органа
-										горно-шахтного оборудования
-										(скребковых конвейеров)</a></div>
+											горно-шахтного оборудования
+											(скребковых конвейеров)</a></div>
 								</div>
 							</div>
 
 							<div data-accordion>
 								<button data-control>Сельское хозяйство</button>
-								<div data-content >
+								<div data-content>
 									<div><a href="">Цепи круглозвенные короткозвенные</a></div>
 									<div><a href="">Цепи круглозвенные среднезвенные
-										для конвейеров непрерывного действия</a></div>
+											для конвейеров непрерывного действия</a></div>
 									<div><a href="">Цепи круглозвенные длиннозвенные</a></div>
 									<div><a href="">Цепи круглозвенные высокопрочные
-										для горно-шахтного оборудования,
-										класс прочности "В", "С"</a></div>
+											для горно-шахтного оборудования,
+											класс прочности "В", "С"</a></div>
 									<div><a href="">Цепи круглозвенные тягового органа
-										горно-шахтного оборудования
-										(скребковых конвейеров)</a></div>
+											горно-шахтного оборудования
+											(скребковых конвейеров)</a></div>
 									<div data-accordion>
 										<button data-control>Цепи круглозвенные для
 											сельскохозяйственной техники</button>
@@ -447,24 +468,24 @@
 									</div>
 
 									<div><a href="">Цепи круглозвенные тягового органа
-										горно-шахтного оборудования
-										(скребковых конвейеров)</a></div>
+											горно-шахтного оборудования
+											(скребковых конвейеров)</a></div>
 								</div>
 							</div>
 
 							<div data-accordion>
 								<button data-control>Машиностроение</button>
-								<div data-content >
+								<div data-content>
 									<div><a href="">Цепи круглозвенные короткозвенные</a></div>
 									<div><a href="">Цепи круглозвенные среднезвенные
-										для конвейеров непрерывного действия</a></div>
+											для конвейеров непрерывного действия</a></div>
 									<div><a href="">Цепи круглозвенные длиннозвенные</a></div>
 									<div><a href="">Цепи круглозвенные высокопрочные
-										для горно-шахтного оборудования,
-										класс прочности "В", "С"</a></div>
+											для горно-шахтного оборудования,
+											класс прочности "В", "С"</a></div>
 									<div><a href="">Цепи круглозвенные тягового органа
-										горно-шахтного оборудования
-										(скребковых конвейеров)</a></div>
+											горно-шахтного оборудования
+											(скребковых конвейеров)</a></div>
 									<div data-accordion>
 										<button data-control>Цепи круглозвенные для
 											сельскохозяйственной техники</button>
@@ -478,24 +499,24 @@
 									</div>
 
 									<div><a href="">Цепи круглозвенные тягового органа
-										горно-шахтного оборудования
-										(скребковых конвейеров)</a></div>
+											горно-шахтного оборудования
+											(скребковых конвейеров)</a></div>
 								</div>
 							</div>
 
 							<div data-accordion>
 								<button data-control>Прочее</button>
-								<div data-content >
+								<div data-content>
 									<div><a href="">Цепи круглозвенные короткозвенные</a></div>
 									<div><a href="">Цепи круглозвенные среднезвенные
-										для конвейеров непрерывного действия</a></div>
+											для конвейеров непрерывного действия</a></div>
 									<div><a href="">Цепи круглозвенные длиннозвенные</a></div>
 									<div><a href="">Цепи круглозвенные высокопрочные
-										для горно-шахтного оборудования,
-										класс прочности "В", "С"</a></div>
+											для горно-шахтного оборудования,
+											класс прочности "В", "С"</a></div>
 									<div><a href="">Цепи круглозвенные тягового органа
-										горно-шахтного оборудования
-										(скребковых конвейеров)</a></div>
+											горно-шахтного оборудования
+											(скребковых конвейеров)</a></div>
 									<div data-accordion>
 										<button data-control>Цепи круглозвенные для
 											сельскохозяйственной техники</button>
@@ -509,12 +530,13 @@
 									</div>
 
 									<div><a href="">Цепи круглозвенные тягового органа
-										горно-шахтного оборудования
-										(скребковых конвейеров)</a></div>
+											горно-шахтного оборудования
+											(скребковых конвейеров)</a></div>
 								</div>
 							</div>
 						</div>
-					</div><!--end item-->
+					</div>
+					<!--end item-->
 				</div>
 			</div>
 		</aside>
@@ -555,8 +577,61 @@
 				</div>
 				<div class="trig_block">
 					Вид:
-					<a class="sep1 active"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><g><g><g><path fill="#dee2e7" d="M0 0h11v11H0z"/></g><g><path fill="#dee2e7" d="M0 12h11v11H0z"/></g><g><path fill="#dee2e7" d="M12 0h11v11H12z"/></g><g><path fill="#dee2e7" d="M12 12h11v11H12z"/></g></g></g></svg></a>
-					<a class="sep2"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><g><g><g><path fill="#dee2e7" d="M0 0h7v7H0z"/></g><g><path fill="#dee2e7" d="M8 3V-.002h15v3z"/></g><g><path fill="#dee2e7" d="M8 7V4h15v3z"/></g><g><path fill="#dee2e7" d="M8 11V7.998h15v3z"/></g><g><path fill="#dee2e7" d="M8 15v-3h15v3z"/></g><g><path fill="#dee2e7" d="M8 18.999v-3h15v3z"/></g><g><path fill="#dee2e7" d="M8 22.999v-3h15v3z"/></g><g><path fill="#323640" d="M23 6H8"/></g><g><path fill="#dee2e7" d="M0 8h7v7H0z"/></g><g><path fill="#dee2e7" d="M0 16h7v7H0z"/></g></g></g></svg></a>
+					<a class="sep1 active"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23"
+							viewBox="0 0 23 23">
+							<g>
+								<g>
+									<g>
+										<path fill="#dee2e7" d="M0 0h11v11H0z" />
+									</g>
+									<g>
+										<path fill="#dee2e7" d="M0 12h11v11H0z" />
+									</g>
+									<g>
+										<path fill="#dee2e7" d="M12 0h11v11H12z" />
+									</g>
+									<g>
+										<path fill="#dee2e7" d="M12 12h11v11H12z" />
+									</g>
+								</g>
+							</g>
+						</svg></a>
+					<a class="sep2"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+							<g>
+								<g>
+									<g>
+										<path fill="#dee2e7" d="M0 0h7v7H0z" />
+									</g>
+									<g>
+										<path fill="#dee2e7" d="M8 3V-.002h15v3z" />
+									</g>
+									<g>
+										<path fill="#dee2e7" d="M8 7V4h15v3z" />
+									</g>
+									<g>
+										<path fill="#dee2e7" d="M8 11V7.998h15v3z" />
+									</g>
+									<g>
+										<path fill="#dee2e7" d="M8 15v-3h15v3z" />
+									</g>
+									<g>
+										<path fill="#dee2e7" d="M8 18.999v-3h15v3z" />
+									</g>
+									<g>
+										<path fill="#dee2e7" d="M8 22.999v-3h15v3z" />
+									</g>
+									<g>
+										<path fill="#323640" d="M23 6H8" />
+									</g>
+									<g>
+										<path fill="#dee2e7" d="M0 8h7v7H0z" />
+									</g>
+									<g>
+										<path fill="#dee2e7" d="M0 16h7v7H0z" />
+									</g>
+								</g>
+							</g>
+						</svg></a>
 				</div>
 			</div>
 
@@ -564,35 +639,40 @@
 				<div class="row">
 					<div class="item">
 						<a href="">
-							<span class="image_block" style="background-image: url('images/jpg/product-test.jpg')"></span>
+							<span class="image_block"
+								style="background-image: url('images/jpg/product-test.jpg')"></span>
 							<span class="ah1">6х19-5</span>
 							<span class="ah2">303.613.271-04</span>
 						</a>
 					</div>
 					<div class="item">
 						<a href="">
-							<span class="image_block" style="background-image: url('images/jpg/product-test.jpg')"></span>
+							<span class="image_block"
+								style="background-image: url('images/jpg/product-test.jpg')"></span>
 							<span class="ah1">6х19-5</span>
 							<span class="ah2">303.613.271-04</span>
 						</a>
 					</div>
 					<div class="item">
 						<a href="">
-							<span class="image_block" style="background-image: url('images/jpg/product-test.jpg')"></span>
+							<span class="image_block"
+								style="background-image: url('images/jpg/product-test.jpg')"></span>
 							<span class="ah1">6х19-5</span>
 							<span class="ah2">303.613.271-04</span>
 						</a>
 					</div>
 					<div class="item">
 						<a href="">
-							<span class="image_block" style="background-image: url('images/jpg/product-test.jpg')"></span>
+							<span class="image_block"
+								style="background-image: url('images/jpg/product-test.jpg')"></span>
 							<span class="ah1">6х19-5</span>
 							<span class="ah2">303.613.271-04</span>
 						</a>
 					</div>
 					<div class="item">
 						<a href="">
-							<span class="image_block" style="background-image: url('images/jpg/product-test.jpg')"></span>
+							<span class="image_block"
+								style="background-image: url('images/jpg/product-test.jpg')"></span>
 							<span class="ah1">6х19-5</span>
 							<span class="ah2">303.613.271-04</span>
 						</a>
@@ -610,4 +690,5 @@
 	//= template/scripts.html
 
 </body>
+
 </html>
