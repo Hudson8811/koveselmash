@@ -27,3 +27,4 @@
 //= partials/customer-profile.js
 //= partials/gallery.js
 //= partials/shopping-cart.js
+//= partials/repres.js
