@@ -392,6 +392,24 @@ tpl:'<div class="fancybox-share"><h1>{{SHARE}}</h1><p><a class="fancybox-share__
 $(document).ready(function() {
     $("input[name='phone']").mask(" +7 (999) 999-99-99");
 
+    $('.text-block a, .scroll_menu_animate a').on('click', function () {
+        var el = $(this);
+        var dest = el.attr('href');
+        if (dest !== undefined && dest !== '') {
+            $('body').removeClass('blocked');
+            $('html').animate({
+                    scrollTop: $(dest).offset().top
+                }, 500
+            );
+        }
+        return false;
+    });
+
+    $('#search-toggle').click(function () {
+        event.preventDefault();
+        $('#menu-search-line').slideToggle();
+    });
+
 
     $(document).mouseup(function (e){
         var div = $(".more-langs");
@@ -1605,4 +1623,12 @@ $(document).ready(function () {
 
     }
 
+});
+$(document).ready(function() {
+    $('.services-page .grid-block .item').hover(function () {
+        $(this).find('.text').slideDown();
+    });
+    $('.services-page .grid-block .item').on("mouseleave", function () {
+        $(this).find('.text').slideUp();
+    });
 });

@@ -28,3 +28,4 @@
 //= partials/gallery.js
 //= partials/shopping-cart.js
 //= partials/repres.js
+//= partials/services.js

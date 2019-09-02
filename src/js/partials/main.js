@@ -1,6 +1,24 @@
 $(document).ready(function() {
     $("input[name='phone']").mask(" +7 (999) 999-99-99");
 
+    $('.text-block a, .scroll_menu_animate a').on('click', function () {
+        var el = $(this);
+        var dest = el.attr('href');
+        if (dest !== undefined && dest !== '') {
+            $('body').removeClass('blocked');
+            $('html').animate({
+                    scrollTop: $(dest).offset().top
+                }, 500
+            );
+        }
+        return false;
+    });
+
+    $('#search-toggle').click(function () {
+        event.preventDefault();
+        $('#menu-search-line').slideToggle();
+    });
+
 
     $(document).mouseup(function (e){
         var div = $(".more-langs");

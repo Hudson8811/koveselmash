@@ -270,10 +270,12 @@
             }
 
             .remove {
-                a {
+                button {
                     width: 24px;
                     height: 24px;
                     display: block;
+                    border: none;
+                    cursor: pointer;
                     background: url(../images/png/remove-shopping-cart.png);
 
                     &:hover {

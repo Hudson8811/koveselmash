@@ -73,14 +73,14 @@ gulp.task('js:build', function () {
 gulp.task('style:build', function () {
 	return gulp.src(path.src.style)
 		.pipe(plumber())
-		.pipe(sourcemaps.init())
+		//.pipe(sourcemaps.init())
 		.pipe(sass())
 		//.pipe(gcmq())
 		.pipe(autoprefixer({
 			browsers: ['last 2 versions']
 		}))
 		.pipe(cleanCSS({rebase: false}))
-		.pipe(sourcemaps.write())
+		//.pipe(sourcemaps.write())
 		.pipe(gulp.dest(path.build.css))
 		.pipe(reload({stream: true}));
 });

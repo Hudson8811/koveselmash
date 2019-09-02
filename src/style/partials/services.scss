@@ -1,0 +1,51 @@
+.services-page{
+  .page-title{
+    color: #1c1c1c;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 40px;
+  }
+  .grid-block{
+    @include flex-row(32px, 32px);
+    .item{
+      min-height: 340px;
+      @include flex-block(340px, 32px, 32px, true, 3);
+      display: block;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      position: relative;
+      .text-block{
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        padding: 50px;
+        color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        background: url("../images/svg/arr-link-w.svg") right 15px top 15px no-repeat;
+        transition: background 0.3s linear;
+        .title{
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 25px;
+        }
+        .text{
+          font-size: 13px;
+          line-height: 22px;
+          margin-top: 30px;
+          transition: opacity 0.3s linear;
+          display: none;
+          opacity: 0;
+        }
+        &:hover{
+          background: #34a963 url("../images/svg/arr-link-down-w.svg") right 15px top 15px no-repeat;
+          .text{
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

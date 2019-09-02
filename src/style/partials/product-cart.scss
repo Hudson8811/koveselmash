@@ -212,6 +212,241 @@
         }
       }
     }
+
+    .left-block-scheme{
+      width: 350px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-left: 35px;
+      position: relative;
+      .btn-back{
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        width: 19px;
+        height: 19px;
+        border-radius: 100%;
+        background: #34a963 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAJCAYAAAD6reaeAAAAW0lEQVQYV22OUQ2AMBQDrwrAAg6GAxxhARzghKCASZgEnJRsGQlZ9j4v1/aJerYDcAOXfjABIxAKtH0AKzBLSrK91NguactShk+WJU1fVd/sdjbrQxlr/ozA+QLtdipdU7IwNgAAAABJRU5ErkJggg==) center center no-repeat;
+      }
+      .title{
+        color: #1c1c1c;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 25px;
+      }
+      .article{
+        color: #848e99;
+        font-size: 13px;
+        font-weight: 400;
+      }
+      .introtext{
+        margin-top: 28px;
+        padding-bottom: 25px;
+        color: #1c1c1c;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 22px;
+      }
+      .mods-block{
+        margin-top: 28px;
+        color: #848e99;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 22px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .label{
+          margin-bottom: 6px;
+        }
+        .mod-link{
+          color: #1c1c1c;
+          &:hover{
+            text-decoration: underline;
+          }
+          &.active{
+            color: #34a963;
+          }
+        }
+      }
+      .add-images{
+        margin-top: 28px;
+        display: flex;
+        a{
+          width: 74px;
+          height: 74px;
+          display: block;
+          background: #ffffff;
+          cursor: pointer;
+          +a{
+            margin-left: 16px;
+          }
+          img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+      }
+    }
+    .right-block-scheme{
+      width: 700px;
+      height: 420px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      .scheme-item{
+        max-height: 100%;
+        position: relative;
+        display: block;
+        .scheme-img{
+          display: block;
+          position: relative;
+          z-index: 1;
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+        .dot{
+          width: 27px;
+          height: 27px;
+          position: absolute;
+          z-index: 2;
+          .circle{
+            width: 100%;
+            height: 100%;
+            border-radius: 100%;
+            background-color: #34a963;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &::after{
+              content: "";
+              width: 40%;
+              height: 40%;
+              background-color: #ffffff;
+              border-radius: 100%;
+            }
+          }
+          .text{
+            width: 267px;
+            min-height: 64px;
+            background-color: #ffffff;
+            box-sizing: border-box;
+            left: 100%;
+            top: -25px;
+            position: absolute;
+            padding: 14px 66px 14px 22px;
+            display: none;
+            &::before{
+              content: "";
+              position: absolute;
+              display: block;
+              border: 7px solid transparent;
+              border-right: 7px solid #fff;
+              left: -14px;
+              top: 31px;
+            }
+            &::after{
+              content: "";
+              display: inline-block;
+              width: 22px;
+              height: 22px;
+              background: #34a963 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='5' height='9' viewBox='0 0 5 9'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%23eaeff5' d='M-.002 8.996l3.248-4.497-3.248-4.5h1.755l3.249 4.5-3.249 4.497z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") center center no-repeat;
+              border-radius: 100%;
+              vertical-align: middle;
+              position: absolute;
+              right: 22px;
+              top: calc(50% - 11px);
+            }
+            span{
+              color: #1c1c1c;
+              font-weight: 600;
+              font-size: 15px;
+              line-height: 22px;
+            }
+
+          }
+          &:hover{
+            .text{
+              display: block;
+            }
+            .dot{
+              opacity: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .product-order-row{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 37px 74px;
+    box-sizing: border-box;
+    background-color: #f6f8fb;
+    margin-top: 13px;
+    .status{
+      font-size: 13px;
+      font-weight: 400;
+      padding: 8px 18px;
+      &.in-stock{
+        background-color: #ffbf46;
+        color: #1c1c1c;
+        &::before{
+          content: "";
+          width: 14px;
+          height: 9px;
+          background: url("../images/png/i-check.png") center center no-repeat;
+          display: inline-block;
+          margin-right: 5px;
+        }
+      }
+      &.out-stock{
+        color: #848e99;
+        background-color: #eff2f7;
+      }
+    }
+    .price{
+      color: #1c1c1c;
+      font-size: 15px;
+      span{
+        font-weight: 600;
+      }
+    }
+    .links{
+      display: flex;
+      margin-left: 32px;
+      justify-content: space-between;
+      width: 357px;
+      a{
+        color: #848e99;
+        font-size: 15px;
+        font-weight: 400;
+        text-decoration: underline;
+        &:hover{
+          text-decoration: none;
+        }
+      }
+    }
+    .left{
+      display: flex;
+      align-items: center;
+    }
+    .right{
+      display: flex;
+      align-items: center;
+      .btn{
+        margin-left: 32px;
+      }
+    }
   }
 
   .product-tabs{
@@ -705,5 +940,10 @@
       }
     }
   }
+
+}
+
+
+.product-scheme-page{
 
 }
