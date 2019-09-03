@@ -410,6 +410,18 @@ $(document).ready(function() {
         $('#menu-search-line').slideToggle();
     });
 
+    $('.mobile-header-menu .level-1:not(.no_child) > a').click(function () {
+        event.preventDefault();
+        $(this).parents('.level-1').toggleClass('open');
+        $(this).siblings('.dropdown-block').slideToggle();
+    });
+
+    $('#mobile-menu-toggle').click(function () {
+        event.preventDefault();
+        $(this).toggleClass('active');
+        $('.mobile-header-menu').slideToggle();
+        $('body').toggleClass('shadow');
+    });
 
     $(document).mouseup(function (e){
         var div = $(".more-langs");

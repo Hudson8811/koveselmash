@@ -522,40 +522,11 @@
         z-index: 9999;
         border-radius: 50%;
 
-        .shopping-cart {
-            display: block;
-            position: fixed;
-            width: 54px;
-            height: 54px;
-            border-radius: 50%;
-            background: url('../images/png/white-cart.png') center no-repeat, #7c8488;
-            background: url('../images/png/white-cart.png') center no-repeat, #445055;
 
-            opacity: 0.7;
-
-            .num-of-items {
-                position: absolute;
-                top: 10px;
-                left: 9px;
-                width: 21px;
-                height: 21px;
-                border-radius: 50%;
-                background-color: #34a963;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                color: #ffffff;
-                font-size: 13px;
-                font-weight: 400;
-                line-height: 22px;
-            }
-
-            &.empty {
-                display: none;
-            }
-        }
     }
 }
+
+
 
 @media screen and (max-width: 700px) {
     .shopping-cart-page {
