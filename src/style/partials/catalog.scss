@@ -6,7 +6,7 @@ $font2: "Montserrat", sans-serif;*/
 
 	.scrollbar {
 		position: sticky;
-		top: 500px;
+		top: 0px;
 		z-index: 1;
 		width: 100%;
 		background: #fff;
@@ -220,7 +220,7 @@ $font2: "Montserrat", sans-serif;*/
 								}
 							}
 
-							&>#filter {
+							& #filter {
 
 								margin-left: 0;
 								margin-right: 0;
@@ -765,7 +765,7 @@ $font2: "Montserrat", sans-serif;*/
 		td,
 		th {
 
-			div.centred {
+			a.centred {
 				display: flex;
 				align-items: center;
 				min-height: 90px;
