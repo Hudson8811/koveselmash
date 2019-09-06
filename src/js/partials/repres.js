@@ -99,7 +99,8 @@ $(document).ready(function () {
 
             }
 
-            if ($(window).width() <= 700) {
+          /*  console.log($(window).width());*/
+            if ($('#mobile-indicator').is(':visible')) {
                 if (!$('.activeTab').length > 0) {
                     $('.diller-tabs').prepend('<div class="activeTab closed">' + $('.diller-tabs .tabs .item.active').html() + '</div>');
                     $('.activeTab').click(function (e) {

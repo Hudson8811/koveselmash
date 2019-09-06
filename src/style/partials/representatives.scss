@@ -1,4 +1,7 @@
 .repres-page {
+    #mobile-indicator{
+        display: none;
+    }
     position: relative;
     max-width: 1920px;
     margin: 0 auto;
@@ -872,7 +875,12 @@
 @media screen and (max-width:700px) {
 
     .repres-page {
-        .map {}
+        #mobile-indicator{
+            display: block;
+        }
+        .map {
+            top: 331px;
+        }
 
         .map-text-container.container {
             >.left {
