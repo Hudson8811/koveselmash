@@ -1674,7 +1674,7 @@ $(document).ready(function () {
                         }
                     });
 
-                    $('.item').click(function (e) {
+                    $('.tabs .item').click(function (e) {
                         if ($(window).width() <= 700) {
                             $('.activeTab').html($(this).html());
                             $(this).addClass('active').siblings().removeClass('active');
