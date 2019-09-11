@@ -863,6 +863,42 @@ $font2: "Montserrat", sans-serif;*/
 			}
 
 		}
+
+		#scroll{
+			div.scrollingHotSpotLeft2{
+				background-position: center center;
+				position: absolute;
+				z-index: 2;
+				background-image: url(../images/svg/arr-left.svg);
+				background-color: #fff;
+				background-repeat: no-repeat;
+				zoom: 1;
+				cursor: pointer;
+				width: 50px;
+				height: 100%;
+				top: 0;
+				left: 0;
+				opacity: initial;
+				background-size: 20px;
+			}
+
+			div.scrollingHotSpotRight2 {
+				background-position: center center;
+				position: absolute;
+				z-index: 2;
+				background-image: url(../images/svg/arr-bread.svg);
+				background-color: #fff;
+				background-repeat: no-repeat;
+				zoom: 1;
+				cursor: pointer;
+				width: 50px;
+				height: 100%;
+				top: 0;
+				right: 86px;
+				opacity: initial;
+				background-size: 20px;
+			}
+		}
 	}
 
 	&.catalog-pokovky {

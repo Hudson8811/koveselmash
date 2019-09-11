@@ -152,6 +152,7 @@
             box-sizing: border-box;
             cursor: pointer;
             text-align: center;
+            user-select: none;
 
             span{
               width: 100%;
@@ -165,7 +166,8 @@
             }
 
             input{
-              display: none;
+              position: absolute;
+              opacity: 0;
             }
 
             input:checked + span{
@@ -197,7 +199,8 @@
             }
 
             input{
-              display: none;
+              opacity: 0;
+              position: absolute;
             }
 
             input:checked + span{
@@ -233,7 +236,8 @@
         padding-bottom: 18px;
 
         input{
-          display: none;
+          opacity: 0;
+          position: absolute;
         }
 
         & + label{

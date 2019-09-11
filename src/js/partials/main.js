@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $("input[name='phone']").mask(" +7 (999) 999-99-99");
+    $("input[name='phone']").mask(" +380 (99) 999-99-99");
 
     $('.text-block a, .scroll_menu_animate a').on('click', function () {
         var el = $(this);
@@ -19,7 +19,26 @@ $(document).ready(function() {
         $('#menu-search-line').slideToggle();
     });
 
-    $('.mobile-header-menu .level-1:not(.no_child) > a').click(function () {
+
+    $('.mobile-header-menu .level-1.product-link > a').click(function () {
+        event.preventDefault();
+        $('.mobile-header-menu > .menu').slideUp(
+            function () {
+                $('.mobile-header-menu > .mobile-products').slideDown();
+            }
+        );
+    });
+
+    $('.mobile-header-menu .back-to-menu').click(function () {
+        event.preventDefault();
+        $('.mobile-header-menu > .mobile-products').slideUp(
+            function () {
+                $('.mobile-header-menu > .menu').slideDown();
+            }
+        );
+    });
+
+    $('.mobile-header-menu .level-1:not(.no_child):not(.product-link) > a').click(function () {
         event.preventDefault();
         $(this).parents('.level-1').toggleClass('open');
         $(this).siblings('.dropdown-block').slideToggle();

@@ -20,7 +20,7 @@ time, mark, audio, video {
 b, strong{
 	font-weight: 700;
 }
-i{
+i, em{
 	font-style: italic;
 }
 

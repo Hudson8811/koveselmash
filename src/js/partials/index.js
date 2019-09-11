@@ -102,6 +102,29 @@ $(document).ready(function() {
         }
     });
 
+
+
+    $('.map svg .st1').click(
+        function (e) {
+            $('.map_hover_blocks .hover_item').hide();
+            var country = $(this).attr('data-country');
+            $('#hover_' + country).show();
+
+            var parentOffset = $('.st3[data-country="'+country+'"]').offset();
+            var parentOffset2 = $('.map').offset();
+            var relX = e.pageX - parentOffset.left;
+            var relY = parentOffset.top - parentOffset2.top;
+            $('#hover_' + $(this).attr('data-country')).css({ top: relY - 30, left: parentOffset.left + 30 });
+        }
+    );
+
+    $(document).mouseup(function (e){
+        var div = $(".map_hover_blocks .hover_item");
+        if (!div.is(e.target) && div.has(e.target).length === 0) {
+            div.removeClass('active');
+            $('.map_hover_blocks .hover_item').hide();
+        }
+    });
 });
 
 var popularSwiper = new Swiper ('.popular-spec-products #carousel-1 .swiper-container', {

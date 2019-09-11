@@ -23,22 +23,30 @@ $(document).ready(function () {
     });
 
 
+    $(".catalog_table-2 #scroll ").smoothDivScroll({
+        mousewheelScrolling: "allDirections",
+        manualContinuousScrolling: false,
+        touchScrolling: true,
+        scrollingHotSpotLeftClass: "scrollingHotSpotLeft2",
+        scrollingHotSpotRightClass: "scrollingHotSpotRight2"
 
 
+    });
 
+    /*
     $('#customScrollOnCatalog').attr("max", $('#scroll table tbody').width() - $('#scroll').width());
 
     $('#scroll').scroll(function () {
         console.log($('#scroll').scrollLeft() + "    width=" + ($('#scroll table tbody').width() - $('#scroll').width()));
         $('#customScrollOnCatalog').val($('#scroll').scrollLeft());
         $('input[type="range"]').rangeslider('update', true);
-    });
+    });*/
 
     /* $('#customScrollOnCatalog').on('mousemove change', function () {
          console.log($('#customScrollOnCatalog').val());
          $('#scroll').scrollLeft($('#customScrollOnCatalog').val());
      });*/
-    function updateValueScroll(pos, value) {
+    /*function updateValueScroll(pos, value) {
         console.log(value);
         $('#scroll').scrollLeft(value);
     }
@@ -51,7 +59,7 @@ $(document).ready(function () {
         onSlide: function (pos, value) {
             updateValueScroll(pos, value);
         }
-    });
+    });*/
 
 
     ///////////////////////////////////////////////////

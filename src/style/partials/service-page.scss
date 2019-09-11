@@ -192,7 +192,6 @@
                     margin-top: 22px;
 
                     line-height: 20px;
-                    margin-top: 22px;
                     max-width: 657px;
                     font-size: 15px;
 
@@ -213,6 +212,20 @@
                             background-color: #34a963;
                             border-radius: 50%;
                         }
+                    }
+                }
+
+                ol {
+                    margin-top: 22px;
+
+                    line-height: 20px;
+                    font-size: 15px;
+
+                    li {
+                        position: relative;
+                        margin-top: 15px;
+                        margin-left: 27px;
+                        padding-left: 10px;
                     }
                 }
 
@@ -329,6 +342,9 @@
 
                         a {
                             color: #1c1c1c;
+                            &:hover {
+                                color: #34a963;
+                            }
                         }
 
                         &:last-child {
@@ -339,14 +355,14 @@
                         }
 
                         &.active {
-                            a {
+                            > a {
                                 color: #34a963;
                             }
                         }
-
-                        &:hover {
-                            a {
-                                color: #34a963;
+                        .inner{
+                            .item{
+                                border: none;
+                                padding: 10px 0 10px 15px;
                             }
                         }
                     }
