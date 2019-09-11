@@ -37,10 +37,10 @@ $(document).ready(function () {
         );
 
         $('.map path').click(function (e) {
-            var $id=$('#content_'+$(this).attr('data-country'));
+            var $id = $('#content_' + $(this).attr('data-country'));
             $id.click();
-             $('.toggle .toggle_item:last-child').click();
-           // $id.click();
+            $('.toggle .toggle_item:last-child').click();
+            // $id.click();
         });
 
 
@@ -91,18 +91,39 @@ $(document).ready(function () {
 
 
         function makeAdaptive__repres_page() {
-
-
-
             if ($(window).width() <= 800) {
                 $('.map').after($('.btn-repres'))
             }
-
             else {
                 $('.left .text').after($('.btn-repres'))
 
             }
 
+          /*  console.log($(window).width());*/
+            if ($('#mobile-indicator').is(':visible')) {
+                if (!$('.activeTab').length > 0) {
+                    $('.diller-tabs').prepend('<div class="activeTab closed">' + $('.diller-tabs .tabs .item.active').html() + '</div>');
+                    $('.activeTab').click(function (e) {
+                        if ($(window).width() <= 700) {
+                            $('.tabs').stop().slideToggle(200);
+                            $(this).toggleClass('closed');
+                        }
+                    });
+
+                    $('.item').click(function (e) {
+                        if ($(window).width() <= 700) {
+                            $('.activeTab').html($(this).html());
+                            $(this).addClass('active').siblings().removeClass('active');
+                            $('.tabs').stop().slideToggle(200);
+                        }
+                    });
+                }
+            } else {
+                if ($('.activeTab').length > 0) {
+                    $('.activeTab').remove();
+                }
+
+            }
         }
 
 
@@ -110,14 +131,16 @@ $(document).ready(function () {
 
 
         window.onload = function () {
-
             makeAdaptive__repres_page();
-
         };
+
+
 
         $(window).resize(function () {
             makeAdaptive__repres_page();
         });
+
+
 
     }
 

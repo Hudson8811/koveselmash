@@ -1,4 +1,7 @@
 .repres-page {
+    #mobile-indicator{
+        display: none;
+    }
     position: relative;
     max-width: 1920px;
     margin: 0 auto;
@@ -554,8 +557,200 @@
                 max-width: 281px;
             }
 
-            .btn {
-                margin-top: 174px;
+
+        }
+
+        .btn {
+            margin-top: 173px;
+            margin-left: 0px;
+        }
+    }
+
+    .repres-page {
+
+
+        &.repres-page-list {
+            .map {}
+
+            .map-text-container.container {
+                >.left {
+                    >.title {
+                        padding-top: 52px;
+                    }
+
+                    .map-text {}
+                }
+            }
+
+            .diller-tabs {
+                margin-top: 25px;
+
+                .tabs {
+                    max-width: 206px;
+                    min-width: 206px;
+
+                    .item {
+                        &:first-child {
+                            padding-top: 0;
+                            margin-top: 39px;
+                        }
+
+                        padding-top: 23px;
+                        padding-bottom: 23px;
+                        font-size: 23px;
+                        font-weight: 500;
+                        line-height: 35px;
+
+                        img {
+                            padding-right: 12px;
+                        }
+
+                        &:hover {}
+
+                        &.active {
+                            &:first-child {
+                                padding-top: 0;
+                                margin-top: 39px;
+                            }
+                        }
+                    }
+                }
+
+                .content {
+                    &.active {}
+
+                    .category {
+                        padding-top: 41px;
+
+                        &:first-child {
+                            margin-top: 51px;
+
+                            .title {
+                                height: 50px;
+                                line-height: 24px;
+
+                            }
+                        }
+
+                        .title {
+                            padding-left: 31px;
+                            font-size: 16px;
+                            line-height: 40px;
+
+                            height: 50px;
+                            /*
+                            &:first-child {
+                                height: 50px;
+                                line-height: 24px;
+                            }*/
+                        }
+
+                        .item {
+                            margin-left: 30px;
+
+                            &::after {}
+
+                            .name {
+                                font-size: 14px;
+
+                                .city {}
+                            }
+
+                            .url {
+                                margin-top: -11px;
+
+                                &:hover {}
+                            }
+
+                            .contacts {
+                                flex-wrap: wrap;
+
+                                .contact {
+                                    &:nth-child(1) {
+                                        width: 64.8%;
+                                    }
+
+                                    &:nth-child(2) {}
+
+                                    &:nth-child(3) {
+                                        width: 100%;
+                                        margin-top: 28px;
+                                    }
+                                }
+
+                                .type {}
+
+                                .info {
+                                    font-size: 14px;
+
+                                    a {
+                                        &:hover {}
+
+                                        &:active {}
+
+                                        &:focus {}
+                                    }
+
+                                    .bold {}
+
+                                    a {
+                                        &:hover {}
+
+                                        &:active {}
+
+                                        &:focus {}
+                                    }
+                                }
+                            }
+
+                            &.closed {
+                                &::after {}
+
+                                .name {
+                                    .company {
+                                        width: fit-content;
+                                    }
+
+                                    .city {
+                                        margin-left: 22px;
+                                    }
+
+                                    &:hover {
+                                        .company {}
+                                    }
+                                }
+
+                                .url {}
+
+                                .contacts {
+                                    .contact {}
+
+                                    .type {}
+
+                                    .info {
+                                        a {
+                                            &:hover {}
+
+                                            &:active {}
+
+                                            &:focus {}
+                                        }
+
+                                        .bold {}
+
+                                        a {
+                                            &:hover {}
+
+                                            &:active {}
+
+                                            &:focus {}
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -665,7 +860,311 @@
             position: relative;
         }
 
+        &.repres-page-list {
+            .btn {
+                display: none;
+            }
+        }
+
     }
 
 
+}
+
+
+@media screen and (max-width:700px) {
+
+    .repres-page {
+        #mobile-indicator{
+            display: block;
+        }
+        .map {
+            top: 331px;
+        }
+
+        .map-text-container.container {
+            >.left {
+                >.title {
+                    font-size: 20px;
+                }
+
+                .map-text {
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+            }
+        }
+
+        .btn {
+            margin-top: 218px;
+        }
+
+
+        &.repres-page-list {
+            .btn {
+                display: none;
+            }
+
+            .map-text-container.container>.left>.title {
+                padding-top: 50px;
+            }
+
+            .diller-tabs {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+
+                .activeTab {
+                    position: relative;
+                    cursor: pointer;
+                    width: calc(100% - 23px);
+                    height: 56px;
+                    border: 1px solid #dee2e7;
+                    background-color: #eff2f7;
+                    display: flex;
+                    align-items: center;
+                    padding-left: 23px;
+                    font-size: 20px;
+                    cursor: pointer;
+
+                    img {
+                        padding-right: 14px;
+                    }
+
+                    &::after {
+                        content: "";
+                        width: 10px;
+                        height: 5px;
+                        position: absolute;
+                        top: 24px;
+                        right: 23px;
+                        transition-duration: .2s;
+                        background: url(../images/svg/arr-gray-u.svg);
+                        -webkit-transition-duration: .2s;
+                        transition-duration: .2s;
+                        transform: rotate(0deg);
+                    }
+
+                    &.closed {
+                        &::after {
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+
+                .tabs {
+                    position: absolute;
+                    z-index: 100;
+                    max-width: calc(100% - 20px);
+                    margin-top: 0;
+                    top: 57px;
+                    width: calc(100% - 20px);
+                    padding: 10px;
+                    border: 1px solid #dee2e7;
+                    background-color: #eff2f7;
+                    display: none;
+
+                    .item {
+                        cursor: pointer;
+                        position: relative;
+                        cursor: pointer;
+                        width: calc(100% - 23px);
+                        display: flex;
+                        align-items: center;
+                        padding: 15px 23px;
+                        font-size: 20px;
+                        cursor: pointer;
+                        opacity: .7;
+
+                        img {
+                            padding-right: 14px;
+                        }
+
+                        &:first-child {
+                            padding: 15px 23px;
+                            margin-top: 0;
+                            height: unset;
+                        }
+
+                        &.active {
+                            display: none;
+                        }
+                    }
+                }
+
+
+                .tabs {
+                    .item {
+                        &:first-child {}
+
+                        img {}
+
+                        &:hover {}
+
+                        &.active {
+                            &:first-child {}
+                        }
+                    }
+                }
+
+                .content {
+                    &.active {}
+
+                    .category {
+                        border-left: none;
+                        padding-top: 31px;
+
+                        &:first-child {
+                            .title {
+                                height: 42px;
+                            }
+                        }
+
+                        .title {
+                            position: relative;
+                            padding-left: 0;
+
+                            &::after {
+                                content: "";
+                                display: block;
+                                position: absolute;
+                                bottom: -1px;
+                                width: 100vw;
+                                left: -15px;
+                                height: 1px;
+                                background-color: #dee2e7;
+                            }
+                        }
+
+                        .item {
+                            margin-left: 0;
+                            padding-bottom: 22px;
+
+                            &::after {
+                                top: 28px;
+                                right: -2px;
+                            }
+
+                            .name {
+                                padding-top: 12px;
+
+                                display: block;
+
+                                .company {
+                                    width: 100%;
+                                    font-size: 14px;
+                                }
+
+                                .city {
+                                    font-size: 14px;
+                                    width: 100%;
+                                    margin-left: 0;
+                                }
+                            }
+
+                            .url {
+                                &:hover {}
+                            }
+
+                            .contacts {
+                                padding-top: 14px;
+
+                                .contact {
+                                    &:nth-child(1) {
+                                        width: 100%;
+                                        margin-bottom: 18px;
+                                    }
+
+                                    &:nth-child(2) {
+                                        width: 100%;
+                                    }
+
+                                    &:nth-child(3) {
+                                        margin-top: 19px;
+                                    }
+                                }
+
+                                .type {}
+
+                                .info {
+                                    a {
+                                        &:hover {}
+
+                                        &:active {}
+
+                                        &:focus {}
+                                    }
+
+                                    .bold {}
+
+                                    a {
+                                        &:hover {}
+
+                                        &:active {}
+
+                                        &:focus {}
+                                    }
+                                }
+                            }
+
+                            &.closed {
+                                padding-bottom: 10px;
+
+                                &::after {}
+
+                                .name {
+                                    .company {}
+
+                                    .city {
+                                        margin-left: 0;
+
+                                        margin-top: -12px;
+                                        font-size: 14px;
+                                    }
+
+                                    &:hover {
+                                        .company {}
+                                    }
+                                }
+
+                                .url {}
+
+                                .contacts {
+                                    .contact {}
+
+                                    .type {}
+
+                                    .info {
+                                        a {
+                                            &:hover {}
+
+                                            &:active {}
+
+                                            &:focus {}
+                                        }
+
+                                        .bold {}
+
+                                        a {
+                                            &:hover {}
+
+                                            &:active {}
+
+                                            &:focus {}
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+
+
+
+
+        }
+    }
 }
